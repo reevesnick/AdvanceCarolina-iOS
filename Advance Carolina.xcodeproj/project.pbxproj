@@ -125,6 +125,9 @@
 		9054B74D2E1BF2F3AF01DA75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D128D81A1C8F700E002DE1CE /* MapKit.framework */,
+				D128D8181C8F7008002DE1CE /* MessageUI.framework */,
+				D128D8161C8F6FFF002DE1CE /* CoreData.framework */,
 				E66B8696A54E8A796EC38E56 /* libPods-Advance Carolina.a */,
 				F7C9FEA36F4B43161CFFD970 /* libPods-Advance CarolinaTests.a */,
 				6C4099E7709839E9FAB6DF34 /* libPods-Advance CarolinaUITests.a */,
@@ -135,9 +138,6 @@
 		D10C06A61C8E2F92005B6B23 = {
 			isa = PBXGroup;
 			children = (
-				D128D81A1C8F700E002DE1CE /* MapKit.framework */,
-				D128D8181C8F7008002DE1CE /* MessageUI.framework */,
-				D128D8161C8F6FFF002DE1CE /* CoreData.framework */,
 				D10C06B11C8E2F92005B6B23 /* Advance Carolina */,
 				D10C06C91C8E2F92005B6B23 /* Advance CarolinaTests */,
 				D10C06D41C8E2F93005B6B23 /* Advance CarolinaUITests */,

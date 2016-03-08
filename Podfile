@@ -5,6 +5,11 @@
 
 target 'Advance Carolina' do
 
+pod 'KINWebBrowser'
+pod 'MWFeedParser'
+
+
+
 end
 
 target 'Advance CarolinaTests' do

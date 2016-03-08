@@ -8,8 +8,37 @@
 
 import UIKit
 
-class FeedTableViewController: UITableViewController {
+class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
+    
+    
+    var feedItems = [MWFeedItem]()
+    
+    func request(){
+        let url = NSURL(string: "http://feeds.feedburner.com/realclearpolitics/qlMj");
+        let feedParser = MWFeedParser(feedURL: url)
+        feedParser.delegate = self
+        feedParser.parse()
+    }
 
+    // MARK: - Feed Parser Delegate
+    func feedParserDidStart(parser: MWFeedParser!) {
+        feedItems = [MWFeedItem]()
+    }
+    
+    func feedParserDidFinish(parser: MWFeedParser!) {
+        self.tableView.reloadData();
+    }
+    
+    func feedParser(parser: MWFeedParser!, didParseFeedInfo info: MWFeedInfo!) {
+        print(info);
+        self.title = info.title;
+    }
+    
+    func feedParser(parser: MWFeedParser!, didParseFeedItem item: MWFeedItem!) {
+        feedItems.append(item)
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,33 +48,46 @@ class FeedTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        request()
+    }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
-
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100;
+    }
+    
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return feedItems.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         // Configure the cell...
 
+        let item = feedItems[indexPath.row] as MWFeedItem
+        cell.textLabel?.text = item.title
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
