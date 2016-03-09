@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
+class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINWebBrowserDelegate {
     
     
     var feedItems = [MWFeedItem]()
@@ -18,6 +18,7 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
         let feedParser = MWFeedParser(feedURL: url)
         feedParser.delegate = self
         feedParser.parse()
+
     }
 
     // MARK: - Feed Parser Delegate
@@ -31,7 +32,8 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
     
     func feedParser(parser: MWFeedParser!, didParseFeedInfo info: MWFeedInfo!) {
         print(info);
-        self.title = info.title;
+        self.title = "News";
+        //self.summary = info.summary;
     }
     
     func feedParser(parser: MWFeedParser!, didParseFeedItem item: MWFeedItem!) {
@@ -41,6 +43,8 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -81,11 +85,34 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         // Configure the cell...
+        
 
         let item = feedItems[indexPath.row] as MWFeedItem
+        var DateStringer = item.date;
+        //Convert Date Into String
+        var formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy"
+        var dateString = formatter.stringFromDate(item.date)
+        
+        
         cell.textLabel?.text = item.title
+        cell.detailTextLabel?.text = item.author;
+        
+
+        
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = feedItems[indexPath.row] as MWFeedItem
+        
+        let webBroswer = KINWebBrowserViewController()
+        let url = NSURL(string: item.link)
+        
+        webBroswer.loadURL(url);
+        
+        self.navigationController?.pushViewController(webBroswer, animated: true);
     }
     
 
