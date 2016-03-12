@@ -24,6 +24,8 @@
 		D128D8171C8F6FFF002DE1CE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D8161C8F6FFF002DE1CE /* CoreData.framework */; };
 		D128D8191C8F7008002DE1CE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D8181C8F7008002DE1CE /* MessageUI.framework */; };
 		D128D81B1C8F700E002DE1CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D81A1C8F700E002DE1CE /* MapKit.framework */; };
+		D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAB1C93A24500593DFD /* PollingViewController.swift */; };
+		D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */; };
 		D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC03481C8F872400D5563D /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		D128D8161C8F6FFF002DE1CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D128D8181C8F7008002DE1CE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D128D81A1C8F700E002DE1CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D173EFAB1C93A24500593DFD /* PollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingViewController.swift; sourceTree = "<group>"; };
+		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		D1DC034A1C8F878A00D5563D /* Advance Carolina-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Advance Carolina-Bridging-Header.h"; sourceTree = "<group>"; };
 		E66B8696A54E8A796EC38E56 /* libPods-Advance Carolina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Advance Carolina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,17 +164,18 @@
 		D10C06B11C8E2F92005B6B23 /* Advance Carolina */ = {
 			isa = PBXGroup;
 			children = (
+				D173EFAD1C93BADE00593DFD /* Polling */,
 				D128D81C1C8F7B2B002DE1CE /* News */,
 				D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */,
 				D10C06B41C8E2F92005B6B23 /* ViewController.swift */,
 				D128D80D1C8F6143002DE1CE /* SampleBallotViewController.swift */,
 				D128D8141C8F676B002DE1CE /* ContactViewController.swift */,
+				D173EFAB1C93A24500593DFD /* PollingViewController.swift */,
 				D10C06B61C8E2F92005B6B23 /* Main.storyboard */,
 				D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */,
 				D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */,
 				D10C06C11C8E2F92005B6B23 /* Info.plist */,
 				D10C06B91C8E2F92005B6B23 /* Advance_Carolina.xcdatamodeld */,
-				D128D8111C8F6417002DE1CE /* Open Source Libraries and API */,
 				D128D8101C8F63F9002DE1CE /* Frameworks */,
 				D128D80F1C8F63EE002DE1CE /* Supporting Files */,
 				D1DC034A1C8F878A00D5563D /* Advance Carolina-Bridging-Header.h */,
@@ -211,19 +216,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D128D8111C8F6417002DE1CE /* Open Source Libraries and API */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Open Source Libraries and API";
-			sourceTree = "<group>";
-		};
 		D128D81C1C8F7B2B002DE1CE /* News */ = {
 			isa = PBXGroup;
 			children = (
 				D1DC03481C8F872400D5563D /* FeedTableViewController.swift */,
 			);
 			name = News;
+			sourceTree = "<group>";
+		};
+		D173EFAD1C93BADE00593DFD /* Polling */ = {
+			isa = PBXGroup;
+			children = (
+				D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */,
+			);
+			name = Polling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,7 +499,9 @@
 				D128D80E1C8F6143002DE1CE /* SampleBallotViewController.swift in Sources */,
 				D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */,
 				D10C06B51C8E2F92005B6B23 /* ViewController.swift in Sources */,
+				D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */,
 				D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */,
+				D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */,
 				D10C06BB1C8E2F92005B6B23 /* Advance_Carolina.xcdatamodeld in Sources */,
 				D128D8151C8F676B002DE1CE /* ContactViewController.swift in Sources */,
 			);

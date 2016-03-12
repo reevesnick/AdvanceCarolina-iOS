@@ -36,7 +36,7 @@ class ContactViewController: UIViewController,MFMailComposeViewControllerDelegat
     
         mailComposerVC.setToRecipients(["someone@somewhere.com"]) //Mail to
         mailComposerVC.setSubject("Sending you an in-app e-mail...") // Subject
-        mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
+        //mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
     
         return mailComposerVC
     }

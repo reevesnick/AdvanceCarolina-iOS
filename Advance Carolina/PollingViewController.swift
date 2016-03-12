@@ -1,41 +1,37 @@
 //
-//  SampleBallotViewController.swift
+//  PollingViewController.swift
 //  Advance Carolina
 //
-//  Created by Neegbeah Reeves on 3/8/16.
+//  Created by Neegbeah Reeves on 3/11/16.
 //  Copyright © 2016 Brown Box Works. All rights reserved.
 //
 
 import UIKit
 import Foundation
 
-
-class SampleBallotViewController: UIViewController {
+class PollingViewController: UIViewController {
     
-    @IBOutlet weak var webView: UIWebView!
-
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    
+    @IBAction func indexChanged(sender: UISegmentedControl) {
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            view1.hidden = false
+            view2.hidden = true
+        case 1:
+            view1.hidden = true
+            view2.hidden = false
+        default:
+            break;
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        let localfilePath = NSBundle.mainBundle().URLForResource("pdf",withExtension: "pdf");
-        let myRequest = NSURLRequest(URL: localfilePath!);
-        webView.loadRequest(myRequest);
-        
-        //Zoom in aod out web view
-        let contentSize:CGSize = webView.scrollView.contentSize
-        let viewSize:CGSize = self.view.bounds.size
-        
-        let rw = viewSize.width / contentSize.width;
-        
-        webView.scrollView.minimumZoomScale = rw;
-        webView.scrollView.zoomScale = rw;
-        
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
