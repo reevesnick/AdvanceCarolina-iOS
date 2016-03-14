@@ -8,7 +8,26 @@
 
 import UIKit
 
-class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINWebBrowserDelegate {
+extension String {
+    
+    var html2AttributedString: NSAttributedString? {
+        guard
+            let data = dataUsingEncoding(NSUTF8StringEncoding)
+            else { return nil }
+        do {
+            return try NSAttributedString(data: data, options: [NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType,NSCharacterEncodingDocumentAttribute:NSUTF8StringEncoding], documentAttributes: nil)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+            return  nil
+        }
+    }
+    var html2String: String {
+        return html2AttributedString?.string ?? ""
+    }
+}
+
+
+class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINWebBrowserDelegate, DZNEmptyDataSetDelegate,DZNEmptyDataSetSource {
     
     
     var feedItems = [MWFeedItem]()
@@ -43,14 +62,18 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        // Set DZEmptyVieDataSet Delegate and Datasource
+        self.tableView.emptyDataSetDelegate = self;
+        self.tableView.emptyDataSetSource = self;
+        
+        self.tableView.tableFooterView = UIView()
+    }
+    
+    deinit{
+        self.tableView.emptyDataSetSource = nil;
+        self.tableView.emptyDataSetDelegate = nil;
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -59,8 +82,6 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
         request()
     }
 
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -86,20 +107,24 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
 
         // Configure the cell...
         
+        
+        
 
         let item = feedItems[indexPath.row] as MWFeedItem
         var DateStringer = item.date;
         //Convert Date Into String
         var formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy"
+        formatter.dateFormat = "M/dd/yyyy, H:mm"
         var dateString = formatter.stringFromDate(item.date)
         
+        let subtitle = NSMutableString()
+        if ((item.date) != nil){
+            subtitle.appendFormat("%@ ", formatter.stringFromDate(item.date));
+        }
+        subtitle.appendString(item.summary.html2String)
         
         cell.textLabel?.text = item.title
-        cell.detailTextLabel?.text = item.author;
-        
-
-        
+        cell.detailTextLabel?.text = subtitle as String;
         
         return cell
     }
@@ -115,6 +140,46 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
         self.navigationController?.pushViewController(webBroswer, animated: true);
     }
     
+    
+    
+    // MARK: - DZEmptyView
+    func titleForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "Unable to Load"
+        let attrs = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)]
+        return NSAttributedString(string: str,attributes: attrs);
+    }
+    
+    func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "It might have been a connect problems fronm the server or the internet connection is offline"
+        let attrs = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)]
+        return NSAttributedString(string: str,attributes: attrs);    }
+
+    func backgroundColorForEmptyDataSet(scrollView: UIScrollView!) -> UIColor! {
+        return UIColor.whiteColor()
+        
+    }
+    
+    
+    // MARK: - DZEmptyView Delegate
+    func emptyDataSetShouldDisplay(scrollView: UIScrollView!) -> Bool {
+        return true;
+    }
+    
+    func emptyDataSetShouldAllowTouch(scrollView: UIScrollView!) -> Bool {
+        return true;
+    }
+    
+    func emptyDataSetShouldAllowScroll(scrollView: UIScrollView!) -> Bool {
+        return true;
+    }
+    
+    func emptyDataSetDidTapView(scrollView: UIScrollView!) {
+        //NSLog("", nil)
+    }
+    
+    func emptyDataSetDidTapButton(scrollView: UIScrollView!) {
+       // NSLog("", nil)
+    }
 
     /*
     // Override to support conditional editing of the table view.
