@@ -39,6 +39,8 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
         feedParser.parse()
 
     }
+    
+    // 
 
     // MARK: - Feed Parser Delegate
     func feedParserDidStart(parser: MWFeedParser!) {
@@ -139,7 +141,6 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
         
         self.navigationController?.pushViewController(webBroswer, animated: true);
     }
-    
     
     
     // MARK: - DZEmptyView

@@ -41,6 +41,7 @@ class ContactViewController: UIViewController,MFMailComposeViewControllerDelegat
         return mailComposerVC
     }
     
+    
     func showSendMailErrorAlert() {
         let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
         sendMailErrorAlert.show()
@@ -52,7 +53,8 @@ class ContactViewController: UIViewController,MFMailComposeViewControllerDelegat
     }
 
     
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
