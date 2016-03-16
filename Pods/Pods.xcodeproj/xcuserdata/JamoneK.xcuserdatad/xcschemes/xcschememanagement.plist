@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FontAwesomeKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KINWebBrowser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -97,6 +102,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>059B6BF1A5D5A2CE95600A4653F7577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0B0EBA1FCFE4D6C9EFCDE41735756990</key>
 		<dict>
 			<key>primary</key>
@@ -127,7 +137,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>87B1323F0A5BA1D8247956BC39E5081D</key>
+		<key>8BE9D4B6FF6D92923152CB0534F2BB94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,12 +162,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD12ED9C60096C3124CF6FEEC75397E5</key>
+		<key>B0FF4FDA599C82A79B991E72913CD084</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C44A207525B627727CA7D6945E1D848C</key>
+		<key>BD12ED9C60096C3124CF6FEEC75397E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

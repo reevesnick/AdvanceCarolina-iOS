@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		334E495CE8BD67EA0EF69A6D /* Pods_Advance_Carolina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D92BB2CF6AB8422DF10046 /* Pods_Advance_Carolina.framework */; };
+		64263FF71C99F27E00FBD584 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 64263FF61C99F27E00FBD584 /* FontAwesome.otf */; };
+		64263FFA1C99F8E800FBD584 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64263FF91C99F8E800FBD584 /* TabBarController.swift */; };
 		6467A3C61C986FF2002A1557 /* PollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467A3C51C986FF2002A1557 /* PollCell.swift */; };
 		6467A3C91C987353002A1557 /* PollModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467A3C81C987353002A1557 /* PollModel.swift */; };
 		6467A3CC1C9873C2002A1557 /* PollAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467A3CB1C9873C2002A1557 /* PollAPI.swift */; };
@@ -56,6 +58,8 @@
 		293D6150D4B7A68F7527E826 /* Pods_Advance_CarolinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advance_CarolinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C571B2BA71CAC64E1C6C09C /* Pods-Advance CarolinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaTests/Pods-Advance CarolinaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D077C8214D7E7D794672CB7 /* Pods-Advance Carolina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance Carolina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advance Carolina/Pods-Advance Carolina.debug.xcconfig"; sourceTree = "<group>"; };
+		64263FF61C99F27E00FBD584 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		64263FF91C99F8E800FBD584 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		6467A3C51C986FF2002A1557 /* PollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollCell.swift; sourceTree = "<group>"; };
 		6467A3C81C987353002A1557 /* PollModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollModel.swift; sourceTree = "<group>"; };
 		6467A3CB1C9873C2002A1557 /* PollAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollAPI.swift; sourceTree = "<group>"; };
@@ -136,6 +140,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		64263FF51C99F27100FBD584 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				64263FF61C99F27E00FBD584 /* FontAwesome.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		64263FF81C99F89A00FBD584 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D173EFAB1C93A24500593DFD /* PollingViewController.swift */,
+				D128D8141C8F676B002DE1CE /* ContactViewController.swift */,
+				D128D80D1C8F6143002DE1CE /* SampleBallotViewController.swift */,
+				D10C06B41C8E2F92005B6B23 /* ViewController.swift */,
+				D128D81C1C8F7B2B002DE1CE /* News */,
+				D173EFAD1C93BADE00593DFD /* Polling */,
+				64263FF91C99F8E800FBD584 /* TabBarController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		6467A3C71C987348002A1557 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,17 +232,13 @@
 		D10C06B11C8E2F92005B6B23 /* Advance Carolina */ = {
 			isa = PBXGroup;
 			children = (
+				64263FF51C99F27100FBD584 /* Fonts */,
 				64785D321C98E22F009EB8B0 /* Helpers */,
 				6467A3CD1C9887C7002A1557 /* ViewModel */,
 				6467A3CA1C9873B5002A1557 /* Networking */,
+				64263FF81C99F89A00FBD584 /* Controllers */,
 				6467A3C71C987348002A1557 /* Models */,
-				D173EFAD1C93BADE00593DFD /* Polling */,
-				D128D81C1C8F7B2B002DE1CE /* News */,
 				D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */,
-				D10C06B41C8E2F92005B6B23 /* ViewController.swift */,
-				D128D80D1C8F6143002DE1CE /* SampleBallotViewController.swift */,
-				D128D8141C8F676B002DE1CE /* ContactViewController.swift */,
-				D173EFAB1C93A24500593DFD /* PollingViewController.swift */,
 				D10C06B61C8E2F92005B6B23 /* Main.storyboard */,
 				D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */,
 				D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */,
@@ -355,7 +377,12 @@
 				TargetAttributes = {
 					D10C06AE1C8E2F92005B6B23 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = L6WD86F9N5;
+						DevelopmentTeam = W29D5BE398;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					D10C06C51C8E2F92005B6B23 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -393,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */,
+				64263FF71C99F27E00FBD584 /* FontAwesome.otf in Resources */,
 				D128D8131C8F6435002DE1CE /* pdf.pdf in Resources */,
 				D10C06BD1C8E2F92005B6B23 /* Assets.xcassets in Resources */,
 				D10C06B81C8E2F92005B6B23 /* Main.storyboard in Resources */,
@@ -554,6 +582,7 @@
 				D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */,
 				D10C06BB1C8E2F92005B6B23 /* Advance_Carolina.xcdatamodeld in Sources */,
 				D128D8151C8F676B002DE1CE /* ContactViewController.swift in Sources */,
+				64263FFA1C99F8E800FBD584 /* TabBarController.swift in Sources */,
 				6467A3CC1C9873C2002A1557 /* PollAPI.swift in Sources */,
 				6467A3CF1C9887E3002A1557 /* PollingLocationViewModel.swift in Sources */,
 			);
@@ -698,11 +727,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Advance-Carolina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Advance Carolina/Advance Carolina-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -715,11 +746,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Advance-Carolina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Advance Carolina/Advance Carolina-Bridging-Header.h";
 			};
 			name = Release;

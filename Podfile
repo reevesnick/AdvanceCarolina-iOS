@@ -12,6 +12,7 @@ target 'Advance Carolina' do
     pod 'Moya/RxSwift'
     pod 'Moya-Argo/RxSwift'
     pod 'Curry'
+    pod 'FontAwesomeKit'
 end
 
 target 'Advance CarolinaTests' do

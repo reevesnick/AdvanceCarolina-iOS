@@ -10,8 +10,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 import KINWebBrowser
+import DZNEmptyDataSet
+import FontAwesomeKit
 
-class PollingLocationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class PollingLocationViewController: UIViewController {
     
     // MARK: Properties
     @IBOutlet weak var pollTableView: UITableView!
@@ -31,7 +33,12 @@ class PollingLocationViewController: UIViewController, UITableViewDelegate, UITa
         self.navigationController?.pushViewController(webBroswer, animated: true)
         webBroswer.loadURLString("http://www.google.com")  // USA Voting How to Page
     }
-
+    
+    deinit {
+        self.pollTableView.emptyDataSetSource = nil
+        self.pollTableView.emptyDataSetDelegate = nil
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,8 +58,9 @@ class PollingLocationViewController: UIViewController, UITableViewDelegate, UITa
                 }
         }.addDisposableTo(disposeBag)
         
-        pollTableView.dataSource = self
-        pollTableView.delegate = self
+        pollTableView.emptyDataSetDelegate = self
+        pollTableView.emptyDataSetSource = self
+        pollTableView.tableFooterView = UIView()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -66,8 +74,44 @@ class PollingLocationViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PollCell
         
-        cell.locationName.text = locations![indexPath.row].locationName
-        print(locations![indexPath.row].locationName)
+        if let locationName = locations?[indexPath.row].locationName {
+            cell.locationName.text = locationName
+        }
+        
+        if let line1 = locations?[indexPath.row].line1 {
+            cell.line1.text = line1
+        } else {
+            cell.line1.hidden = true
+        }
+        
+        if let line2 = locations?[indexPath.row].line2 {
+            cell.line2.text = line2
+        } else {
+            cell.line2.hidden = true
+        }
+        
+        if let line3 = locations?[indexPath.row].line3 {
+            cell.line3.text = line3
+        } else {
+            cell.line3.hidden = true
+        }
+        
+        if let city = locations?[indexPath.row].city {
+            cell.city.text = city
+        }
+        
+        if let state = locations?[indexPath.row].state {
+            cell.state.text = state
+        }
+        
+        if let zip = locations?[indexPath.row].zip {
+            cell.zip.text = zip
+        }
+        
+        if let pollHours = locations?[indexPath.row].pollingHours {
+            cell.pollHours.text = pollHours
+        }
+        
         return cell
     }
     
@@ -88,4 +132,66 @@ class PollingLocationViewController: UIViewController, UITableViewDelegate, UITa
     }
     */
 
+}
+
+extension PollingLocationViewController: DZNEmptyDataSetDelegate, DZNEmptyDataSetSource {
+    // MARK: EmptyDataSet Methods
+    
+    func titleForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        let text = "No polling locations available"
+        
+        let attributes = [
+            NSFontAttributeName: UIFont.boldSystemFontOfSize(18.0),
+            NSForegroundColorAttributeName: UIColor.blackColor()
+        ]
+        
+        return NSAttributedString(string: text, attributes: attributes)
+    }
+    
+    func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        let text = "We are not able to find any polling locations."
+        
+        let paragraph = NSMutableParagraphStyle()
+        
+        paragraph.lineBreakMode = .ByWordWrapping
+        paragraph.alignment = .Center
+        
+        let attributes = [
+            NSFontAttributeName: UIFont.systemFontOfSize(14.0),
+            NSForegroundColorAttributeName: UIColor.blackColor(),
+            NSParagraphStyleAttributeName: paragraph
+        ]
+        
+        return NSAttributedString(string: text, attributes: attributes)
+    }
+    
+    func buttonTitleForEmptyDataSet(scrollView: UIScrollView!, forState state: UIControlState) -> NSAttributedString! {
+        let attributes = [
+            NSFontAttributeName: UIFont.boldSystemFontOfSize(17.0),
+            NSForegroundColorAttributeName: UIColor.blueColor()
+        ]
+        
+        return NSAttributedString(string: "Search for new location", attributes:attributes)
+    }
+    
+    func imageForEmptyDataSet(scrollView: UIScrollView!) -> UIImage! {
+        return FAKFontAwesome.homeIconWithSize(50).imageWithSize(CGSize(width: 50, height: 50))
+    }
+    
+    func backgroundColorForEmptyDataSet(scrollView: UIScrollView!) -> UIColor! {
+        return UIColor.whiteColor()
+    }
+    
+    //    func customViewForEmptyDataSet(scrollView: UIScrollView!) -> UIView! {
+    //        let activityView = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+    //        activityView.startAnimating()
+    //        return activityView
+    //    }
+    
+    // MARK: - DZNEmptyDataSetDelegate
+    
+    func emptyDataSetDidTapButton(scrollView: UIScrollView!) {
+        print("Button pressed")
+    }
+    
 }
