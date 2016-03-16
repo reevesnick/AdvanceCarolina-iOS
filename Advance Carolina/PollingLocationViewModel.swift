@@ -29,14 +29,12 @@ class PollingLocationViewModel {
                     } catch {
                         print ("error on next")
                     }
-                    //let jsonData = Mapper<PollModel>().map(jsonData1)
-                    //debugPrint(jsonData)
-                    observe.on(.Next(nil))
+                    observe.on(.Next(self.locations))
+                    observe.on(.Completed)
                 case .Error(let error):
-                    print("Called error: \(error)")
+                    print(error)
                     observe.on(.Next(nil))
                 case .Completed:
-                    print("Called complete")
                     observe.on(.Completed)
                 }
             }

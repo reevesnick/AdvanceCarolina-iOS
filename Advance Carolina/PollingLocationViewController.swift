@@ -19,7 +19,7 @@ class PollingLocationViewController: UIViewController, UITableViewDelegate, UITa
     var pollViewModel: PollingLocationViewModel?
     var locations: [PollModel]? {
         didSet {
-            print("Called reload \(locations?.count)")
+            print("Called reload \(locations!.count)")
             
             self.pollTableView.reloadData()
         }
@@ -47,23 +47,27 @@ class PollingLocationViewController: UIViewController, UITableViewDelegate, UITa
                 case .Error(_):
                     print("Error")
                 case .Next(let loc):
-                    debugPrint(loc)
                     self.locations = loc
                 }
         }.addDisposableTo(disposeBag)
         
-        
+        pollTableView.dataSource = self
+        pollTableView.delegate = self
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return locations!.count
+        if let count = locations?.count {
+            return count
+        } else {
+            return 0
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PollCell
         
         cell.locationName.text = locations![indexPath.row].locationName
-        
+        print(locations![indexPath.row].locationName)
         return cell
     }
     
