@@ -10,6 +10,9 @@
 		20601E38E134EC990B248BFD /* libPods-Advance CarolinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C9FEA36F4B43161CFFD970 /* libPods-Advance CarolinaTests.a */; };
 		3CF52AA1D74DD5B2185FA45F /* libPods-Advance CarolinaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4099E7709839E9FAB6DF34 /* libPods-Advance CarolinaUITests.a */; };
 		866C81CF42C4EF168361BDE9 /* libPods-Advance Carolina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E66B8696A54E8A796EC38E56 /* libPods-Advance Carolina.a */; };
+		D1005D221C9CAA8B007FD9C9 /* ScheduleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1005D211C9CAA8B007FD9C9 /* ScheduleListViewController.m */; };
+		D1005D251C9CABD5007FD9C9 /* CreateScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1005D241C9CABD5007FD9C9 /* CreateScheduleViewController.m */; };
+		D1005D271C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */; };
 		D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */; };
 		D10C06B51C8E2F92005B6B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B41C8E2F92005B6B23 /* ViewController.swift */; };
 		D10C06B81C8E2F92005B6B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C06B61C8E2F92005B6B23 /* Main.storyboard */; };
@@ -24,11 +27,8 @@
 		D128D8171C8F6FFF002DE1CE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D8161C8F6FFF002DE1CE /* CoreData.framework */; };
 		D128D8191C8F7008002DE1CE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D8181C8F7008002DE1CE /* MessageUI.framework */; };
 		D128D81B1C8F700E002DE1CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D81A1C8F700E002DE1CE /* MapKit.framework */; };
-		D14ACFC01C9709C100EC1CA2 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14ACFBF1C9709C000EC1CA2 /* ScheduleViewController.swift */; };
 		D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAB1C93A24500593DFD /* PollingViewController.swift */; };
 		D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */; };
-		D1A2411A1C98CB9D00B0DA77 /* ScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A241191C98CB9D00B0DA77 /* ScheduleItem.swift */; };
-		D1A2411C1C98D13300B0DA77 /* ScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2411B1C98D13300B0DA77 /* ScheduleList.swift */; };
 		D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC03481C8F872400D5563D /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +56,11 @@
 		76B77AEC8D3AF6BA8D5ECAC2 /* Pods-Advance CarolinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaTests/Pods-Advance CarolinaTests.release.xcconfig"; sourceTree = "<group>"; };
 		99B839B7C584F4AF091FC6B7 /* Pods-Advance CarolinaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A15BC5EE2430D90FA7DAC27 /* Pods-Advance CarolinaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1005D201C9CAA8B007FD9C9 /* ScheduleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleListViewController.h; sourceTree = "<group>"; };
+		D1005D211C9CAA8B007FD9C9 /* ScheduleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleListViewController.m; sourceTree = "<group>"; };
+		D1005D231C9CABD5007FD9C9 /* CreateScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateScheduleViewController.h; sourceTree = "<group>"; };
+		D1005D241C9CABD5007FD9C9 /* CreateScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateScheduleViewController.m; sourceTree = "<group>"; };
+		D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateScheduleStoryboard.storyboard; sourceTree = "<group>"; };
 		D10C06AF1C8E2F92005B6B23 /* Advance Carolina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advance Carolina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D10C06B41C8E2F92005B6B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,11 +81,8 @@
 		D128D8161C8F6FFF002DE1CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D128D8181C8F7008002DE1CE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D128D81A1C8F700E002DE1CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D14ACFBF1C9709C000EC1CA2 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		D173EFAB1C93A24500593DFD /* PollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingViewController.swift; sourceTree = "<group>"; };
 		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
-		D1A241191C98CB9D00B0DA77 /* ScheduleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleItem.swift; sourceTree = "<group>"; };
-		D1A2411B1C98D13300B0DA77 /* ScheduleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleList.swift; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		D1DC034A1C8F878A00D5563D /* Advance Carolina-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Advance Carolina-Bridging-Header.h"; sourceTree = "<group>"; };
 		E66B8696A54E8A796EC38E56 /* libPods-Advance Carolina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Advance Carolina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +179,7 @@
 				D128D80D1C8F6143002DE1CE /* SampleBallotViewController.swift */,
 				D128D8141C8F676B002DE1CE /* ContactViewController.swift */,
 				D173EFAB1C93A24500593DFD /* PollingViewController.swift */,
+				D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */,
 				D10C06B61C8E2F92005B6B23 /* Main.storyboard */,
 				D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */,
 				D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */,
@@ -234,9 +237,10 @@
 			isa = PBXGroup;
 			children = (
 				D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */,
-				D14ACFBF1C9709C000EC1CA2 /* ScheduleViewController.swift */,
-				D1A241191C98CB9D00B0DA77 /* ScheduleItem.swift */,
-				D1A2411B1C98D13300B0DA77 /* ScheduleList.swift */,
+				D1005D201C9CAA8B007FD9C9 /* ScheduleListViewController.h */,
+				D1005D211C9CAA8B007FD9C9 /* ScheduleListViewController.m */,
+				D1005D231C9CABD5007FD9C9 /* CreateScheduleViewController.h */,
+				D1005D241C9CABD5007FD9C9 /* CreateScheduleViewController.m */,
 			);
 			name = Polling;
 			sourceTree = "<group>";
@@ -357,6 +361,7 @@
 				D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */,
 				D128D8131C8F6435002DE1CE /* pdf.pdf in Resources */,
 				D10C06BD1C8E2F92005B6B23 /* Assets.xcassets in Resources */,
+				D1005D271C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard in Resources */,
 				D10C06B81C8E2F92005B6B23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,14 +513,13 @@
 				D128D80E1C8F6143002DE1CE /* SampleBallotViewController.swift in Sources */,
 				D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */,
 				D10C06B51C8E2F92005B6B23 /* ViewController.swift in Sources */,
-				D1A2411A1C98CB9D00B0DA77 /* ScheduleItem.swift in Sources */,
-				D14ACFC01C9709C100EC1CA2 /* ScheduleViewController.swift in Sources */,
 				D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */,
 				D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */,
 				D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */,
 				D10C06BB1C8E2F92005B6B23 /* Advance_Carolina.xcdatamodeld in Sources */,
 				D128D8151C8F676B002DE1CE /* ContactViewController.swift in Sources */,
-				D1A2411C1C98D13300B0DA77 /* ScheduleList.swift in Sources */,
+				D1005D221C9CAA8B007FD9C9 /* ScheduleListViewController.m in Sources */,
+				D1005D251C9CABD5007FD9C9 /* CreateScheduleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

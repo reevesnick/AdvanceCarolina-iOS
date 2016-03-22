@@ -27,6 +27,19 @@ class PollingViewController: UIViewController {
             break;
         }
     }
+    
+    
+    @IBAction func addSchedule(sender: UIBarButtonItem){
+        
+        
+        let viewController:UIViewController = UIStoryboard(name: "CreateScheduleStoryboard", bundle: nil).instantiateInitialViewController()! as UIViewController
+        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+        
+        self.presentViewController(viewController, animated: false, completion: nil)
+ 
+ 
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

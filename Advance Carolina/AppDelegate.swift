@@ -17,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+            if #available(iOS 8.0, *) {
+                let notificationType = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+                UIApplication.sharedApplication().registerUserNotificationSettings(notificationType)
+
+            } else {
+                // Fallback on earlier versions
+            }
+                //UIApplication.sharedApplication().registerUserNotificationSettings(notificationType)
+        
+
+            // Fallback on earlier versions
+            
+        
         return true
     }
 
@@ -44,6 +59,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
+    // MARK: - Local Push Notification
+    
+
+    
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
