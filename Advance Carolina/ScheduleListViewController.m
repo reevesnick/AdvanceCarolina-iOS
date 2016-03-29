@@ -113,7 +113,7 @@
 // The attributed string for the description of the empty state:
 - (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView
 {
-    NSString *text = @"This allows you to svhedule your vote and notifify of your next polling schedule. To get started, tap 'Add A Schedule' to create you first schedule.";
+    NSString *text = @"This allows you to schedule your vote and notifify of your next polling schedule. To get started, tap 'Add A Schedule' to create you first schedule.";
     
     NSMutableParagraphStyle *paragraph = [NSMutableParagraphStyle new];
     paragraph.lineBreakMode = NSLineBreakByWordWrapping;

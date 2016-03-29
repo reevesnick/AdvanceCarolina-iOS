@@ -8,7 +8,7 @@ target 'Advance Carolina' do
 pod 'KINWebBrowser'
 pod 'MWFeedParser'
 pod 'DZNEmptyDataSet'
-
+pod 'Batch', '~> 1.5'
 
 
 end

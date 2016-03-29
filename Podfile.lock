@@ -1,5 +1,6 @@
 PODS:
   - ARChromeActivity (1.0.5)
+  - Batch (1.5.1)
   - DZNEmptyDataSet (1.7.3)
   - KINWebBrowser (1.3.2):
     - ARChromeActivity (= 1.0.5)
@@ -16,17 +17,19 @@ PODS:
   - TUSafariActivity (1.0.4)
 
 DEPENDENCIES:
+  - Batch (~> 1.5)
   - DZNEmptyDataSet
   - KINWebBrowser
   - MWFeedParser
 
 SPEC CHECKSUMS:
   ARChromeActivity: 821c7849b566f49583987468733a896fee35aa4d
+  Batch: 968cfffd316d2f0e8cd652c97608c6c19e2ec099
   DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
   KINWebBrowser: 27aa857a2aa39063ed102cca781d130b679d205f
   MWFeedParser: 2cf646014c1baf6ad1b08c480b40a08180079247
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
 
-PODFILE CHECKSUM: be6dd1461560941d8ed1261c4717577d66153e12
+PODFILE CHECKSUM: 05f90194b5272905c49b8697c48df98050fd7b27
 
 COCOAPODS: 1.0.0.beta.3

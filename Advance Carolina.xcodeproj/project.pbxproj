@@ -21,12 +21,14 @@
 		D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */; };
 		D10C06CB1C8E2F92005B6B23 /* Advance_CarolinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06CA1C8E2F92005B6B23 /* Advance_CarolinaTests.swift */; };
 		D10C06D61C8E2F93005B6B23 /* Advance_CarolinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06D51C8E2F93005B6B23 /* Advance_CarolinaUITests.swift */; };
+		D11836141CA766170025EE48 /* CandidateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11836131CA766170025EE48 /* CandidateListTableViewController.swift */; };
 		D128D80E1C8F6143002DE1CE /* SampleBallotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D128D80D1C8F6143002DE1CE /* SampleBallotViewController.swift */; };
 		D128D8131C8F6435002DE1CE /* pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D128D8121C8F6435002DE1CE /* pdf.pdf */; };
 		D128D8151C8F676B002DE1CE /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D128D8141C8F676B002DE1CE /* ContactViewController.swift */; };
 		D128D8171C8F6FFF002DE1CE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D8161C8F6FFF002DE1CE /* CoreData.framework */; };
 		D128D8191C8F7008002DE1CE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D8181C8F7008002DE1CE /* MessageUI.framework */; };
 		D128D81B1C8F700E002DE1CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D81A1C8F700E002DE1CE /* MapKit.framework */; };
+		D134185C1CAAE77B00E5D0AD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D134185B1CAAE77B00E5D0AD /* RegisterViewController.swift */; };
 		D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAB1C93A24500593DFD /* PollingViewController.swift */; };
 		D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */; };
 		D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC03481C8F872400D5563D /* FeedTableViewController.swift */; };
@@ -75,12 +77,14 @@
 		D10C06D11C8E2F93005B6B23 /* Advance CarolinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Advance CarolinaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10C06D51C8E2F93005B6B23 /* Advance_CarolinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advance_CarolinaUITests.swift; sourceTree = "<group>"; };
 		D10C06D71C8E2F93005B6B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D11836131CA766170025EE48 /* CandidateListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateListTableViewController.swift; sourceTree = "<group>"; };
 		D128D80D1C8F6143002DE1CE /* SampleBallotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleBallotViewController.swift; sourceTree = "<group>"; };
 		D128D8121C8F6435002DE1CE /* pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pdf.pdf; sourceTree = "<group>"; };
 		D128D8141C8F676B002DE1CE /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		D128D8161C8F6FFF002DE1CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D128D8181C8F7008002DE1CE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D128D81A1C8F700E002DE1CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D134185B1CAAE77B00E5D0AD /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D173EFAB1C93A24500593DFD /* PollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingViewController.swift; sourceTree = "<group>"; };
 		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
@@ -175,10 +179,12 @@
 				D173EFAD1C93BADE00593DFD /* Polling */,
 				D128D81C1C8F7B2B002DE1CE /* News */,
 				D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */,
+				D134185B1CAAE77B00E5D0AD /* RegisterViewController.swift */,
 				D10C06B41C8E2F92005B6B23 /* ViewController.swift */,
 				D128D80D1C8F6143002DE1CE /* SampleBallotViewController.swift */,
 				D128D8141C8F676B002DE1CE /* ContactViewController.swift */,
 				D173EFAB1C93A24500593DFD /* PollingViewController.swift */,
+				D11836131CA766170025EE48 /* CandidateListTableViewController.swift */,
 				D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */,
 				D10C06B61C8E2F92005B6B23 /* Main.storyboard */,
 				D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */,
@@ -322,6 +328,11 @@
 					D10C06AE1C8E2F92005B6B23 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = L6WD86F9N5;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					D10C06C51C8E2F92005B6B23 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -513,8 +524,10 @@
 				D128D80E1C8F6143002DE1CE /* SampleBallotViewController.swift in Sources */,
 				D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */,
 				D10C06B51C8E2F92005B6B23 /* ViewController.swift in Sources */,
+				D134185C1CAAE77B00E5D0AD /* RegisterViewController.swift in Sources */,
 				D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */,
 				D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */,
+				D11836141CA766170025EE48 /* CandidateListTableViewController.swift in Sources */,
 				D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */,
 				D10C06BB1C8E2F92005B6B23 /* Advance_Carolina.xcdatamodeld in Sources */,
 				D128D8151C8F676B002DE1CE /* ContactViewController.swift in Sources */,
@@ -665,7 +678,7 @@
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Advance-Carolina";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AdvanceCarolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Advance Carolina/Advance Carolina-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -682,7 +695,7 @@
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Advance-Carolina";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AdvanceCarolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Advance Carolina/Advance Carolina-Bridging-Header.h";
 			};

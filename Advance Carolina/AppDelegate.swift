@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Batch
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
+        //Parse Server API Key
+        
+        
+        //Push Notifications - Batch
+        //Batch.startWithAPIKey("DEV56F29C2F5520F6FE495D960485E"); //Developer Key
+        Batch.startWithAPIKey("56F29C2F53E59355215F7DB2616C2A") //Live Key
+        
+        BatchPush.registerForRemoteNotifications()
+        
+        // Local Notifications
             if #available(iOS 8.0, *) {
                 let notificationType = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
                 UIApplication.sharedApplication().registerUserNotificationSettings(notificationType)
@@ -33,6 +45,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         
         return true
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        
+        // Dismiss push notification
+        BatchPush.dismissNotifications()
+        
+    
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -97,6 +117,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             NSLog("Unresolved error \(wrappedError), \(wrappedError.userInfo)")
             abort()
+        
         }
         
         return coordinator
@@ -109,6 +130,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         managedObjectContext.persistentStoreCoordinator = coordinator
         return managedObjectContext
     }()
+    
+    
 
     // MARK: - Core Data Saving support
 

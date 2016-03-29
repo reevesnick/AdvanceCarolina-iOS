@@ -47,10 +47,13 @@ class ContactViewController: UIViewController,MFMailComposeViewControllerDelegat
         sendMailErrorAlert.show()
     }
     
+    
+    
     // MARK: MFMailComposeViewControllerDelegate Method
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
+    
 
     
     
@@ -58,7 +61,11 @@ class ContactViewController: UIViewController,MFMailComposeViewControllerDelegat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
     }
+    
+    
   /*
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         return UITableViewCell()

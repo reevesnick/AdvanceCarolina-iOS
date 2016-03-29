@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Create Schedule View Controller-->
+        <!--Create A Schedule-->
         <scene sceneID="AYq-ap-g3F">
             <objects>
                 <viewController id="whl-jS-cEU" customClass="CreateScheduleViewController" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                                 <rect key="frame" x="20" y="92" width="280" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LPv-iI-k1g">
@@ -58,7 +58,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="I24-HS-co0"/>
+                    <navigationItem key="navigationItem" title="Create A Schedule" id="I24-HS-co0"/>
                     <connections>
                         <outlet property="datePicker" destination="njA-MT-hiQ" id="eTP-qh-as7"/>
                         <outlet property="itemText" destination="Dk5-kQ-o9i" id="beb-HS-eSn"/>
