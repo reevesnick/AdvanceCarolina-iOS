@@ -30,6 +30,7 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
         self.tableView.emptyDataSetSource = nil;
     }
     
+    
     override func queryForTable() -> PFQuery {
         let query:PFQuery = PFQuery(className:"CandidaeList")
         
@@ -49,7 +50,7 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+/*
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -61,8 +62,25 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
+  */
+
     
-    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell?
+    {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CandidateTableViewCell
+        
+        cell.candidateNameLabel?.text = object?.objectForKey("candidate_name") as? String
+        cell.candidatePartyLabel?.text = object?.objectForKey("candidate_party") as? String
+
+        
+        let imageFile = object?.objectForKey("candidate_picture") as? PFFile
+        cell.candidiatePicture?.image = UIImage(named: "placeholder")
+        cell.candidiatePicture?.file = imageFile
+        cell.candidiatePicture.loadInBackground()
+        
+        return cell
+    }
+
     
     // MARK: - DZEmptyView
     func titleForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
@@ -105,14 +123,7 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
 
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-        // Configure the cell...
-
-        return cell
-    }
-    
 
     /*
     // Override to support conditional editing of the table view.
@@ -149,14 +160,27 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showDetail"
+        {
+            let indexPath = self.tableView.indexPathForSelectedRow
+            let detailVC = segue.destinationViewController as! CandidateDetailViewController
+            let object = self.objectAtIndexPath(indexPath)
+            detailVC.nameString = object?.objectForKey("candidate_name") as! String
+            detailVC.partyString = object?.objectForKey("candidate_party") as! String
+
+            detailVC.pictureFile = object?.objectForKey("candidate_picture") as! PFFile
+            self.tableView.deselectRowAtIndexPath(indexPath!, animated: true)
+        }
+
     }
-    */
+    
 
 }

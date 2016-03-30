@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class RegisterViewController: UIViewController{
+class RegisterViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
@@ -21,6 +21,15 @@ class RegisterViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set TextField Delegate
+        firstName.delegate = self;
+        lastName.delegate = self;
+        address.delegate = self;
+        city.delegate = self;
+        county.delegate = self;
+        state.delegate = self;
+        party.delegate = self;
 
         // Do any additional setup after loading the view.
     }
@@ -46,6 +55,7 @@ class RegisterViewController: UIViewController{
         let partyText = party.text;
         
         
+        // Parse Object
         let data = PFObject(className: "VoterInformation");
         data["first_name"] = firstNameText;
         data["last_name"] = lastNameText;
@@ -57,7 +67,10 @@ class RegisterViewController: UIViewController{
         
         data.saveInBackgroundWithBlock({
             (success: Bool, error: NSError?) -> Void in
-                
+            
+            
+            /*iOS 8 has a new UIAlertController Protcol, if the user is in iOS 8 then it uses UIAlertController. 
+             Otherwise, it will fallback to UIAlertView*/
             if (error == nil){
                 if #available(iOS 8.0, *) {
                     let alert = UIAlertController(title: "Success!", message: "Thank you for proividing you voter infomation to Advance Carolina.", preferredStyle: UIAlertControllerStyle.Alert)
@@ -96,6 +109,43 @@ class RegisterViewController: UIViewController{
     
     
  
+    }
+    
+    // UITextField Delegates
+    func textFieldDidBeginEditing(textField: UITextField) {
+        print("TextField did begin editing method called")
+    }
+    func textFieldDidEndEditing(textField: UITextField) {
+        print("TextField did end editing method called")
+    }
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        print("TextField should begin editing method called")
+        return true;
+    }
+    func textFieldShouldClear(textField: UITextField) -> Bool {
+        print("TextField should clear method called")
+        return true;
+    }
+    func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+        print("TextField should snd editing method called")
+        return true;
+    }
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        print("While entering the characters this method gets called")
+        return true;
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        print("TextField should return method called")
+        textField.resignFirstResponder();
+        firstName.resignFirstResponder();
+        lastName.resignFirstResponder();
+        address.resignFirstResponder();
+        city.resignFirstResponder();
+        county.resignFirstResponder();
+        state.resignFirstResponder();
+        
+        
+        return true;
     }
 /*
     // MARK: - Navigation

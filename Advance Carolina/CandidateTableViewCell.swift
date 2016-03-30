@@ -12,7 +12,7 @@ class CandidateTableViewCell: PFTableViewCell {
     
     @IBOutlet weak var candidateNameLabel: UILabel!
     @IBOutlet weak var candidatePartyLabel: UILabel!
-    @IBOutlet weak var candidiatePicture: UIImageView!
+    @IBOutlet weak var candidiatePicture: PFImageView!
     
     var parseObject:PFObject?
 

@@ -15,7 +15,7 @@
 		D1005D271C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */; };
 		D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */; };
 		D10C06B51C8E2F92005B6B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B41C8E2F92005B6B23 /* ViewController.swift */; };
-		D10C06B81C8E2F92005B6B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C06B61C8E2F92005B6B23 /* Main.storyboard */; };
+		D10C06B81C8E2F92005B6B23 /* Main_2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C06B61C8E2F92005B6B23 /* Main_2.storyboard */; };
 		D10C06BB1C8E2F92005B6B23 /* Advance_Carolina.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B91C8E2F92005B6B23 /* Advance_Carolina.xcdatamodeld */; };
 		D10C06BD1C8E2F92005B6B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */; };
 		D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */; };
@@ -41,6 +41,8 @@
 		D155D8701CAAF5BC00D7D275 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D86F1CAAF5BC00D7D275 /* libsqlite3.tbd */; };
 		D155D8721CAB634C00D7D275 /* RegisterVoterInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */; };
 		D155D8751CAB7FC000D7D275 /* CandidateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155D8741CAB7FBF00D7D275 /* CandidateTableViewCell.swift */; };
+		D155D8771CAB96E000D7D275 /* CandidateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155D8761CAB96E000D7D275 /* CandidateDetailViewController.swift */; };
+		D155D8791CAB9ED100D7D275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D155D8781CAB9ED100D7D275 /* Main.storyboard */; };
 		D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAB1C93A24500593DFD /* PollingViewController.swift */; };
 		D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */; };
 		D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC03481C8F872400D5563D /* FeedTableViewController.swift */; };
@@ -78,7 +80,7 @@
 		D10C06AF1C8E2F92005B6B23 /* Advance Carolina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advance Carolina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D10C06B41C8E2F92005B6B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D10C06B71C8E2F92005B6B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D10C06B71C8E2F92005B6B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_2.storyboard; sourceTree = "<group>"; };
 		D10C06BA1C8E2F92005B6B23 /* Advance_Carolina.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Advance_Carolina.xcdatamodel; sourceTree = "<group>"; };
 		D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D10C06BF1C8E2F92005B6B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,8 @@
 		D155D86F1CAAF5BC00D7D275 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterVoterInfo.storyboard; sourceTree = "<group>"; };
 		D155D8741CAB7FBF00D7D275 /* CandidateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateTableViewCell.swift; sourceTree = "<group>"; };
+		D155D8761CAB96E000D7D275 /* CandidateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateDetailViewController.swift; sourceTree = "<group>"; };
+		D155D8781CAB9ED100D7D275 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		D173EFAB1C93A24500593DFD /* PollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingViewController.swift; sourceTree = "<group>"; };
 		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
@@ -230,7 +234,8 @@
 				D128D8141C8F676B002DE1CE /* ContactViewController.swift */,
 				D173EFAB1C93A24500593DFD /* PollingViewController.swift */,
 				D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */,
-				D10C06B61C8E2F92005B6B23 /* Main.storyboard */,
+				D155D8781CAB9ED100D7D275 /* Main.storyboard */,
+				D10C06B61C8E2F92005B6B23 /* Main_2.storyboard */,
 				D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */,
 				D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */,
 				D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */,
@@ -289,6 +294,7 @@
 			children = (
 				D11836131CA766170025EE48 /* CandidateListTableViewController.swift */,
 				D155D8741CAB7FBF00D7D275 /* CandidateTableViewCell.swift */,
+				D155D8761CAB96E000D7D275 /* CandidateDetailViewController.swift */,
 			);
 			name = Candidate;
 			sourceTree = "<group>";
@@ -423,12 +429,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D155D8791CAB9ED100D7D275 /* Main.storyboard in Resources */,
 				D155D8721CAB634C00D7D275 /* RegisterVoterInfo.storyboard in Resources */,
 				D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */,
 				D128D8131C8F6435002DE1CE /* pdf.pdf in Resources */,
 				D10C06BD1C8E2F92005B6B23 /* Assets.xcassets in Resources */,
 				D1005D271C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard in Resources */,
-				D10C06B81C8E2F92005B6B23 /* Main.storyboard in Resources */,
+				D10C06B81C8E2F92005B6B23 /* Main_2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +588,7 @@
 				D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */,
 				D10C06B51C8E2F92005B6B23 /* ViewController.swift in Sources */,
 				D134185C1CAAE77B00E5D0AD /* RegisterViewController.swift in Sources */,
+				D155D8771CAB96E000D7D275 /* CandidateDetailViewController.swift in Sources */,
 				D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */,
 				D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */,
 				D11836141CA766170025EE48 /* CandidateListTableViewController.swift in Sources */,
@@ -624,12 +632,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D10C06B61C8E2F92005B6B23 /* Main.storyboard */ = {
+		D10C06B61C8E2F92005B6B23 /* Main_2.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D10C06B71C8E2F92005B6B23 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_2.storyboard;
 			sourceTree = "<group>";
 		};
 		D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */ = {
