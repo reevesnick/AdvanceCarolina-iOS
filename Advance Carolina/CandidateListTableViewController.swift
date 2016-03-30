@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CandidateListTableViewController: UITableViewController, DZNEmptyDataSetSource,DZNEmptyDataSetDelegate {
+class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyDataSetSource,DZNEmptyDataSetDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,19 @@ class CandidateListTableViewController: UITableViewController, DZNEmptyDataSetSo
         self.tableView.emptyDataSetSource = nil;
     }
     
+    override func queryForTable() -> PFQuery {
+        let query:PFQuery = PFQuery(className:"CandidaeList")
+        
+        if(objects?.count == 0)
+        {
+            query.cachePolicy = PFCachePolicy.CacheThenNetwork
+        }
+        
+        query.orderByAscending("party")
+        
+        return query
+    }
+
     
 
     override func didReceiveMemoryWarning() {
@@ -91,15 +104,15 @@ class CandidateListTableViewController: UITableViewController, DZNEmptyDataSetSo
     }
 
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
