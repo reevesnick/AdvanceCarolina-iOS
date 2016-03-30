@@ -10,7 +10,6 @@ import UIKit
 import CoreData
 import Batch
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -22,6 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //Parse Server API Key
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "Lvkh2vw9sSKCLk1R8SfKKlUZGUSFoEbMaLr0Fogf"
+            $0.clientKey = "VqzatKxu4742ZATP9mdgRSo7awrxLoBV8wBftgMw"
+            $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initializeWithConfiguration(configuration)
+
         
         
         //Push Notifications - Batch

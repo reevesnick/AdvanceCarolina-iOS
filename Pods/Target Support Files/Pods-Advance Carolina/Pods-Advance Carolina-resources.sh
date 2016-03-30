@@ -78,6 +78,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "KINWebBrowser/Assets/forwardbutton.png"
   install_resource "KINWebBrowser/Assets/forwardbutton@2x.png"
   install_resource "KINWebBrowser/Assets/forwardbutton@3x.png"
+  install_resource "Parse/Parse/Resources/en.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/en.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/fr.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/pt-BR.lproj"
   install_resource "${BUILT_PRODUCTS_DIR}/TUSafariActivity.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -94,6 +98,10 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "KINWebBrowser/Assets/forwardbutton.png"
   install_resource "KINWebBrowser/Assets/forwardbutton@2x.png"
   install_resource "KINWebBrowser/Assets/forwardbutton@3x.png"
+  install_resource "Parse/Parse/Resources/en.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/en.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/fr.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/pt-BR.lproj"
   install_resource "${BUILT_PRODUCTS_DIR}/TUSafariActivity.bundle"
 fi
 

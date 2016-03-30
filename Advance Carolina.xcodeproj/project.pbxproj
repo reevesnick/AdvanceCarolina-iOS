@@ -29,6 +29,17 @@
 		D128D8191C8F7008002DE1CE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D8181C8F7008002DE1CE /* MessageUI.framework */; };
 		D128D81B1C8F700E002DE1CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D81A1C8F700E002DE1CE /* MapKit.framework */; };
 		D134185C1CAAE77B00E5D0AD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D134185B1CAAE77B00E5D0AD /* RegisterViewController.swift */; };
+		D155D85E1CAAF57000D7D275 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D85D1CAAF57000D7D275 /* AudioToolbox.framework */; };
+		D155D8601CAAF57900D7D275 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D85F1CAAF57900D7D275 /* CFNetwork.framework */; };
+		D155D8621CAAF58000D7D275 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D8611CAAF58000D7D275 /* CoreGraphics.framework */; };
+		D155D8641CAAF58900D7D275 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D8631CAAF58900D7D275 /* CoreLocation.framework */; };
+		D155D8661CAAF59000D7D275 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D8651CAAF59000D7D275 /* QuartzCore.framework */; };
+		D155D8681CAAF59600D7D275 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D8671CAAF59600D7D275 /* Security.framework */; };
+		D155D86A1CAAF59E00D7D275 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D8691CAAF59E00D7D275 /* StoreKit.framework */; };
+		D155D86C1CAAF5AB00D7D275 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D86B1CAAF5AB00D7D275 /* SystemConfiguration.framework */; };
+		D155D86E1CAAF5B300D7D275 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D86D1CAAF5B300D7D275 /* libz.tbd */; };
+		D155D8701CAAF5BC00D7D275 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D155D86F1CAAF5BC00D7D275 /* libsqlite3.tbd */; };
+		D155D8721CAB634C00D7D275 /* RegisterVoterInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */; };
 		D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAB1C93A24500593DFD /* PollingViewController.swift */; };
 		D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */; };
 		D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC03481C8F872400D5563D /* FeedTableViewController.swift */; };
@@ -85,6 +96,17 @@
 		D128D8181C8F7008002DE1CE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D128D81A1C8F700E002DE1CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D134185B1CAAE77B00E5D0AD /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D155D85D1CAAF57000D7D275 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D155D85F1CAAF57900D7D275 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D155D8611CAAF58000D7D275 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D155D8631CAAF58900D7D275 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D155D8651CAAF59000D7D275 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D155D8671CAAF59600D7D275 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D155D8691CAAF59E00D7D275 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D155D86B1CAAF5AB00D7D275 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D155D86D1CAAF5B300D7D275 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D155D86F1CAAF5BC00D7D275 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterVoterInfo.storyboard; sourceTree = "<group>"; };
 		D173EFAB1C93A24500593DFD /* PollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingViewController.swift; sourceTree = "<group>"; };
 		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +121,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D155D8701CAAF5BC00D7D275 /* libsqlite3.tbd in Frameworks */,
+				D155D86E1CAAF5B300D7D275 /* libz.tbd in Frameworks */,
+				D155D86C1CAAF5AB00D7D275 /* SystemConfiguration.framework in Frameworks */,
+				D155D86A1CAAF59E00D7D275 /* StoreKit.framework in Frameworks */,
+				D155D8681CAAF59600D7D275 /* Security.framework in Frameworks */,
+				D155D8661CAAF59000D7D275 /* QuartzCore.framework in Frameworks */,
+				D155D8641CAAF58900D7D275 /* CoreLocation.framework in Frameworks */,
+				D155D8621CAAF58000D7D275 /* CoreGraphics.framework in Frameworks */,
+				D155D8601CAAF57900D7D275 /* CFNetwork.framework in Frameworks */,
+				D155D85E1CAAF57000D7D275 /* AudioToolbox.framework in Frameworks */,
 				D128D81B1C8F700E002DE1CE /* MapKit.framework in Frameworks */,
 				D128D8191C8F7008002DE1CE /* MessageUI.framework in Frameworks */,
 				D128D8171C8F6FFF002DE1CE /* CoreData.framework in Frameworks */,
@@ -141,6 +173,16 @@
 		9054B74D2E1BF2F3AF01DA75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D155D86F1CAAF5BC00D7D275 /* libsqlite3.tbd */,
+				D155D86D1CAAF5B300D7D275 /* libz.tbd */,
+				D155D86B1CAAF5AB00D7D275 /* SystemConfiguration.framework */,
+				D155D8691CAAF59E00D7D275 /* StoreKit.framework */,
+				D155D8671CAAF59600D7D275 /* Security.framework */,
+				D155D8651CAAF59000D7D275 /* QuartzCore.framework */,
+				D155D8631CAAF58900D7D275 /* CoreLocation.framework */,
+				D155D8611CAAF58000D7D275 /* CoreGraphics.framework */,
+				D155D85F1CAAF57900D7D275 /* CFNetwork.framework */,
+				D155D85D1CAAF57000D7D275 /* AudioToolbox.framework */,
 				D128D81A1C8F700E002DE1CE /* MapKit.framework */,
 				D128D8181C8F7008002DE1CE /* MessageUI.framework */,
 				D128D8161C8F6FFF002DE1CE /* CoreData.framework */,
@@ -187,6 +229,7 @@
 				D11836131CA766170025EE48 /* CandidateListTableViewController.swift */,
 				D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */,
 				D10C06B61C8E2F92005B6B23 /* Main.storyboard */,
+				D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */,
 				D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */,
 				D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */,
 				D10C06C11C8E2F92005B6B23 /* Info.plist */,
@@ -369,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D155D8721CAB634C00D7D275 /* RegisterVoterInfo.storyboard in Resources */,
 				D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */,
 				D128D8131C8F6435002DE1CE /* pdf.pdf in Resources */,
 				D10C06BD1C8E2F92005B6B23 /* Assets.xcassets in Resources */,

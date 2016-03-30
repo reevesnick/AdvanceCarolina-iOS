@@ -9,6 +9,8 @@ pod 'KINWebBrowser'
 pod 'MWFeedParser'
 pod 'DZNEmptyDataSet'
 pod 'Batch', '~> 1.5'
+pod 'Parse'
+pod 'ParseUI'
 
 
 end

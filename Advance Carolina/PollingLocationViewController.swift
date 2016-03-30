@@ -20,6 +20,13 @@ class PollingLocationViewController: UIViewController, UITableViewDelegate, UITa
         webBroswer.loadURLString("http://www.google.com")  // USA Voting How to Page
     }
     
+    @IBAction func registerButton(sender: UIButton){
+        let viewController:UIViewController = UIStoryboard(name: "RegisterVoterInfo", bundle: nil).instantiateInitialViewController()! as UIViewController
+        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+        
+        self.presentViewController(viewController, animated: false, completion: nil)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

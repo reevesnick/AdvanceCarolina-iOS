@@ -5,3 +5,7 @@
 #import "MWFeedParser.h"
 #import "KINWebBrowserViewController.h"
 #import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
+
+

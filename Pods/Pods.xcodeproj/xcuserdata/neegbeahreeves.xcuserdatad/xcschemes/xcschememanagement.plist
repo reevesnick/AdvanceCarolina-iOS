@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>DZNEmptyDataSet.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,16 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+		<key>Parse.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>ParseUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
 		</dict>
 		<key>Pods-Advance Carolina.xcscheme</key>
 		<dict>
@@ -58,12 +73,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>146D4D3BEC39209E7FD55AD619B9712E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>16146B35458210FB715049DF7D6CC7F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>2E431163577389EA23905BA6F3468F39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4CD92797A96766670A60AE5197C5FB82</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -98,12 +123,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>CD2B367A6ADAD06EE4F327DD0F8F1B6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CE8E3E526C9DACCAC751DA0B131A70AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DB55187331D5422D7556B8D5C8BC1377</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1A4F3A0B191F7C48A6C6D3349A583B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
