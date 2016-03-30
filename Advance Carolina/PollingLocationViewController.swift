@@ -7,6 +7,7 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 import RxSwift
 import RxCocoa
 import KINWebBrowser
@@ -26,14 +27,22 @@ class PollingLocationViewController: UIViewController {
             self.pollTableView.reloadData()
         }
     }
+=======
+import Foundation
+
+class PollingLocationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate{
+    
+    
+    @IBOutlet var tableView:UITableView!
+>>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
     
     @IBAction func registerToVote(sender: UIButton){
-        
         let webBroswer = KINWebBrowserViewController()
         self.navigationController?.pushViewController(webBroswer, animated: true)
         webBroswer.loadURLString("http://www.google.com")  // USA Voting How to Page
     }
     
+<<<<<<< HEAD
     deinit {
         self.pollTableView.emptyDataSetSource = nil
         self.pollTableView.emptyDataSetDelegate = nil
@@ -69,6 +78,44 @@ class PollingLocationViewController: UIViewController {
         } else {
             return 0
         }
+=======
+    @IBAction func registerButton(sender: UIButton){
+        let viewController:UIViewController = UIStoryboard(name: "RegisterVoterInfo", bundle: nil).instantiateInitialViewController()! as UIViewController
+        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+        
+        self.presentViewController(viewController, animated: false, completion: nil)
+    }
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        
+        // Set DZEmptyVieDataSet Delegate and Datasource
+        self.tableView.emptyDataSetDelegate = self;
+        self.tableView.emptyDataSetSource = self;
+        
+        self.tableView.tableFooterView = UIView()
+        
+    }
+
+    
+    deinit{
+        self.tableView.emptyDataSetSource = nil;
+        self.tableView.emptyDataSetDelegate = nil;
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        return UITableViewCell()
+>>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -115,11 +162,56 @@ class PollingLocationViewController: UIViewController {
         return cell
     }
     
+<<<<<<< HEAD
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+=======
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+    
     }
     
+    
+    // MARK: - DZEmptyView
+    func titleForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "Uh-Oh!"
+        let attrs = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)]
+        return NSAttributedString(string: str,attributes: attrs);
+>>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
+    }
+    
+    func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "We have a problem pulling nearest location from the server. It might have been a connection problems from the server or the internet connection is offline."
+        let attrs = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)]
+        return NSAttributedString(string: str,attributes: attrs);    }
+    
+    func backgroundColorForEmptyDataSet(scrollView: UIScrollView!) -> UIColor! {
+        return UIColor.whiteColor()
+        
+    }
+    
+    
+    // MARK: - DZEmptyView Delegate
+    func emptyDataSetShouldDisplay(scrollView: UIScrollView!) -> Bool {
+        return true;
+    }
+    
+    func emptyDataSetShouldAllowTouch(scrollView: UIScrollView!) -> Bool {
+        return false;
+    }
+    
+    func emptyDataSetShouldAllowScroll(scrollView: UIScrollView!) -> Bool {
+        return false;
+    }
+    
+    func emptyDataSetDidTapView(scrollView: UIScrollView!) {
+        //NSLog("", nil)
+    }
+    
+    func emptyDataSetDidTapButton(scrollView: UIScrollView!) {
+        // NSLog("", nil)
+    }
+
     
 
     /*

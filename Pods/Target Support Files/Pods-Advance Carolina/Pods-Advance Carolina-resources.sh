@@ -79,6 +79,49 @@ EOM
       ;;
   esac
 }
+<<<<<<< HEAD
+=======
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@2x.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@2x~ipad.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@3x.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@3x~ipad.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity~ipad.png"
+  install_resource "Batch/Batch.embeddedframework/Batch.bundle"
+  install_resource "KINWebBrowser/Assets/backbutton.png"
+  install_resource "KINWebBrowser/Assets/backbutton@2x.png"
+  install_resource "KINWebBrowser/Assets/backbutton@3x.png"
+  install_resource "KINWebBrowser/Assets/forwardbutton.png"
+  install_resource "KINWebBrowser/Assets/forwardbutton@2x.png"
+  install_resource "KINWebBrowser/Assets/forwardbutton@3x.png"
+  install_resource "Parse/Parse/Resources/en.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/en.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/fr.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/pt-BR.lproj"
+  install_resource "${BUILT_PRODUCTS_DIR}/TUSafariActivity.bundle"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@2x.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@2x~ipad.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@3x.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@3x~ipad.png"
+  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity~ipad.png"
+  install_resource "Batch/Batch.embeddedframework/Batch.bundle"
+  install_resource "KINWebBrowser/Assets/backbutton.png"
+  install_resource "KINWebBrowser/Assets/backbutton@2x.png"
+  install_resource "KINWebBrowser/Assets/backbutton@3x.png"
+  install_resource "KINWebBrowser/Assets/forwardbutton.png"
+  install_resource "KINWebBrowser/Assets/forwardbutton@2x.png"
+  install_resource "KINWebBrowser/Assets/forwardbutton@3x.png"
+  install_resource "Parse/Parse/Resources/en.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/en.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/fr.lproj"
+  install_resource "ParseUI/ParseUI/Resources/Localization/pt-BR.lproj"
+  install_resource "${BUILT_PRODUCTS_DIR}/TUSafariActivity.bundle"
+fi
+>>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

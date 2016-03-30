@@ -1,6 +1,10 @@
 CONFIGURATION_BUILD_DIR = $PODS_SHARED_BUILD_DIR/DZNEmptyDataSet
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+<<<<<<< HEAD
 HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Public"
+=======
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/DZNEmptyDataSet" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ARChromeActivity" "${PODS_ROOT}/Headers/Public/Batch" "${PODS_ROOT}/Headers/Public/Bolts" "${PODS_ROOT}/Headers/Public/DZNEmptyDataSet" "${PODS_ROOT}/Headers/Public/KINWebBrowser" "${PODS_ROOT}/Headers/Public/MWFeedParser" "${PODS_ROOT}/Headers/Public/Parse" "${PODS_ROOT}/Headers/Public/ParseUI" "${PODS_ROOT}/Headers/Public/TUSafariActivity"
+>>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
 OTHER_LDFLAGS = -framework "UIKit"
 PODS_ROOT = ${SRCROOT}
 PODS_SHARED_BUILD_DIR = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
