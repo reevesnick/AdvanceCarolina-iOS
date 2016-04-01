@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
 
+        //Custon UI
+
         
         
         //Parse Server API Key
@@ -49,7 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 
             // Fallback on earlier versions
-            
+        
+        var appFont:UIFont = UIFont(name: "Avenir", size: 20)!
+
+        
         
         return true
     

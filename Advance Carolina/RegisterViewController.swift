@@ -22,6 +22,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+
+        
         // Set TextField Delegate
         firstName.delegate = self;
         lastName.delegate = self;
@@ -85,7 +88,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         
                 let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
                 // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
-                
                 self.presentViewController(viewController, animated: false, completion: nil)
                 
                 print("Data Uploaded");

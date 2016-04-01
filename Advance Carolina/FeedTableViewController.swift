@@ -64,6 +64,9 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+
 
         
         // Set DZEmptyVieDataSet Delegate and Datasource

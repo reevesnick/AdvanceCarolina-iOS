@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class CandidateDetailViewController: UIViewController {
 
     @IBOutlet weak var candidateNameString: UILabel!
