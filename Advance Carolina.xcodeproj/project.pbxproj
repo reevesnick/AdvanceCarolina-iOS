@@ -42,7 +42,7 @@
 		D155D8721CAB634C00D7D275 /* RegisterVoterInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */; };
 		D155D8751CAB7FC000D7D275 /* CandidateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155D8741CAB7FBF00D7D275 /* CandidateTableViewCell.swift */; };
 		D155D8771CAB96E000D7D275 /* CandidateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155D8761CAB96E000D7D275 /* CandidateDetailViewController.swift */; };
-		D155D8791CAB9ED100D7D275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D155D8781CAB9ED100D7D275 /* Main.storyboard */; };
+		D155D8791CAB9ED100D7D275 /* Main_NeegbeahReeves.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D155D8781CAB9ED100D7D275 /* Main_NeegbeahReeves.storyboard */; };
 		D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAB1C93A24500593DFD /* PollingViewController.swift */; };
 		D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */; };
 		D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC03481C8F872400D5563D /* FeedTableViewController.swift */; };
@@ -112,7 +112,7 @@
 		D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterVoterInfo.storyboard; sourceTree = "<group>"; };
 		D155D8741CAB7FBF00D7D275 /* CandidateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateTableViewCell.swift; sourceTree = "<group>"; };
 		D155D8761CAB96E000D7D275 /* CandidateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateDetailViewController.swift; sourceTree = "<group>"; };
-		D155D8781CAB9ED100D7D275 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		D155D8781CAB9ED100D7D275 /* Main_NeegbeahReeves.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_NeegbeahReeves.storyboard; path = ../Main_NeegbeahReeves.storyboard; sourceTree = "<group>"; };
 		D173EFAB1C93A24500593DFD /* PollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingViewController.swift; sourceTree = "<group>"; };
 		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
@@ -234,7 +234,7 @@
 				D128D8141C8F676B002DE1CE /* ContactViewController.swift */,
 				D173EFAB1C93A24500593DFD /* PollingViewController.swift */,
 				D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */,
-				D155D8781CAB9ED100D7D275 /* Main.storyboard */,
+				D155D8781CAB9ED100D7D275 /* Main_NeegbeahReeves.storyboard */,
 				D10C06B61C8E2F92005B6B23 /* Main_2.storyboard */,
 				D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */,
 				D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */,
@@ -429,7 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D155D8791CAB9ED100D7D275 /* Main.storyboard in Resources */,
+				D155D8791CAB9ED100D7D275 /* Main_NeegbeahReeves.storyboard in Resources */,
 				D155D8721CAB634C00D7D275 /* RegisterVoterInfo.storyboard in Resources */,
 				D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */,
 				D128D8131C8F6435002DE1CE /* pdf.pdf in Resources */,
