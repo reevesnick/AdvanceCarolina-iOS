@@ -12,7 +12,7 @@ import Foundation
 
 class SampleBallotViewController: UIViewController {
     
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet var webView: UIWebView!
 
 
     override func viewDidLoad() {

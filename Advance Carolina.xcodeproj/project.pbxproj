@@ -15,6 +15,13 @@
 		6467A3CC1C9873C2002A1557 /* PollAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467A3CB1C9873C2002A1557 /* PollAPI.swift */; };
 		6467A3CF1C9887E3002A1557 /* PollingLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467A3CE1C9887E3002A1557 /* PollingLocationViewModel.swift */; };
 		64785D341C98E254009EB8B0 /* PollModelResponseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64785D331C98E254009EB8B0 /* PollModelResponseHelper.swift */; };
+		64CE276A1CAE08DC008EE0E8 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE27691CAE08DC008EE0E8 /* UIViewExtensions.swift */; };
+		64CE276E1CAE0AC0008EE0E8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE276C1CAE0AC0008EE0E8 /* Home.storyboard */; };
+		64CE27701CAE0B4A008EE0E8 /* Poll View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE276F1CAE0B4A008EE0E8 /* Poll View.storyboard */; };
+		64CE27731CAE0B6E008EE0E8 /* Sample Ballot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE27711CAE0B6E008EE0E8 /* Sample Ballot.storyboard */; };
+		64CE27751CAE0B7F008EE0E8 /* Candidates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE27741CAE0B7F008EE0E8 /* Candidates.storyboard */; };
+		64CE27781CAE0B8C008EE0E8 /* News Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE27761CAE0B8C008EE0E8 /* News Feed.storyboard */; };
+		64CE277A1CAE0B99008EE0E8 /* Contact Us.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE27791CAE0B99008EE0E8 /* Contact Us.storyboard */; };
 		78127160650C1F98C6E09752 /* Pods_Advance_CarolinaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236C57677CAB25482899B653 /* Pods_Advance_CarolinaUITests.framework */; };
 		A7EDB24F7E89EF9F5B92AAF2 /* Pods_Advance_CarolinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293D6150D4B7A68F7527E826 /* Pods_Advance_CarolinaTests.framework */; };
 		D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */; };
@@ -65,6 +72,13 @@
 		6467A3CB1C9873C2002A1557 /* PollAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollAPI.swift; sourceTree = "<group>"; };
 		6467A3CE1C9887E3002A1557 /* PollingLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewModel.swift; sourceTree = "<group>"; };
 		64785D331C98E254009EB8B0 /* PollModelResponseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollModelResponseHelper.swift; sourceTree = "<group>"; };
+		64CE27691CAE08DC008EE0E8 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		64CE276D1CAE0AC0008EE0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		64CE276F1CAE0B4A008EE0E8 /* Poll View.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Poll View.storyboard"; sourceTree = "<group>"; };
+		64CE27721CAE0B6E008EE0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Sample Ballot.storyboard"; sourceTree = "<group>"; };
+		64CE27741CAE0B7F008EE0E8 /* Candidates.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Candidates.storyboard; sourceTree = "<group>"; };
+		64CE27771CAE0B8C008EE0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/News Feed.storyboard"; sourceTree = "<group>"; };
+		64CE27791CAE0B99008EE0E8 /* Contact Us.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Contact Us.storyboard"; sourceTree = "<group>"; };
 		76B77AEC8D3AF6BA8D5ECAC2 /* Pods-Advance CarolinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaTests/Pods-Advance CarolinaTests.release.xcconfig"; sourceTree = "<group>"; };
 		99B839B7C584F4AF091FC6B7 /* Pods-Advance CarolinaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A15BC5EE2430D90FA7DAC27 /* Pods-Advance CarolinaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +208,28 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		64CE276B1CAE08E1008EE0E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64CE27691CAE08DC008EE0E8 /* UIViewExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		64CE277B1CAE0B9F008EE0E8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D10C06B61C8E2F92005B6B23 /* Main.storyboard */,
+				64CE27791CAE0B99008EE0E8 /* Contact Us.storyboard */,
+				64CE27761CAE0B8C008EE0E8 /* News Feed.storyboard */,
+				64CE27741CAE0B7F008EE0E8 /* Candidates.storyboard */,
+				64CE27711CAE0B6E008EE0E8 /* Sample Ballot.storyboard */,
+				64CE276F1CAE0B4A008EE0E8 /* Poll View.storyboard */,
+				64CE276C1CAE0AC0008EE0E8 /* Home.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		9054B74D2E1BF2F3AF01DA75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,14 +268,15 @@
 		D10C06B11C8E2F92005B6B23 /* Advance Carolina */ = {
 			isa = PBXGroup;
 			children = (
+				D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */,
+				64CE276B1CAE08E1008EE0E8 /* Extensions */,
 				64263FF51C99F27100FBD584 /* Fonts */,
 				64785D321C98E22F009EB8B0 /* Helpers */,
 				6467A3CD1C9887C7002A1557 /* ViewModel */,
 				6467A3CA1C9873B5002A1557 /* Networking */,
 				64263FF81C99F89A00FBD584 /* Controllers */,
+				64CE277B1CAE0B9F008EE0E8 /* Storyboards */,
 				6467A3C71C987348002A1557 /* Models */,
-				D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */,
-				D10C06B61C8E2F92005B6B23 /* Main.storyboard */,
 				D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */,
 				D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */,
 				D10C06C11C8E2F92005B6B23 /* Info.plist */,
@@ -421,9 +458,15 @@
 			files = (
 				D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */,
 				64263FF71C99F27E00FBD584 /* FontAwesome.otf in Resources */,
+				64CE27781CAE0B8C008EE0E8 /* News Feed.storyboard in Resources */,
+				64CE277A1CAE0B99008EE0E8 /* Contact Us.storyboard in Resources */,
 				D128D8131C8F6435002DE1CE /* pdf.pdf in Resources */,
+				64CE276E1CAE0AC0008EE0E8 /* Home.storyboard in Resources */,
+				64CE27751CAE0B7F008EE0E8 /* Candidates.storyboard in Resources */,
 				D10C06BD1C8E2F92005B6B23 /* Assets.xcassets in Resources */,
+				64CE27701CAE0B4A008EE0E8 /* Poll View.storyboard in Resources */,
 				D10C06B81C8E2F92005B6B23 /* Main.storyboard in Resources */,
+				64CE27731CAE0B6E008EE0E8 /* Sample Ballot.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64785D341C98E254009EB8B0 /* PollModelResponseHelper.swift in Sources */,
+				64CE276A1CAE08DC008EE0E8 /* UIViewExtensions.swift in Sources */,
 				D128D80E1C8F6143002DE1CE /* SampleBallotViewController.swift in Sources */,
 				D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */,
 				D10C06B51C8E2F92005B6B23 /* ViewController.swift in Sources */,
@@ -620,6 +664,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		64CE276C1CAE0AC0008EE0E8 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CE276D1CAE0AC0008EE0E8 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		64CE27711CAE0B6E008EE0E8 /* Sample Ballot.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CE27721CAE0B6E008EE0E8 /* Base */,
+			);
+			name = "Sample Ballot.storyboard";
+			sourceTree = "<group>";
+		};
+		64CE27761CAE0B8C008EE0E8 /* News Feed.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CE27771CAE0B8C008EE0E8 /* Base */,
+			);
+			name = "News Feed.storyboard";
+			sourceTree = "<group>";
+		};
 		D10C06B61C8E2F92005B6B23 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -729,7 +797,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Advance-Carolina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -748,7 +816,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Advance-Carolina";
 				PRODUCT_NAME = "$(TARGET_NAME)";

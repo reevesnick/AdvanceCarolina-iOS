@@ -21,9 +21,12 @@ class PollingLocationViewController: UIViewController {
     var pollViewModel: PollingLocationViewModel?
     var locations: [PollModel]? {
         didSet {
-            print("Called reload \(locations!.count)")
-            
-            self.pollTableView.reloadData()
+            print("Called reload \(locations?.count)")
+            if let loc = locations {
+                if loc.count > 0 {
+                     self.pollTableView.reloadData()
+                }
+            }
         }
     }
     
