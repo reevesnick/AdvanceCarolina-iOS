@@ -5,8 +5,10 @@
 //  Created by Neegbeah Reeves on 3/30/16.
 //  Copyright © 2016 Brown Box Works. All rights reserved.
 //
-/*
+
 import UIKit
+import Parse
+import ParseUI
 
 
 class CandidateDetailViewController: UIViewController {
@@ -55,4 +57,3 @@ class CandidateDetailViewController: UIViewController {
 
 }
  
-*/

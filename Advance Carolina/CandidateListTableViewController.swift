@@ -8,9 +8,11 @@
 
 import UIKit
 import DZNEmptyDataSet
+import Parse
+import ParseUI
 
 
-/*
+
 class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyDataSetSource,DZNEmptyDataSetDelegate {
 
     override func viewDidLoad() {
@@ -190,4 +192,3 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
     
 
 }
-*/

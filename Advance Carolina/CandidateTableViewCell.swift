@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
 
-/*
 class CandidateTableViewCell: PFTableViewCell {
     
     @IBOutlet weak var candidateNameLabel: UILabel!
@@ -32,4 +33,3 @@ class CandidateTableViewCell: PFTableViewCell {
     }
 
 }
-*/
