@@ -5,7 +5,7 @@
 //  Created by Neegbeah Reeves on 3/29/16.
 //  Copyright © 2016 Brown Box Works. All rights reserved.
 //
-
+/*
 import UIKit
 
 extension UIImageView{
@@ -40,3 +40,4 @@ class CandidateTableViewCell: PFTableViewCell {
     }
 
 }
+*/

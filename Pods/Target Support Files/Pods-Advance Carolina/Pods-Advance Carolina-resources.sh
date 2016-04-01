@@ -8,21 +8,6 @@ RESOURCES_TO_COPY=${PODS_ROOT}/resources-to-copy-${TARGETNAME}.txt
 
 XCASSET_FILES=()
 
-case "${TARGETED_DEVICE_FAMILY}" in
-  1,2)
-    TARGET_DEVICE_ARGS="--target-device ipad --target-device iphone"
-    ;;
-  1)
-    TARGET_DEVICE_ARGS="--target-device iphone"
-    ;;
-  2)
-    TARGET_DEVICE_ARGS="--target-device ipad"
-    ;;
-  *)
-    TARGET_DEVICE_ARGS="--target-device mac"
-    ;;
-esac
-
 realpath() {
   DIRECTORY="$(cd "${1%/*}" && pwd)"
   FILENAME="${1##*/}"
@@ -44,8 +29,8 @@ EOM
   fi
   case $RESOURCE_PATH in
     *.storyboard)
-      echo "ibtool --reference-external-strings-file --errors --warnings --notices --minimum-deployment-target ${!DEPLOYMENT_TARGET_SETTING_NAME} --output-format human-readable-text --compile ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/`basename \"$RESOURCE_PATH\" .storyboard`.storyboardc $RESOURCE_PATH --sdk ${SDKROOT} ${TARGET_DEVICE_ARGS}"
-      ibtool --reference-external-strings-file --errors --warnings --notices --minimum-deployment-target ${!DEPLOYMENT_TARGET_SETTING_NAME} --output-format human-readable-text --compile "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/`basename \"$RESOURCE_PATH\" .storyboard`.storyboardc" "$RESOURCE_PATH" --sdk "${SDKROOT}" ${TARGET_DEVICE_ARGS}
+      echo "ibtool --reference-external-strings-file --errors --warnings --notices --minimum-deployment-target ${!DEPLOYMENT_TARGET_SETTING_NAME} --output-format human-readable-text --compile ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/`basename \"$RESOURCE_PATH\" .storyboard`.storyboardc $RESOURCE_PATH --sdk ${SDKROOT}"
+      ibtool --reference-external-strings-file --errors --warnings --notices --minimum-deployment-target ${!DEPLOYMENT_TARGET_SETTING_NAME} --output-format human-readable-text --compile "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/`basename \"$RESOURCE_PATH\" .storyboard`.storyboardc" "$RESOURCE_PATH" --sdk "${SDKROOT}"
       ;;
     *.xib)
       echo "ibtool --reference-external-strings-file --errors --warnings --notices --minimum-deployment-target ${!DEPLOYMENT_TARGET_SETTING_NAME} --output-format human-readable-text --compile ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/`basename \"$RESOURCE_PATH\" .xib`.nib $RESOURCE_PATH --sdk ${SDKROOT}"
@@ -79,49 +64,12 @@ EOM
       ;;
   esac
 }
-<<<<<<< HEAD
-=======
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@2x.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@2x~ipad.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@3x.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@3x~ipad.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity~ipad.png"
   install_resource "Batch/Batch.embeddedframework/Batch.bundle"
-  install_resource "KINWebBrowser/Assets/backbutton.png"
-  install_resource "KINWebBrowser/Assets/backbutton@2x.png"
-  install_resource "KINWebBrowser/Assets/backbutton@3x.png"
-  install_resource "KINWebBrowser/Assets/forwardbutton.png"
-  install_resource "KINWebBrowser/Assets/forwardbutton@2x.png"
-  install_resource "KINWebBrowser/Assets/forwardbutton@3x.png"
-  install_resource "Parse/Parse/Resources/en.lproj"
-  install_resource "ParseUI/ParseUI/Resources/Localization/en.lproj"
-  install_resource "ParseUI/ParseUI/Resources/Localization/fr.lproj"
-  install_resource "ParseUI/ParseUI/Resources/Localization/pt-BR.lproj"
-  install_resource "${BUILT_PRODUCTS_DIR}/TUSafariActivity.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@2x.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@2x~ipad.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@3x.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity@3x~ipad.png"
-  install_resource "ARChromeActivity/ARChromeActivity/ARChromeActivity~ipad.png"
   install_resource "Batch/Batch.embeddedframework/Batch.bundle"
-  install_resource "KINWebBrowser/Assets/backbutton.png"
-  install_resource "KINWebBrowser/Assets/backbutton@2x.png"
-  install_resource "KINWebBrowser/Assets/backbutton@3x.png"
-  install_resource "KINWebBrowser/Assets/forwardbutton.png"
-  install_resource "KINWebBrowser/Assets/forwardbutton@2x.png"
-  install_resource "KINWebBrowser/Assets/forwardbutton@3x.png"
-  install_resource "Parse/Parse/Resources/en.lproj"
-  install_resource "ParseUI/ParseUI/Resources/Localization/en.lproj"
-  install_resource "ParseUI/ParseUI/Resources/Localization/fr.lproj"
-  install_resource "ParseUI/ParseUI/Resources/Localization/pt-BR.lproj"
-  install_resource "${BUILT_PRODUCTS_DIR}/TUSafariActivity.bundle"
 fi
->>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
@@ -133,6 +81,21 @@ rm -f "$RESOURCES_TO_COPY"
 
 if [[ -n "${WRAPPER_EXTENSION}" ]] && [ "`xcrun --find actool`" ] && [ -n "$XCASSET_FILES" ]
 then
+  case "${TARGETED_DEVICE_FAMILY}" in
+    1,2)
+      TARGET_DEVICE_ARGS="--target-device ipad --target-device iphone"
+      ;;
+    1)
+      TARGET_DEVICE_ARGS="--target-device iphone"
+      ;;
+    2)
+      TARGET_DEVICE_ARGS="--target-device ipad"
+      ;;
+    *)
+      TARGET_DEVICE_ARGS="--target-device mac"
+      ;;
+  esac
+
   # Find all other xcassets (this unfortunately includes those of path pods and other targets).
   OTHER_XCASSETS=$(find "$PWD" -iname "*.xcassets" -type d)
   while read line; do

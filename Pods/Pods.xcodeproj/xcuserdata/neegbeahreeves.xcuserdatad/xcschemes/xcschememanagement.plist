@@ -7,143 +7,212 @@
 		<key>ARChromeActivity.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>2</integer>
+		</dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Argo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>4</integer>
 		</dict>
-		<key>DZNEmptyDataSet.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
-		<key>KINWebBrowser.xcscheme</key>
+		<key>Curry.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>MWFeedParser.xcscheme</key>
+		<key>DZNEmptyDataSet.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
-		<key>Parse.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
-		</dict>
-		<key>ParseUI.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
-		<key>Pods-Advance Carolina.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>Pods-Advance CarolinaTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>Pods-Advance CarolinaUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>TUSafariActivity-TUSafariActivity.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
-		</dict>
-		<key>TUSafariActivity.xcscheme</key>
+		<key>FontAwesomeKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>KINWebBrowser.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>MWFeedParser.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>Moya-Argo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>Moya.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>Parse.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>ParseUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>Pods-Advance Carolina.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>Pods-Advance CarolinaTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>Pods-Advance CarolinaUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>Result.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>TUSafariActivity-TUSafariActivity.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>TUSafariActivity.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>146D4D3BEC39209E7FD55AD619B9712E</key>
+		<key>03857CB7ED3EB7019D4BEDE0F18E2FB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>16146B35458210FB715049DF7D6CC7F7</key>
+		<key>0B0EBA1FCFE4D6C9EFCDE41735756990</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E431163577389EA23905BA6F3468F39</key>
+		<key>16FB872D0D2D4BA0F378AB34D47CF95F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CD92797A96766670A60AE5197C5FB82</key>
+		<key>28E618D9359494C1A68D1922E59D48BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>570441154F4B3221D0F4B6B66C5D18E9</key>
+		<key>2C8AA1BAF35413BDB954A1DF93576ED1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>736E57AD5AEFAAF68D47AE4E8FCB8F68</key>
+		<key>47F44A33BD3BBA735E59147217641B65</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7EA03DFA01554A2DE52881F28B7179B6</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>93D38998B226C2414400E5B8713735EE</key>
+		<key>8150D31656E944FEE4DAC7062A8F5810</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A5E1D33B62251D91002217B07B75387</key>
+		<key>8BE9D4B6FF6D92923152CB0534F2BB94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8E98212FF6A02229F15565E0A11016E</key>
+		<key>90D81A2AFE31942D30F68FF14FCD1AC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD2B367A6ADAD06EE4F327DD0F8F1B6E</key>
+		<key>93DDB4D07205258016E6779F2667E665</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE8E3E526C9DACCAC751DA0B131A70AE</key>
+		<key>9A28D7DA654B0D822D70CD09E4D4BC33</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB55187331D5422D7556B8D5C8BC1377</key>
+		<key>9FB41E8816E40FF5E683768D6D92FCDA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1A4F3A0B191F7C48A6C6D3349A583B4</key>
+		<key>A0933FC1307AD48F89C9FB7CEA3C29C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F7AF14DD2431C8DA79F45F4F1D22075E</key>
+		<key>B0AD89FAE7AFE0924D447D9FDC5D66D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B272B33F162D6E5C3510BA50ECF2684B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8DF847CF6AAF5D6D00344B27D7F7FE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBBAC4E0146B4FD186B0026F84E671C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D72C59BC75F590B35DD8AAEF9A0B0A2B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E1F78B1C5F8F2CCD0E68552EAF2B9B52</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E5678FC69B99077E1972D149186B2285</key>
 		<dict>
 			<key>primary</key>
 			<true/>

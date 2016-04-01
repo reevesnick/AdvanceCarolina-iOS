@@ -5,7 +5,7 @@
 //  Created by Neegbeah Reeves on 3/30/16.
 //  Copyright © 2016 Brown Box Works. All rights reserved.
 //
-
+/*
 import UIKit
 
 
@@ -13,7 +13,7 @@ class CandidateDetailViewController: UIViewController {
 
     @IBOutlet weak var candidateNameString: UILabel!
     @IBOutlet weak var candidatePartyString: UILabel!
-    @IBOutlet weak var candidatePictureFile: PFImageView!
+    @IBOutlet  var candidatePictureFile: PFImageView!
     
     @IBOutlet weak var candidateNotes: UITextField!
     
@@ -54,3 +54,4 @@ class CandidateDetailViewController: UIViewController {
     
 
 }
+ */

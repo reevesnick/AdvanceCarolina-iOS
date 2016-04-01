@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20601E38E134EC990B248BFD /* libPods-Advance CarolinaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C9FEA36F4B43161CFFD970 /* libPods-Advance CarolinaTests.a */; };
-		3CF52AA1D74DD5B2185FA45F /* libPods-Advance CarolinaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4099E7709839E9FAB6DF34 /* libPods-Advance CarolinaUITests.a */; };
-		866C81CF42C4EF168361BDE9 /* libPods-Advance Carolina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E66B8696A54E8A796EC38E56 /* libPods-Advance Carolina.a */; };
+		1B13B53B0FCA3C65639CEBBD /* Pods_Advance_CarolinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FECFA11FB0AE537F24FD1A6 /* Pods_Advance_CarolinaTests.framework */; };
+		32F0902436476E7AE0C45671 /* Pods_Advance_CarolinaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B097E70CF66E39F55D870D5 /* Pods_Advance_CarolinaUITests.framework */; };
+		9349802EC65E0115A6C4CCF3 /* Pods_Advance_Carolina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A36CB8A128465C1287F005 /* Pods_Advance_Carolina.framework */; };
 		D1005D221C9CAA8B007FD9C9 /* ScheduleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1005D211C9CAA8B007FD9C9 /* ScheduleListViewController.m */; };
 		D1005D251C9CABD5007FD9C9 /* CreateScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1005D241C9CABD5007FD9C9 /* CreateScheduleViewController.m */; };
 		D1005D271C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */; };
 		D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */; };
 		D10C06B51C8E2F92005B6B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B41C8E2F92005B6B23 /* ViewController.swift */; };
-		D10C06B81C8E2F92005B6B23 /* Main_2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C06B61C8E2F92005B6B23 /* Main_2.storyboard */; };
 		D10C06BB1C8E2F92005B6B23 /* Advance_Carolina.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B91C8E2F92005B6B23 /* Advance_Carolina.xcdatamodeld */; };
 		D10C06BD1C8E2F92005B6B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */; };
 		D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */; };
@@ -67,8 +66,10 @@
 
 /* Begin PBXFileReference section */
 		2C571B2BA71CAC64E1C6C09C /* Pods-Advance CarolinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaTests/Pods-Advance CarolinaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FECFA11FB0AE537F24FD1A6 /* Pods_Advance_CarolinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advance_CarolinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D077C8214D7E7D794672CB7 /* Pods-Advance Carolina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance Carolina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advance Carolina/Pods-Advance Carolina.debug.xcconfig"; sourceTree = "<group>"; };
-		6C4099E7709839E9FAB6DF34 /* libPods-Advance CarolinaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Advance CarolinaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A36CB8A128465C1287F005 /* Pods_Advance_Carolina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advance_Carolina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B097E70CF66E39F55D870D5 /* Pods_Advance_CarolinaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advance_CarolinaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B77AEC8D3AF6BA8D5ECAC2 /* Pods-Advance CarolinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaTests/Pods-Advance CarolinaTests.release.xcconfig"; sourceTree = "<group>"; };
 		99B839B7C584F4AF091FC6B7 /* Pods-Advance CarolinaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A15BC5EE2430D90FA7DAC27 /* Pods-Advance CarolinaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		D10C06AF1C8E2F92005B6B23 /* Advance Carolina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advance Carolina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D10C06B41C8E2F92005B6B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D10C06B71C8E2F92005B6B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_2.storyboard; sourceTree = "<group>"; };
 		D10C06BA1C8E2F92005B6B23 /* Advance_Carolina.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Advance_Carolina.xcdatamodel; sourceTree = "<group>"; };
 		D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D10C06BF1C8E2F92005B6B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,8 +117,6 @@
 		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		D1DC034A1C8F878A00D5563D /* Advance Carolina-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Advance Carolina-Bridging-Header.h"; sourceTree = "<group>"; };
-		E66B8696A54E8A796EC38E56 /* libPods-Advance Carolina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Advance Carolina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7C9FEA36F4B43161CFFD970 /* libPods-Advance CarolinaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Advance CarolinaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA89F67263DED880897DB506 /* Pods-Advance Carolina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance Carolina.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance Carolina/Pods-Advance Carolina.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +138,7 @@
 				D128D81B1C8F700E002DE1CE /* MapKit.framework in Frameworks */,
 				D128D8191C8F7008002DE1CE /* MessageUI.framework in Frameworks */,
 				D128D8171C8F6FFF002DE1CE /* CoreData.framework in Frameworks */,
-				866C81CF42C4EF168361BDE9 /* libPods-Advance Carolina.a in Frameworks */,
+				9349802EC65E0115A6C4CCF3 /* Pods_Advance_Carolina.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20601E38E134EC990B248BFD /* libPods-Advance CarolinaTests.a in Frameworks */,
+				1B13B53B0FCA3C65639CEBBD /* Pods_Advance_CarolinaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CF52AA1D74DD5B2185FA45F /* libPods-Advance CarolinaUITests.a in Frameworks */,
+				32F0902436476E7AE0C45671 /* Pods_Advance_CarolinaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,9 +190,9 @@
 				D128D81A1C8F700E002DE1CE /* MapKit.framework */,
 				D128D8181C8F7008002DE1CE /* MessageUI.framework */,
 				D128D8161C8F6FFF002DE1CE /* CoreData.framework */,
-				E66B8696A54E8A796EC38E56 /* libPods-Advance Carolina.a */,
-				F7C9FEA36F4B43161CFFD970 /* libPods-Advance CarolinaTests.a */,
-				6C4099E7709839E9FAB6DF34 /* libPods-Advance CarolinaUITests.a */,
+				65A36CB8A128465C1287F005 /* Pods_Advance_Carolina.framework */,
+				3FECFA11FB0AE537F24FD1A6 /* Pods_Advance_CarolinaTests.framework */,
+				6B097E70CF66E39F55D870D5 /* Pods_Advance_CarolinaUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -235,7 +233,6 @@
 				D173EFAB1C93A24500593DFD /* PollingViewController.swift */,
 				D1005D261C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard */,
 				D155D8781CAB9ED100D7D275 /* Main_NeegbeahReeves.storyboard */,
-				D10C06B61C8E2F92005B6B23 /* Main_2.storyboard */,
 				D155D8711CAB634C00D7D275 /* RegisterVoterInfo.storyboard */,
 				D10C06BC1C8E2F92005B6B23 /* Assets.xcassets */,
 				D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */,
@@ -435,7 +432,6 @@
 				D128D8131C8F6435002DE1CE /* pdf.pdf in Resources */,
 				D10C06BD1C8E2F92005B6B23 /* Assets.xcassets in Resources */,
 				D1005D271C9DDF5D007FD9C9 /* CreateScheduleStoryboard.storyboard in Resources */,
-				D10C06B81C8E2F92005B6B23 /* Main_2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,14 +628,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D10C06B61C8E2F92005B6B23 /* Main_2.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D10C06B71C8E2F92005B6B23 /* Base */,
-			);
-			name = Main_2.storyboard;
-			sourceTree = "<group>";
-		};
 		D10C06BE1C8E2F92005B6B23 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -740,7 +728,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.AdvanceCarolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -757,7 +745,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.AdvanceCarolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
