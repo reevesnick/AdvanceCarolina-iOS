@@ -5,12 +5,12 @@
 //  Created by Neegbeah Reeves on 3/26/16.
 //  Copyright © 2016 Brown Box Works. All rights reserved.
 //
-/*
+
 import UIKit
 import DZNEmptyDataSet
 
 
-
+/*
 class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyDataSetSource,DZNEmptyDataSetDelegate {
 
     override func viewDidLoad() {

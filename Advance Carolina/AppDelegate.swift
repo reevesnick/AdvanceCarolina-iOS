@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Batch
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

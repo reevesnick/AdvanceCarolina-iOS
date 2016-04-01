@@ -69,6 +69,11 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>Pods-Advance Carolina 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
 		<key>Pods-Advance Carolina.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -88,6 +93,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>17</integer>
+		</dict>
+		<key>RxCocoa 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
 		</dict>
 		<key>RxCocoa.xcscheme</key>
 		<dict>
@@ -113,6 +123,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>03857CB7ED3EB7019D4BEDE0F18E2FB3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>059B6BF1A5D5A2CE95600A4653F7577B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -183,6 +198,11 @@
 			<true/>
 		</dict>
 		<key>B0AD89FAE7AFE0924D447D9FDC5D66D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0FF4FDA599C82A79B991E72913CD084</key>
 		<dict>
 			<key>primary</key>
 			<true/>
