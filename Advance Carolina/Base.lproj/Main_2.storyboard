@@ -44,6 +44,54 @@
             </objects>
             <point key="canvasLocation" x="825" y="2606"/>
         </scene>
+<<<<<<< HEAD
+        <!--Candidates-->
+        <scene sceneID="9Jt-DE-YW4">
+            <objects>
+                <viewController id="ZUj-Si-dyc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgl-gK-YA1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="135" sectionHeaderHeight="28" sectionFooterHeight="28" id="3Eg-PP-A4c">
+                                <rect key="frame" x="0.0" y="72" width="320" height="449"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="135" id="0Fd-xo-nUB">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="135"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Fd-xo-nUB" id="B5j-XW-qER">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2Kq-cW-WTz">
+                                                    <rect key="frame" x="8" y="13" width="89" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candidates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xED-al-Aaj">
+                                                    <rect key="frame" x="105" y="44" width="207" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Candidates" id="srN-cs-G3c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bxd-EH-esW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="993"/>
+        </scene>
+=======
+>>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
         <!--Sample Ballot-->
         <scene sceneID="8Ch-rB-oaw">
             <objects>
@@ -73,7 +121,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="AyI-04-EvF">
             <objects>
-                <tabBarController id="H12-6e-PJY" sceneMemberID="viewController">
+                <tabBarController id="H12-6e-PJY" customClass="TabBarController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="QuD-C3-Ecr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -101,7 +149,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="TkL-fx-XjQ" detailTextLabel="177-nE-S7l" rowHeight="66" style="IBUITableViewCellStyleSubtitle" id="dd2-W7-ZnI">
-                                <rect key="frame" x="0.0" y="92" width="320" height="66"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dd2-W7-ZnI" id="d7t-BX-Xzp">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="65"/>
@@ -387,14 +435,107 @@
             </objects>
             <point key="canvasLocation" x="374.39999999999998" y="-319.97333333333336"/>
         </scene>
+<<<<<<< HEAD
+        <!--Poll View-->
+=======
         <!--Empty Data Set Delegate-->
+>>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
         <scene sceneID="GBe-4E-Jva">
             <objects>
-                <viewController id="PKR-AO-pHX" customClass="PollingLocationViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PKR-AO-pHX" userLabel="Poll View" customClass="PollingLocationViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k1H-rW-Tig">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="222" sectionHeaderHeight="28" sectionFooterHeight="28" id="hsK-aM-2iQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="222" id="16m-rt-bqW" customClass="PollCell" customModule="Advance_Carolina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="222"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="16m-rt-bqW" id="XQg-Eb-pEP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="221"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RP4-UU-hmX">
+                                                    <rect key="frame" x="25" y="8" width="115" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wVh-6a-LIM">
+                                                    <rect key="frame" x="27" y="37" width="40" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mZy-ir-8hc">
+                                                    <rect key="frame" x="25" y="66" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wms-wV-Pl3">
+                                                    <rect key="frame" x="24" y="95" width="43" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dZX-bL-4cY">
+                                                    <rect key="frame" x="25" y="124" width="31" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YwT-e5-HCN">
+                                                    <rect key="frame" x="25" y="153" width="41" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="es1-gP-g9R">
+                                                    <rect key="frame" x="115" y="153" width="25" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poll Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="drx-uO-sGa">
+                                                    <rect key="frame" x="27" y="182" width="78" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="city" destination="dZX-bL-4cY" id="b6X-VB-UZx"/>
+                                            <outlet property="line1" destination="wVh-6a-LIM" id="7Fv-JM-b6p"/>
+                                            <outlet property="line2" destination="mZy-ir-8hc" id="huc-fT-MCn"/>
+                                            <outlet property="line3" destination="Wms-wV-Pl3" id="oxp-Rv-lEH"/>
+                                            <outlet property="locationName" destination="RP4-UU-hmX" id="tZC-vl-g2C"/>
+                                            <outlet property="pollHours" destination="drx-uO-sGa" id="uqj-Tl-RBT"/>
+                                            <outlet property="state" destination="YwT-e5-HCN" id="FIM-h4-LKt"/>
+                                            <outlet property="zip" destination="es1-gP-g9R" id="tzf-cV-DTL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PKR-AO-pHX" id="myV-ch-NIu"/>
+                                    <outlet property="delegate" destination="PKR-AO-pHX" id="VtV-WL-LgO"/>
+                                    <outlet property="emptyDataSetDelegate" destination="PKR-AO-pHX" id="7sG-mC-Yco"/>
+                                    <outlet property="emptyDataSetSource" destination="PKR-AO-pHX" id="kLt-af-dOc"/>
+=======
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hsK-aM-2iQ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="376"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -404,6 +545,7 @@
                                     <outlet property="delegate" destination="PKR-AO-pHX" id="UGq-VM-XsJ"/>
                                     <outlet property="emptyDataSetDelegate" destination="PKR-AO-pHX" id="fBi-T8-CGQ"/>
                                     <outlet property="emptyDataSetSource" destination="PKR-AO-pHX" id="ZWd-Jb-O6f"/>
+>>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZdC-MY-BPb">
@@ -433,7 +575,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+<<<<<<< HEAD
+                        <outlet property="pollTableView" destination="hsK-aM-2iQ" id="KIC-Zi-tTk"/>
+=======
                         <outlet property="tableView" destination="hsK-aM-2iQ" id="ddW-7S-y1l"/>
+>>>>>>> fb2c7a919ed343ee2f7c1a8e9ca0a7e3b94f4382
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dlb-hN-7Sq" userLabel="First Responder" sceneMemberID="firstResponder"/>

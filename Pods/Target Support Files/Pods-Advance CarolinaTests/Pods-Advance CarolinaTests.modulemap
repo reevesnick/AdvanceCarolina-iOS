@@ -1,0 +1,6 @@
+framework module Pods_Advance_CarolinaTests {
+  umbrella header "Pods-Advance CarolinaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
