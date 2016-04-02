@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Poll View-->
+        <scene sceneID="GBe-4E-Jva">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-PKR-AO-pHX" id="PKR-AO-pHX" userLabel="Poll View" customClass="PollingLocationViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ca4-Xa-6an"/>
+                        <viewControllerLayoutGuide type="bottom" id="lzE-0I-obD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k1H-rW-Tig">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdC-MY-BPb">
+                                <rect key="frame" x="89" y="484" width="143" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Register to Vote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerToVote:" destination="PKR-AO-pHX" eventType="touchUpInside" id="nsb-SR-qSl"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" misplaced="YES" placeholder="Enter a location" translatesAutoresizingMaskIntoConstraints="NO" id="eJw-bW-LDe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="222" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hsK-aM-2iQ">
+                                <rect key="frame" x="0.0" y="62" width="320" height="314"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="222" id="16m-rt-bqW" customClass="PollCell" customModule="Advance_Carolina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="222"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="16m-rt-bqW" id="XQg-Eb-pEP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="221.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RP4-UU-hmX">
+                                                    <rect key="frame" x="25" y="8" width="115" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVh-6a-LIM">
+                                                    <rect key="frame" x="27" y="37" width="40" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZy-ir-8hc">
+                                                    <rect key="frame" x="25" y="66" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wms-wV-Pl3">
+                                                    <rect key="frame" x="24" y="95" width="43" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZX-bL-4cY">
+                                                    <rect key="frame" x="25" y="124" width="31" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwT-e5-HCN">
+                                                    <rect key="frame" x="25" y="153" width="41" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="es1-gP-g9R">
+                                                    <rect key="frame" x="115" y="153" width="25" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poll Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drx-uO-sGa">
+                                                    <rect key="frame" x="27" y="182" width="78" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Wms-wV-Pl3" firstAttribute="top" secondItem="mZy-ir-8hc" secondAttribute="bottom" constant="8" symbolic="YES" id="Ec0-Se-mqz"/>
+                                                <constraint firstItem="RP4-UU-hmX" firstAttribute="top" secondItem="XQg-Eb-pEP" secondAttribute="topMargin" id="EvP-AO-1J7"/>
+                                                <constraint firstItem="wVh-6a-LIM" firstAttribute="leading" secondItem="drx-uO-sGa" secondAttribute="leading" id="Evl-kC-PBI"/>
+                                                <constraint firstItem="drx-uO-sGa" firstAttribute="top" secondItem="YwT-e5-HCN" secondAttribute="bottom" constant="8" symbolic="YES" id="IoL-sH-2Cu"/>
+                                                <constraint firstItem="mZy-ir-8hc" firstAttribute="leading" secondItem="dZX-bL-4cY" secondAttribute="leading" id="N0X-0l-J5q"/>
+                                                <constraint firstItem="wVh-6a-LIM" firstAttribute="trailing" secondItem="mZy-ir-8hc" secondAttribute="trailing" id="QSr-EF-bgx"/>
+                                                <constraint firstItem="dZX-bL-4cY" firstAttribute="top" secondItem="Wms-wV-Pl3" secondAttribute="bottom" constant="8" symbolic="YES" id="Qgd-5Q-Cx2"/>
+                                                <constraint firstItem="mZy-ir-8hc" firstAttribute="top" secondItem="wVh-6a-LIM" secondAttribute="bottom" constant="8" symbolic="YES" id="Sat-9H-5wG"/>
+                                                <constraint firstItem="YwT-e5-HCN" firstAttribute="baseline" secondItem="es1-gP-g9R" secondAttribute="baseline" id="TBm-6T-lOO"/>
+                                                <constraint firstItem="RP4-UU-hmX" firstAttribute="leading" secondItem="mZy-ir-8hc" secondAttribute="leading" id="V33-Re-umW"/>
+                                                <constraint firstItem="dZX-bL-4cY" firstAttribute="leading" secondItem="YwT-e5-HCN" secondAttribute="leading" id="VaA-lX-Y7B"/>
+                                                <constraint firstItem="mZy-ir-8hc" firstAttribute="trailing" secondItem="Wms-wV-Pl3" secondAttribute="trailing" id="bxc-dl-exX"/>
+                                                <constraint firstItem="wVh-6a-LIM" firstAttribute="top" secondItem="RP4-UU-hmX" secondAttribute="bottom" constant="8" symbolic="YES" id="ccO-82-2ck"/>
+                                                <constraint firstItem="RP4-UU-hmX" firstAttribute="trailing" secondItem="es1-gP-g9R" secondAttribute="trailing" id="oMr-e0-heu"/>
+                                                <constraint firstItem="Wms-wV-Pl3" firstAttribute="leading" secondItem="XQg-Eb-pEP" secondAttribute="leadingMargin" constant="16" id="rKL-xO-gdm"/>
+                                                <constraint firstItem="YwT-e5-HCN" firstAttribute="top" secondItem="dZX-bL-4cY" secondAttribute="bottom" constant="8" symbolic="YES" id="vpH-RW-f9y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="city" destination="dZX-bL-4cY" id="b6X-VB-UZx"/>
+                                            <outlet property="line1" destination="wVh-6a-LIM" id="7Fv-JM-b6p"/>
+                                            <outlet property="line2" destination="mZy-ir-8hc" id="huc-fT-MCn"/>
+                                            <outlet property="line3" destination="Wms-wV-Pl3" id="oxp-Rv-lEH"/>
+                                            <outlet property="locationName" destination="RP4-UU-hmX" id="tZC-vl-g2C"/>
+                                            <outlet property="pollHours" destination="drx-uO-sGa" id="uqj-Tl-RBT"/>
+                                            <outlet property="state" destination="YwT-e5-HCN" id="FIM-h4-LKt"/>
+                                            <outlet property="zip" destination="es1-gP-g9R" id="tzf-cV-DTL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PKR-AO-pHX" id="myV-ch-NIu"/>
+                                    <outlet property="delegate" destination="PKR-AO-pHX" id="VtV-WL-LgO"/>
+                                    <outlet property="emptyDataSetDelegate" destination="PKR-AO-pHX" id="7sG-mC-Yco"/>
+                                    <outlet property="emptyDataSetSource" destination="PKR-AO-pHX" id="kLt-af-dOc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eJw-bW-LDe" firstAttribute="leading" secondItem="k1H-rW-Tig" secondAttribute="leading" id="1ng-BV-ESd"/>
+                            <constraint firstItem="lzE-0I-obD" firstAttribute="top" secondItem="ZdC-MY-BPb" secondAttribute="bottom" constant="54" id="5EO-EX-xOJ"/>
+                            <constraint firstItem="hsK-aM-2iQ" firstAttribute="top" secondItem="eJw-bW-LDe" secondAttribute="bottom" constant="18" id="6u3-JQ-NTE"/>
+                            <constraint firstItem="eJw-bW-LDe" firstAttribute="top" secondItem="Ca4-Xa-6an" secondAttribute="bottom" id="Cct-by-HOk"/>
+                            <constraint firstItem="hsK-aM-2iQ" firstAttribute="centerX" secondItem="ZdC-MY-BPb" secondAttribute="centerX" id="LOT-6f-UcS"/>
+                            <constraint firstItem="eJw-bW-LDe" firstAttribute="trailing" secondItem="hsK-aM-2iQ" secondAttribute="trailing" id="Yef-Bj-DHV"/>
+                            <constraint firstAttribute="trailing" secondItem="eJw-bW-LDe" secondAttribute="trailing" id="YpM-ri-9c3"/>
+                            <constraint firstItem="ZdC-MY-BPb" firstAttribute="leading" secondItem="k1H-rW-Tig" secondAttribute="leadingMargin" constant="73" id="fBw-Ry-VU5"/>
+                            <constraint firstItem="ZdC-MY-BPb" firstAttribute="top" secondItem="hsK-aM-2iQ" secondAttribute="bottom" constant="8" symbolic="YES" id="i0T-6s-VQb"/>
+                            <constraint firstItem="eJw-bW-LDe" firstAttribute="leading" secondItem="hsK-aM-2iQ" secondAttribute="leading" id="okQ-rY-Qu1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pollTableView" destination="hsK-aM-2iQ" id="KIC-Zi-tTk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dlb-hN-7Sq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="-475"/>
+        </scene>
+    </scenes>
+</document>
