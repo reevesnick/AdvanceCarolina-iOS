@@ -42,6 +42,8 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
         feedParser.parse()
 
     }
+    
+    // 
 
     // MARK: - Feed Parser Delegate
     func feedParserDidStart(parser: MWFeedParser!) {
@@ -65,6 +67,9 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+
 
         
         // Set DZEmptyVieDataSet Delegate and Datasource
@@ -142,7 +147,6 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
         
         self.navigationController?.pushViewController(webBroswer, animated: true);
     }
-    
     
     
     // MARK: - DZEmptyView

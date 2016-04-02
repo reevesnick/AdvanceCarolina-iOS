@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F7AF14DD2431C8DA79F45F4F1D22075E'
+               BlueprintIdentifier = '47F44A33BD3BBA735E59147217641B65'
                BlueprintName = 'ARChromeActivity'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libARChromeActivity.a'>
+               BuildableName = 'ARChromeActivity.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Batch
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +19,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
+        //Custon UI
+
+        
+        
+        //Parse Server API Key
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "Lvkh2vw9sSKCLk1R8SfKKlUZGUSFoEbMaLr0Fogf"
+            $0.clientKey = "VqzatKxu4742ZATP9mdgRSo7awrxLoBV8wBftgMw"
+            $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initializeWithConfiguration(configuration)
+
+        
+        
+        //Push Notifications - Batch
+        //Batch.startWithAPIKey("DEV56F29C2F5520F6FE495D960485E"); //Developer Key
+        Batch.startWithAPIKey("56F29C2F53E59355215F7DB2616C2A") //Live Key
+        
+        BatchPush.registerForRemoteNotifications()
+        
+        // Local Notifications
+            if #available(iOS 8.0, *) {
+                let notificationType = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+                UIApplication.sharedApplication().registerUserNotificationSettings(notificationType)
+
+            } else {
+                // Fallback on earlier versions
+            }
+                //UIApplication.sharedApplication().registerUserNotificationSettings(notificationType)
+        
+
+            // Fallback on earlier versions
+        
+        var appFont:UIFont = UIFont(name: "Avenir", size: 20)!
+
+        
+        
         return true
+    
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        
+        // Dismiss push notification
+        BatchPush.dismissNotifications()
+        
+    
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -44,6 +93,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
+    // MARK: - Local Push Notification
+    
+
+    
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
@@ -78,6 +131,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             NSLog("Unresolved error \(wrappedError), \(wrappedError.userInfo)")
             abort()
+        
         }
         
         return coordinator
@@ -90,6 +144,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         managedObjectContext.persistentStoreCoordinator = coordinator
         return managedObjectContext
     }()
+    
+    
 
     // MARK: - Core Data Saving support
 

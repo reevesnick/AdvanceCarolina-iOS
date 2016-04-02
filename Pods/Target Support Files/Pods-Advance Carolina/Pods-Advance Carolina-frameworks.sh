@@ -84,6 +84,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+<<<<<<< HEAD
   install_framework "$BUILT_PRODUCTS_DIR/ARChromeActivity/ARChromeActivity.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Argo/Argo.framework"
@@ -114,4 +115,42 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/RxCocoa/RxCocoa.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RxSwift/RxSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TUSafariActivity/TUSafariActivity.framework"
+=======
+  install_framework "Pods-Advance Carolina/ARChromeActivity.framework"
+  install_framework "Pods-Advance Carolina/Alamofire.framework"
+  install_framework "Pods-Advance Carolina/Argo.framework"
+  install_framework "Pods-Advance Carolina/Bolts.framework"
+  install_framework "Pods-Advance Carolina/Curry.framework"
+  install_framework "Pods-Advance Carolina/DZNEmptyDataSet.framework"
+  install_framework "Pods-Advance Carolina/FontAwesomeKit.framework"
+  install_framework "Pods-Advance Carolina/KINWebBrowser.framework"
+  install_framework "Pods-Advance Carolina/MWFeedParser.framework"
+  install_framework "Pods-Advance Carolina/Moya.framework"
+  install_framework "Pods-Advance Carolina/Moya_Argo.framework"
+  install_framework "Pods-Advance Carolina/Parse.framework"
+  install_framework "Pods-Advance Carolina/ParseUI.framework"
+  install_framework "Pods-Advance Carolina/Result.framework"
+  install_framework "Pods-Advance Carolina/RxCocoa.framework"
+  install_framework "Pods-Advance Carolina/RxSwift.framework"
+  install_framework "Pods-Advance Carolina/TUSafariActivity.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Advance Carolina/ARChromeActivity.framework"
+  install_framework "Pods-Advance Carolina/Alamofire.framework"
+  install_framework "Pods-Advance Carolina/Argo.framework"
+  install_framework "Pods-Advance Carolina/Bolts.framework"
+  install_framework "Pods-Advance Carolina/Curry.framework"
+  install_framework "Pods-Advance Carolina/DZNEmptyDataSet.framework"
+  install_framework "Pods-Advance Carolina/FontAwesomeKit.framework"
+  install_framework "Pods-Advance Carolina/KINWebBrowser.framework"
+  install_framework "Pods-Advance Carolina/MWFeedParser.framework"
+  install_framework "Pods-Advance Carolina/Moya.framework"
+  install_framework "Pods-Advance Carolina/Moya_Argo.framework"
+  install_framework "Pods-Advance Carolina/Parse.framework"
+  install_framework "Pods-Advance Carolina/ParseUI.framework"
+  install_framework "Pods-Advance Carolina/Result.framework"
+  install_framework "Pods-Advance Carolina/RxCocoa.framework"
+  install_framework "Pods-Advance Carolina/RxSwift.framework"
+  install_framework "Pods-Advance Carolina/TUSafariActivity.framework"
+>>>>>>> master
 fi

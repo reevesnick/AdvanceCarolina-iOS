@@ -9,14 +9,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Advance Carolina/ContactViewController.swift"
-            timestampString = "479443917.698604"
+            filePath = "Advance Carolina/RegisterViewController.swift"
+            timestampString = "481159403.31419"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "ContactViewController"
-            landmarkType = "3">
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "textFieldShouldClear(_:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
