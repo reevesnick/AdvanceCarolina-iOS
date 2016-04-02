@@ -55,7 +55,13 @@
                             <constraint firstItem="6E0-wo-ISx" firstAttribute="leading" secondItem="y4Z-V2-jmU" secondAttribute="leading" id="nXf-S1-inN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="0KG-dF-Fvb"/>
+                    <navigationItem key="navigationItem" title="Home" id="0KG-dF-Fvb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MVg-Bn-1bA">
+                            <connections>
+                                <action selector="addSchedule:" destination="uYS-mr-r6v" id="TZE-aa-0SO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

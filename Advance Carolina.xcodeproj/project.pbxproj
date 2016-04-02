@@ -40,6 +40,12 @@
 		D128D81B1C8F700E002DE1CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D81A1C8F700E002DE1CE /* MapKit.framework */; };
 		D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAB1C93A24500593DFD /* PollingViewController.swift */; };
 		D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */; };
+		D19399AA1CB0634800BC8E5D /* CandidateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19399A71CB0634800BC8E5D /* CandidateDetailViewController.swift */; };
+		D19399AB1CB0634800BC8E5D /* CandidateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19399A81CB0634800BC8E5D /* CandidateListTableViewController.swift */; };
+		D19399AC1CB0634800BC8E5D /* CandidateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19399A91CB0634800BC8E5D /* CandidateTableViewCell.swift */; };
+		D19399AF1CB0635B00BC8E5D /* CreateScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19399AE1CB0635B00BC8E5D /* CreateScheduleViewController.m */; };
+		D19399B21CB0636900BC8E5D /* ScheduleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D19399B11CB0636900BC8E5D /* ScheduleListViewController.m */; };
+		D19399B41CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19399B31CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard */; };
 		D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC03481C8F872400D5563D /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +110,14 @@
 		D128D81A1C8F700E002DE1CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D173EFAB1C93A24500593DFD /* PollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingViewController.swift; sourceTree = "<group>"; };
 		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
+		D19399A71CB0634800BC8E5D /* CandidateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateDetailViewController.swift; sourceTree = "<group>"; };
+		D19399A81CB0634800BC8E5D /* CandidateListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateListTableViewController.swift; sourceTree = "<group>"; };
+		D19399A91CB0634800BC8E5D /* CandidateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateTableViewCell.swift; sourceTree = "<group>"; };
+		D19399AD1CB0635B00BC8E5D /* CreateScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateScheduleViewController.h; sourceTree = "<group>"; };
+		D19399AE1CB0635B00BC8E5D /* CreateScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateScheduleViewController.m; sourceTree = "<group>"; };
+		D19399B01CB0636900BC8E5D /* ScheduleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleListViewController.h; sourceTree = "<group>"; };
+		D19399B11CB0636900BC8E5D /* ScheduleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleListViewController.m; sourceTree = "<group>"; };
+		D19399B31CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateScheduleStoryboard.storyboard; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		D1DC034A1C8F878A00D5563D /* Advance Carolina-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Advance Carolina-Bridging-Header.h"; sourceTree = "<group>"; };
 		D8D92BB2CF6AB8422DF10046 /* Pods_Advance_Carolina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advance_Carolina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +240,7 @@
 				64CE27711CAE0B6E008EE0E8 /* Sample Ballot.storyboard */,
 				64CE276F1CAE0B4A008EE0E8 /* Poll View.storyboard */,
 				64CE276C1CAE0AC0008EE0E8 /* Home.storyboard */,
+				D19399B31CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -268,6 +283,8 @@
 		D10C06B11C8E2F92005B6B23 /* Advance Carolina */ = {
 			isa = PBXGroup;
 			children = (
+				D19399A61CB0631B00BC8E5D /* Polling Schedule */,
+				D19399A51CB062E200BC8E5D /* Candidate */,
 				D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */,
 				64CE276B1CAE08E1008EE0E8 /* Extensions */,
 				64263FF51C99F27100FBD584 /* Fonts */,
@@ -336,6 +353,27 @@
 				6467A3C51C986FF2002A1557 /* PollCell.swift */,
 			);
 			name = Polling;
+			sourceTree = "<group>";
+		};
+		D19399A51CB062E200BC8E5D /* Candidate */ = {
+			isa = PBXGroup;
+			children = (
+				D19399A71CB0634800BC8E5D /* CandidateDetailViewController.swift */,
+				D19399A81CB0634800BC8E5D /* CandidateListTableViewController.swift */,
+				D19399A91CB0634800BC8E5D /* CandidateTableViewCell.swift */,
+			);
+			name = Candidate;
+			sourceTree = "<group>";
+		};
+		D19399A61CB0631B00BC8E5D /* Polling Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				D19399AD1CB0635B00BC8E5D /* CreateScheduleViewController.h */,
+				D19399AE1CB0635B00BC8E5D /* CreateScheduleViewController.m */,
+				D19399B01CB0636900BC8E5D /* ScheduleListViewController.h */,
+				D19399B11CB0636900BC8E5D /* ScheduleListViewController.m */,
+			);
+			name = "Polling Schedule";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,7 +452,7 @@
 				TargetAttributes = {
 					D10C06AE1C8E2F92005B6B23 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = W29D5BE398;
+						DevelopmentTeam = L6WD86F9N5;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -456,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19399B41CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard in Resources */,
 				D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */,
 				64263FF71C99F27E00FBD584 /* FontAwesome.otf in Resources */,
 				64CE27781CAE0B8C008EE0E8 /* News Feed.storyboard in Resources */,
@@ -615,11 +654,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				64785D341C98E254009EB8B0 /* PollModelResponseHelper.swift in Sources */,
+				D19399AC1CB0634800BC8E5D /* CandidateTableViewCell.swift in Sources */,
 				64CE276A1CAE08DC008EE0E8 /* UIViewExtensions.swift in Sources */,
+				D19399B21CB0636900BC8E5D /* ScheduleListViewController.m in Sources */,
 				D128D80E1C8F6143002DE1CE /* SampleBallotViewController.swift in Sources */,
+				D19399AB1CB0634800BC8E5D /* CandidateListTableViewController.swift in Sources */,
 				D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */,
 				D10C06B51C8E2F92005B6B23 /* ViewController.swift in Sources */,
+				D19399AA1CB0634800BC8E5D /* CandidateDetailViewController.swift in Sources */,
 				D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */,
+				D19399AF1CB0635B00BC8E5D /* CreateScheduleViewController.m in Sources */,
 				6467A3C91C987353002A1557 /* PollModel.swift in Sources */,
 				D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */,
 				6467A3C61C986FF2002A1557 /* PollCell.swift in Sources */,
@@ -799,7 +843,7 @@
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Advance-Carolina";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AdvanceCarolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Advance Carolina/Advance Carolina-Bridging-Header.h";
@@ -818,7 +862,7 @@
 				INFOPLIST_FILE = "Advance Carolina/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Advance-Carolina";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.AdvanceCarolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Advance Carolina/Advance Carolina-Bridging-Header.h";

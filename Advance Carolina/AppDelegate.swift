@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             // Fallback on earlier versions
         
-        var appFont:UIFont = UIFont(name: "Avenir", size: 20)!
+       // var appFont:UIFont = UIFont(name: "Avenir", size: 20)!
 
         
         
