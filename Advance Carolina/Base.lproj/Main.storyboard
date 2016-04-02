@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="H12-6e-PJY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="AyI-04-EvF">
+            <objects>
+                <tabBarController id="H12-6e-PJY" customClass="TabBarController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="QuD-C3-Ecr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="15o-8b-B6V" kind="relationship" relationship="viewControllers" id="6SS-EP-wVS"/>
+                        <segue destination="sqK-dG-Wb6" kind="relationship" relationship="viewControllers" id="bCS-tU-4jZ"/>
+                        <segue destination="bll-bq-HKa" kind="relationship" relationship="viewControllers" id="xHl-gX-f9C"/>
+                        <segue destination="jbI-r0-0R2" kind="relationship" relationship="viewControllers" id="KaL-K5-uth"/>
+                        <segue destination="eum-wc-I26" kind="relationship" relationship="viewControllers" id="Mw9-O0-u8q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFn-YF-ISC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-547.20000000000005" y="1082.04"/>
+        </scene>
+        <!--Contact Us-->
+        <scene sceneID="yos-mV-5yd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eum-wc-I26" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact Us" id="RSW-3s-ALi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J3D-K9-K4R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WE4-At-H1f" kind="relationship" relationship="rootViewController" id="Ut1-eT-5uw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vtm-Hx-4tw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384" y="2606.1733333333332"/>
+        </scene>
+        <!--Ballot-->
+        <scene sceneID="sho-nB-2tS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sqK-dG-Wb6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ballot" id="PYu-N9-bFf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y19-Hk-lys">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UAo-wo-gX0" kind="relationship" relationship="rootViewController" id="1Td-Ks-et3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJT-AQ-blv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.73333333333335" y="368.25333333333333"/>
+        </scene>
+        <!--Candidates-->
+        <scene sceneID="arf-1O-7HH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bll-bq-HKa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Candidates" id="etc-s2-VCl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OPj-gl-BfW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wms-cg-Fwx" kind="relationship" relationship="rootViewController" id="jio-Sk-flV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwE-Je-hwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.73333333333335" y="993.05333333333328"/>
+        </scene>
+        <!--News -->
+        <scene sceneID="pHP-qR-dG3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jbI-r0-0R2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News " id="R19-UA-j0g"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tGe-wM-KYa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CCu-Sz-tvZ" kind="relationship" relationship="rootViewController" id="tUD-74-lpa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pC-Fv-NrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374.39999999999998" y="1772.1600000000001"/>
+        </scene>
+        <!--Poll-->
+        <scene sceneID="lpv-42-FGO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="15o-8b-B6V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Poll" id="ST5-ip-QzR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Bd-Q8-Z8a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="twe-3Y-JTb" kind="relationship" relationship="rootViewController" id="Udz-sT-g89"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dlp-fM-Elf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374.39999999999998" y="-319.97333333333336"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SaC-0X-uPC">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-DJG-nQ-S19" id="DJG-nQ-S19" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gGH-f0-dxy"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGO-ea-tiO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="frM-rH-Txl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ck0-h7-fzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="210"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="8vV-iZ-nyx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="twe-3Y-JTb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ybr-WE-vyl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="772-Aa-6Qo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-426"/>
+        </scene>
+        <!--UIViewController-PKR-AO-pHX-->
+        <scene sceneID="a6Z-Ch-XPG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-PKR-AO-pHX" storyboardName="Poll View" referencedIdentifier="UIViewController-PKR-AO-pHX" id="ghk-i7-z2m" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmE-wU-3uj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="-475"/>
+        </scene>
+        <!--Sample Ballot-->
+        <scene sceneID="6HA-mk-XxO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Sample Ballot" id="UAo-wo-gX0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oqC-g2-C1O"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8d0-wf-6SF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="368"/>
+        </scene>
+        <!--Candidates-->
+        <scene sceneID="rTj-MG-z4V">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Candidates" id="wms-cg-Fwx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wp6-pb-ca3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aat-hg-tPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="993"/>
+        </scene>
+        <!--News Feed-->
+        <scene sceneID="3c1-Iq-ALJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News Feed" id="CCu-Sz-tvZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qhX-8a-uXc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8F-fP-1W9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807.4666666666667" y="1772.1600000000001"/>
+        </scene>
+        <!--Contact Us-->
+        <scene sceneID="K2P-pn-uDq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contact Us" id="WE4-At-H1f" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="D1g-bj-a0P"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDl-0z-i2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="2606"/>
+        </scene>
+    </scenes>
+</document>

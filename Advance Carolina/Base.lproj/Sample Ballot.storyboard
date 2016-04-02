@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CQf-dZ-TH0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample Ballot-->
+        <scene sceneID="8Ch-rB-oaw">
+            <objects>
+                <viewController title="Sample Ballot" id="CQf-dZ-TH0" customClass="SampleBallotViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sI4-tC-Pqt"/>
+                        <viewControllerLayoutGuide type="bottom" id="xjg-7h-A7g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FXx-S6-0mn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLO-OF-gH8">
+                                <rect key="frame" x="0.0" y="64" width="320" height="458"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="lLO-OF-gH8" secondAttribute="bottom" constant="46" id="P0w-Y8-bhm"/>
+                            <constraint firstAttribute="trailing" secondItem="lLO-OF-gH8" secondAttribute="trailing" id="RMg-yn-aZj"/>
+                            <constraint firstItem="lLO-OF-gH8" firstAttribute="leading" secondItem="FXx-S6-0mn" secondAttribute="leading" id="s5z-D2-aeg"/>
+                            <constraint firstItem="lLO-OF-gH8" firstAttribute="top" secondItem="sI4-tC-Pqt" secondAttribute="bottom" id="zQb-Re-oda"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sample Balllot" id="tRS-eM-EGT"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="lLO-OF-gH8" id="9OF-WJ-txh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M74-fW-BrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="368"/>
+        </scene>
+    </scenes>
+</document>
