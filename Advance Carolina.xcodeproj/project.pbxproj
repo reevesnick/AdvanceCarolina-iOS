@@ -283,7 +283,6 @@
 		D10C06B11C8E2F92005B6B23 /* Advance Carolina */ = {
 			isa = PBXGroup;
 			children = (
-				D19399A61CB0631B00BC8E5D /* Polling Schedule */,
 				D19399A51CB062E200BC8E5D /* Candidate */,
 				D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */,
 				64CE276B1CAE08E1008EE0E8 /* Extensions */,
@@ -349,6 +348,7 @@
 		D173EFAD1C93BADE00593DFD /* Polling */ = {
 			isa = PBXGroup;
 			children = (
+				D19399A61CB0631B00BC8E5D /* Polling Schedule */,
 				D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */,
 				6467A3C51C986FF2002A1557 /* PollCell.swift */,
 			);
