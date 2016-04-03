@@ -17,16 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdC-MY-BPb">
-                                <rect key="frame" x="89" y="484" width="143" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Register to Vote">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="registerToVote:" destination="PKR-AO-pHX" eventType="touchUpInside" id="nsb-SR-qSl"/>
-                                </connections>
-                            </button>
                             <searchBar contentMode="redraw" misplaced="YES" placeholder="Enter a location" translatesAutoresizingMaskIntoConstraints="NO" id="eJw-bW-LDe">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -129,6 +119,27 @@
                                     <outlet property="emptyDataSetSource" destination="PKR-AO-pHX" id="kLt-af-dOc"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZl-UU-amJ">
+                                <rect key="frame" x="163" y="484" width="157" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.16493257680000001" blue="0.15507676649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Register to AC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerToAdvancedCarolina:" destination="PKR-AO-pHX" eventType="touchUpInside" id="MlY-iI-10f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdC-MY-BPb">
+                                <rect key="frame" x="20" y="484" width="143" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Register to Vote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerToVote:" destination="PKR-AO-pHX" eventType="touchUpInside" id="nsb-SR-qSl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -139,6 +150,7 @@
                             <constraint firstItem="hsK-aM-2iQ" firstAttribute="centerX" secondItem="ZdC-MY-BPb" secondAttribute="centerX" id="LOT-6f-UcS"/>
                             <constraint firstItem="eJw-bW-LDe" firstAttribute="trailing" secondItem="hsK-aM-2iQ" secondAttribute="trailing" id="Yef-Bj-DHV"/>
                             <constraint firstAttribute="trailing" secondItem="eJw-bW-LDe" secondAttribute="trailing" id="YpM-ri-9c3"/>
+                            <constraint firstItem="HZl-UU-amJ" firstAttribute="centerX" secondItem="k1H-rW-Tig" secondAttribute="centerX" id="ZmS-Jo-OCW"/>
                             <constraint firstItem="ZdC-MY-BPb" firstAttribute="leading" secondItem="k1H-rW-Tig" secondAttribute="leadingMargin" constant="73" id="fBw-Ry-VU5"/>
                             <constraint firstItem="ZdC-MY-BPb" firstAttribute="top" secondItem="hsK-aM-2iQ" secondAttribute="bottom" constant="8" symbolic="YES" id="i0T-6s-VQb"/>
                             <constraint firstItem="eJw-bW-LDe" firstAttribute="leading" secondItem="hsK-aM-2iQ" secondAttribute="leading" id="okQ-rY-Qu1"/>

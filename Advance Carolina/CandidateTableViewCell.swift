@@ -24,7 +24,13 @@ class CandidateTableViewCell: PFTableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        candidiatePicture.layer.cornerRadius = candidiatePicture.frame.size.width/2
+        candidiatePicture.clipsToBounds = true;
+        
     }
+    
+
     
    /// override func view
     

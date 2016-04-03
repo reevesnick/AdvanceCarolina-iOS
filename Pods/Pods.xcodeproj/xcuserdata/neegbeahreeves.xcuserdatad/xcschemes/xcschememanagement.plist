@@ -44,6 +44,16 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>KVNProgress.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
 		<key>MWFeedParser.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -122,12 +132,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0186EE20AB4D310515B8041966DB7AEB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>03857CB7ED3EB7019D4BEDE0F18E2FB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>059B6BF1A5D5A2CE95600A4653F7577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09E8272858364E02204C6162D237A11D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,7 +172,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>42221BDAFF2E9A7C1F35A0DE06E494E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>47F44A33BD3BBA735E59147217641B65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DD9475D15AEE6C1684A6511D9BCE748</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>777CC9EB6D0C9EF3AE186B3FC8B50B95</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -163,6 +198,11 @@
 			<true/>
 		</dict>
 		<key>8150D31656E944FEE4DAC7062A8F5810</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A839DB3E7E65AC846858AA8E190CB7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -193,6 +233,11 @@
 			<true/>
 		</dict>
 		<key>A0933FC1307AD48F89C9FB7CEA3C29C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3199FDC286637EA87AB47298F3E6C0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -233,6 +278,11 @@
 			<true/>
 		</dict>
 		<key>E5678FC69B99077E1972D149186B2285</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
 		<dict>
 			<key>primary</key>
 			<true/>

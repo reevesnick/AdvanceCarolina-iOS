@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import MBProgressHUD
 
 class RegisterViewController: UIViewController, UITextFieldDelegate{
     
@@ -43,7 +44,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func cancelButton(sender: AnyObject){
-        
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
+        self.presentViewController(viewController, animated: false, completion: nil)
     }
     
     @IBAction func submitData(sender: AnyObject){
@@ -71,6 +73,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         data.saveInBackgroundWithBlock({
             (success: Bool, error: NSError?) -> Void in
             
+            let loadingBar = MBProgressHUD.showHUDAddedTo(self.view, animated:true)
+            
+            
             
             /*iOS 8 has a new UIAlertController Protcol, if the user is in iOS 8 then it uses UIAlertController. 
              Otherwise, it will fallback to UIAlertView*/
@@ -79,16 +84,18 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
                     let alert = UIAlertController(title: "Success!", message: "Thank you for proividing you voter infomation to Advance Carolina.", preferredStyle: UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)
+                    loadingBar.hide(true)
                 } else {
                     // Fallback on earlier versions
                     let button2Alert: UIAlertView = UIAlertView(title: "Success!", message: "Thank you for proividing you voter infomation to Advance Carolina.",
                         delegate: nil, cancelButtonTitle: "Ok")
                     button2Alert.show()
+                    loadingBar.hide(true)
+
                 }
         
-                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
-                // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
-                self.presentViewController(viewController, animated: false, completion: nil)
+              /*  let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
+                self.presentViewController(viewController, animated: false, completion: nil)*/
                 
                 print("Data Uploaded");
             }
@@ -97,18 +104,23 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
                     let alert = UIAlertController(title: "Error", message: "Your Data cannot be uploaded. Please check your infomation and try again", preferredStyle: UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)
+                    loadingBar.hide(true)
+
                 } else {
                     // Fallback on earlier versions
                     let button2Alert: UIAlertView = UIAlertView(title: "Error", message: "Your Data cannot be uploaded. Please check your infomation and try again",
                         delegate: nil, cancelButtonTitle: "Ok")
                     button2Alert.show()
+                    loadingBar.hide(true)
+
                 }
 
                 print("Your Data cannot be uploaded. Reason: ",error);
             }
+            
+            
         
     })
-    
     
  
     }

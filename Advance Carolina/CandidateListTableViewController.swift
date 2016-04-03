@@ -18,8 +18,9 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
         
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+        self.title = "Candidates"; 
 
 
         // Uncomment the following line to preserve selection between presentations
@@ -33,12 +34,12 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
         
         self.tableView.tableFooterView = UIView()
     }
-    
+    /*
     deinit{
         self.tableView.emptyDataSetDelegate = nil;
         self.tableView.emptyDataSetSource = nil;
     }
-    
+  */  
     
     override func queryForTable() -> PFQuery {
         let query:PFQuery = PFQuery(className:"CandidaeList")

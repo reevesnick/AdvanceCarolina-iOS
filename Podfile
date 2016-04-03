@@ -19,6 +19,7 @@ pod 'DZNEmptyDataSet'
 pod 'Batch', '~> 1.5'
 pod 'Parse'
 pod 'ParseUI'
+pod 'MBProgressHUD','~>0.9.2'
 
 
 end

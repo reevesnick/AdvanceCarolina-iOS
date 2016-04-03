@@ -10,6 +10,7 @@ import UIKit
 import DZNEmptyDataSet
 import MWFeedParser
 import KINWebBrowser
+import MBProgressHUD
 
 extension String {
     
@@ -37,9 +38,14 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
     
     func request(){
         let url = NSURL(string: "http://feeds.feedburner.com/realclearpolitics/qlMj");
+        let loadingBar = MBProgressHUD.showHUDAddedTo(self.view, animated:true)
+
         let feedParser = MWFeedParser(feedURL: url)
         feedParser.delegate = self
         feedParser.parse()
+        loadingBar.hide(true)
+
+        
 
     }
     
@@ -78,15 +84,15 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate, KINW
         
         self.tableView.tableFooterView = UIView()
     }
-    
+ /*
     deinit{
         self.tableView.emptyDataSetSource = nil;
         self.tableView.emptyDataSetDelegate = nil;
     }
-    
+  */  
     override func viewDidAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         request()
     }
 

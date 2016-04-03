@@ -24,6 +24,7 @@ PODS:
   - KINWebBrowser (1.3.2):
     - ARChromeActivity (= 1.0.5)
     - TUSafariActivity (= 1.0.4)
+  - MBProgressHUD (0.9.2)
   - Moya (6.3.1):
     - Moya/Core (= 6.3.1)
   - Moya-Argo/Core (1.0.0):
@@ -64,6 +65,7 @@ DEPENDENCIES:
   - DZNEmptyDataSet
   - FontAwesomeKit
   - KINWebBrowser
+  - MBProgressHUD (~> 0.9.2)
   - Moya-Argo/RxSwift
   - Moya/RxSwift
   - MWFeedParser
@@ -82,6 +84,7 @@ SPEC CHECKSUMS:
   DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
   FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
   KINWebBrowser: 27aa857a2aa39063ed102cca781d130b679d205f
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   Moya: 852e26948a3771355ddf0f0109ac779b6fc30f28
   Moya-Argo: e204aff3526524596f7ee5de78d338320973b141
   MWFeedParser: 2cf646014c1baf6ad1b08c480b40a08180079247
@@ -92,6 +95,6 @@ SPEC CHECKSUMS:
   RxSwift: 829b2843e9eddc77a02cb3f5117f0d55f8f646f1
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
 
-PODFILE CHECKSUM: 9094bcec2b93cc7c45f21b7ccea52e83458b8994
+PODFILE CHECKSUM: a02c4b82980dc931b2d544e172ea2363aa18ea7b
 
 COCOAPODS: 1.0.0.beta.3
