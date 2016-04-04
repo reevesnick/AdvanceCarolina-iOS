@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import Batch
 import Parse
+import LaunchKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Initialize LaunchKit
+        LaunchKit.launchWithToken("PbQhmGwg52ntajnadBt2CrNrZa6tZkMIMo6DSuH57qi-")
+        
+        let lk = LaunchKit.sharedInstance()
+        lk.presentOnboardingUIOnWindow(self.window!) { _ in
+            print("Showed onboarding!")
+        }
 
         //Custon UI
 

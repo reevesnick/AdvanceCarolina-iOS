@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3P4-eC-9hA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Candidate List Table View Controller-->
@@ -13,11 +14,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="114" id="hxP-jd-j69" customClass="CandidateTableViewCell" customModule="Advance_Carolina" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="114" id="hxP-jd-j69" customClass="CandidateTableViewCell" customModule="Advance_Carolina" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hxP-jd-j69" id="DMR-O9-uRM">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="113.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="113.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Kq-cW-WTz" customClass="PFImageView">
@@ -41,6 +42,7 @@
                                     <outlet property="candidateNameLabel" destination="xED-al-Aaj" id="9xf-f9-O5T"/>
                                     <outlet property="candidatePartyLabel" destination="ecj-iD-Mbk" id="9eV-d7-Tez"/>
                                     <outlet property="candidiatePicture" destination="2Kq-cW-WTz" id="li3-1x-6CC"/>
+                                    <segue destination="ZUj-Si-dyc" kind="push" identifier="showDetail" id="gxV-rh-DdP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -54,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="442" y="1007"/>
         </scene>
-        <!--Candidates-->
+        <!--Candidate Detail-->
         <scene sceneID="9Jt-DE-YW4">
             <objects>
-                <viewController id="ZUj-Si-dyc" sceneMemberID="viewController">
+                <viewController id="ZUj-Si-dyc" customClass="CandidateDetailViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Bf-pG-AGj"/>
                         <viewControllerLayoutGuide type="bottom" id="ahU-YP-MkY"/>
@@ -66,26 +68,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="135" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Eg-PP-A4c">
-                                <rect key="frame" x="0.0" y="72" width="320" height="449"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KnR-AK-rED" customClass="PFImageView">
+                                <rect key="frame" x="10" y="76" width="89" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Candidates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gK-ac-jhO">
+                                <rect key="frame" x="107" y="82" width="207" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Party" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4s-wV-KMX">
+                                <rect key="frame" x="107" y="101" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Write your notes here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZGC-YF-NTf">
+                                <rect key="frame" x="10" y="169" width="304" height="101"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="135" id="0Fd-xo-nUB">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="135"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Fd-xo-nUB" id="B5j-XW-qER">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgX-e5-C2y">
+                                <rect key="frame" x="114" y="300" width="92" height="30"/>
+                                <state key="normal" title="Save Notes"/>
+                                <connections>
+                                    <action selector="saveButtonClick:" destination="ZUj-Si-dyc" eventType="touchUpInside" id="7PV-Dy-dYp"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Website" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCi-cW-e39">
+                                <rect key="frame" x="101" y="119" width="206" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="tgX-e5-C2y" secondAttribute="trailing" constant="117" id="4sq-gG-6mh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZGC-YF-NTf" secondAttribute="trailing" constant="20" id="5kP-eA-X3p"/>
+                            <constraint firstItem="ZGC-YF-NTf" firstAttribute="leading" secondItem="hgl-gK-YA1" secondAttribute="leadingMargin" constant="20" id="YJW-CF-jPM"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Candidates" id="srN-cs-G3c"/>
+                    <navigationItem key="navigationItem" title="Candidate Detail" id="srN-cs-G3c"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="candidateNameString" destination="3gK-ac-jhO" id="o4h-xl-Tue"/>
+                        <outlet property="candidateNotes" destination="ZGC-YF-NTf" id="rdD-AC-TCb"/>
+                        <outlet property="candidatePartyString" destination="C4s-wV-KMX" id="kYP-74-Fae"/>
+                        <outlet property="candidatePictureFile" destination="KnR-AK-rED" id="Esq-lm-kG0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bxd-EH-esW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,19 +11,33 @@ import Parse
 import ParseUI
 
 
-class CandidateDetailViewController: UIViewController {
+class CandidateDetailViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var candidateNameString: UILabel!
     @IBOutlet weak var candidatePartyString: UILabel!
     @IBOutlet  var candidatePictureFile: PFImageView!
     
-    @IBOutlet weak var candidateNotes: UITextField!
+    @IBOutlet weak var candidateNotes: UITextView!
+    
+
     
   
     var nameString: String!
     var partyString: String!
 
     var pictureFile: PFFile!
+    
+    @IBAction func saveButtonClick(sender: AnyObject) {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        defaults.setObject(candidateNotes.text, forKey: "notes")
+        defaults.synchronize()
+        
+        print("notes=\(candidateNotes.text)")
+
+    }
+    
 
    
     
@@ -35,6 +49,15 @@ class CandidateDetailViewController: UIViewController {
         self.candidateNameString.text = nameString;
         self.candidatePartyString.text = partyString;
         self.candidatePictureFile.file = pictureFile
+        
+        
+        
+        
+        
+
+        
+        candidatePictureFile.layer.cornerRadius = candidatePictureFile.frame.size.width/2
+        candidatePictureFile.clipsToBounds = true;
     }
 
     override func didReceiveMemoryWarning() {

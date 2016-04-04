@@ -49,6 +49,16 @@
 			<key>orderHint</key>
 			<integer>25</integer>
 		</dict>
+		<key>LaunchKit-LaunchKitResources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
+		<key>LaunchKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -182,6 +192,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6347BABC009241CF3919941499776C40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>66B430207B132208DA143D41AB4BF82C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C7E98C6AECE3261714C30EE295E71E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6DD9475D15AEE6C1684A6511D9BCE748</key>
 		<dict>
 			<key>primary</key>
@@ -283,6 +308,11 @@
 			<true/>
 		</dict>
 		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E664B39503C783BB687991D435BD4042</key>
 		<dict>
 			<key>primary</key>
 			<true/>
