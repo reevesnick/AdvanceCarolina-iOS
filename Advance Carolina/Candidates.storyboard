@@ -18,7 +18,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hxP-jd-j69" id="DMR-O9-uRM">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="113.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="114"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Kq-cW-WTz" customClass="PFImageView">
@@ -96,12 +96,12 @@
                                     <action selector="saveButtonClick:" destination="ZUj-Si-dyc" eventType="touchUpInside" id="7PV-Dy-dYp"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Website" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCi-cW-e39">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Website" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pCi-cW-e39">
                                 <rect key="frame" x="101" y="119" width="206" height="25"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -119,6 +119,7 @@
                         <outlet property="candidateNotes" destination="ZGC-YF-NTf" id="rdD-AC-TCb"/>
                         <outlet property="candidatePartyString" destination="C4s-wV-KMX" id="kYP-74-Fae"/>
                         <outlet property="candidatePictureFile" destination="KnR-AK-rED" id="Esq-lm-kG0"/>
+                        <outlet property="candidateWebsite" destination="pCi-cW-e39" id="Ssw-ve-aKh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bxd-EH-esW" userLabel="First Responder" sceneMemberID="firstResponder"/>

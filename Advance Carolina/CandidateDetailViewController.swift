@@ -16,6 +16,7 @@ class CandidateDetailViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var candidateNameString: UILabel!
     @IBOutlet weak var candidatePartyString: UILabel!
     @IBOutlet  var candidatePictureFile: PFImageView!
+    @IBOutlet weak var candidateWebsite: UITextView!
     
     @IBOutlet weak var candidateNotes: UITextView!
     
@@ -24,6 +25,7 @@ class CandidateDetailViewController: UIViewController, UITextViewDelegate {
   
     var nameString: String!
     var partyString: String!
+    var websiteString:String!
 
     var pictureFile: PFFile!
     
@@ -49,6 +51,7 @@ class CandidateDetailViewController: UIViewController, UITextViewDelegate {
         self.candidateNameString.text = nameString;
         self.candidatePartyString.text = partyString;
         self.candidatePictureFile.file = pictureFile
+        self.candidateWebsite.text = websiteString
         
         
         

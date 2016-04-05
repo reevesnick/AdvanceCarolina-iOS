@@ -185,6 +185,7 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
             let object = self.objectAtIndexPath(indexPath)
             detailVC.nameString = object?.objectForKey("candidate_name") as! String
             detailVC.partyString = object?.objectForKey("candidate_party") as! String
+            detailVC.websiteString = object?.objectForKey("website") as! String
 
             detailVC.pictureFile = object?.objectForKey("candidate_picture") as! PFFile
             self.tableView.deselectRowAtIndexPath(indexPath!, animated: true)
