@@ -39,7 +39,17 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
         self.tableView.emptyDataSetDelegate = nil;
         self.tableView.emptyDataSetSource = nil;
     }
-  */  
+  */
+    
+    
+    
+    @IBAction func notesButton(sender: AnyObject){
+        let viewController:UIViewController = UIStoryboard(name: "CandidatesNotes", bundle: nil).instantiateInitialViewController()! 
+        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+        
+        self.presentViewController(viewController, animated: false, completion: nil)
+        
+    }
     
     override func queryForTable() -> PFQuery {
         let query:PFQuery = PFQuery(className:"CandidaeList")
@@ -186,6 +196,7 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
             detailVC.nameString = object?.objectForKey("candidate_name") as! String
             detailVC.partyString = object?.objectForKey("candidate_party") as! String
             detailVC.websiteString = object?.objectForKey("website") as! String
+            detailVC.bioString = object?.objectForKey("candidate_bio") as! String
 
             detailVC.pictureFile = object?.objectForKey("candidate_picture") as! PFFile
             self.tableView.deselectRowAtIndexPath(indexPath!, animated: true)

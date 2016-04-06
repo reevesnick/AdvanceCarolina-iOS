@@ -18,7 +18,7 @@ class CandidateDetailViewController: UIViewController, UITextViewDelegate {
     @IBOutlet  var candidatePictureFile: PFImageView!
     @IBOutlet weak var candidateWebsite: UITextView!
     
-    @IBOutlet weak var candidateNotes: UITextView!
+    @IBOutlet weak var candidateBio: UITextView!
     
 
     
@@ -26,19 +26,11 @@ class CandidateDetailViewController: UIViewController, UITextViewDelegate {
     var nameString: String!
     var partyString: String!
     var websiteString:String!
+    var bioString: String!
 
     var pictureFile: PFFile!
     
-    @IBAction func saveButtonClick(sender: AnyObject) {
-        
-        let defaults = NSUserDefaults.standardUserDefaults()
-        
-        defaults.setObject(candidateNotes.text, forKey: "notes")
-        defaults.synchronize()
-        
-        print("notes=\(candidateNotes.text)")
 
-    }
     
 
    
@@ -52,11 +44,7 @@ class CandidateDetailViewController: UIViewController, UITextViewDelegate {
         self.candidatePartyString.text = partyString;
         self.candidatePictureFile.file = pictureFile
         self.candidateWebsite.text = websiteString
-        
-        
-        
-        
-        
+        self.candidateBio.text = bioString
 
         
         candidatePictureFile.layer.cornerRadius = candidatePictureFile.frame.size.width/2

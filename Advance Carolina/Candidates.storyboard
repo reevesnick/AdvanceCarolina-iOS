@@ -2,9 +2,18 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3P4-eC-9hA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--CandidatesNotes-->
+        <scene sceneID="YLg-nM-siL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CandidatesNotes" id="FW3-fp-AFr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4Ol-lW-fhx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vze-WZ-W6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.5" y="533"/>
+        </scene>
         <!--Candidate List Table View Controller-->
         <scene sceneID="WlB-Pf-j9E">
             <objects>
@@ -18,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hxP-jd-j69" id="DMR-O9-uRM">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="114"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="113"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Kq-cW-WTz" customClass="PFImageView">
@@ -51,10 +60,17 @@
                             <outlet property="delegate" destination="3P4-eC-9hA" id="ULs-Nc-ftQ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="KKs-4Q-qXi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="9mf-tI-Ptk">
+                            <connections>
+                                <action selector="notesButton:" destination="3P4-eC-9hA" id="lQY-de-tCx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9JT-Lh-HhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442" y="1007"/>
+            <point key="canvasLocation" x="974" y="1007"/>
         </scene>
         <!--Candidate Detail-->
         <scene sceneID="9Jt-DE-YW4">
@@ -83,19 +99,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Write your notes here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZGC-YF-NTf">
-                                <rect key="frame" x="10" y="169" width="304" height="101"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Write your notes here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZGC-YF-NTf">
+                                <rect key="frame" x="0.0" y="169" width="320" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgX-e5-C2y">
-                                <rect key="frame" x="114" y="300" width="92" height="30"/>
-                                <state key="normal" title="Save Notes"/>
-                                <connections>
-                                    <action selector="saveButtonClick:" destination="ZUj-Si-dyc" eventType="touchUpInside" id="7PV-Dy-dYp"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Website" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pCi-cW-e39">
                                 <rect key="frame" x="101" y="119" width="206" height="25"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,18 +115,13 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="tgX-e5-C2y" secondAttribute="trailing" constant="117" id="4sq-gG-6mh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZGC-YF-NTf" secondAttribute="trailing" constant="20" id="5kP-eA-X3p"/>
-                            <constraint firstItem="ZGC-YF-NTf" firstAttribute="leading" secondItem="hgl-gK-YA1" secondAttribute="leadingMargin" constant="20" id="YJW-CF-jPM"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Candidate Detail" id="srN-cs-G3c"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="candidateBio" destination="ZGC-YF-NTf" id="QbE-L2-INV"/>
                         <outlet property="candidateNameString" destination="3gK-ac-jhO" id="o4h-xl-Tue"/>
-                        <outlet property="candidateNotes" destination="ZGC-YF-NTf" id="rdD-AC-TCb"/>
                         <outlet property="candidatePartyString" destination="C4s-wV-KMX" id="kYP-74-Fae"/>
                         <outlet property="candidatePictureFile" destination="KnR-AK-rED" id="Esq-lm-kG0"/>
                         <outlet property="candidateWebsite" destination="pCi-cW-e39" id="Ssw-ve-aKh"/>
@@ -124,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bxd-EH-esW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="993"/>
+            <point key="canvasLocation" x="1381" y="1007"/>
         </scene>
     </scenes>
 </document>

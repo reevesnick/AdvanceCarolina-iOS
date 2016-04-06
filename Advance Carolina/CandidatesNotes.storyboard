@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZEa-SA-lKj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Notes-->
+        <scene sceneID="sNW-TY-qoR">
+            <objects>
+                <viewController id="Tzf-2K-wKr" customClass="CandidatesNotes" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5wS-8x-XlW"/>
+                        <viewControllerLayoutGuide type="bottom" id="d78-WX-OcQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bz1-lb-lps">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="je9-l5-CDS">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notes" id="4KF-HB-Mfk">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="bQM-0p-vF7">
+                            <connections>
+                                <action selector="doneButtonClicked:" destination="Tzf-2K-wKr" id="hZa-o4-6t1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="EpD-yd-Pgm">
+                            <connections>
+                                <action selector="saveButtonClick:" destination="Tzf-2K-wKr" id="iVo-ak-xHu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="candidateNotes" destination="je9-l5-CDS" id="JBx-jb-zH1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fS-cg-ZSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7SR-V5-3gU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZEa-SA-lKj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mJa-N1-fEA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tzf-2K-wKr" kind="relationship" relationship="rootViewController" id="fQE-Rf-eIa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVM-UI-1uU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="433"/>
+        </scene>
+    </scenes>
+</document>
