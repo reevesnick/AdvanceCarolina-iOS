@@ -56,7 +56,7 @@ class PollingLocationViewController: UIViewController {
         pollViewModel = PollingLocationViewModel()
         
         
-        pollViewModel?.getLocations("9 white oak circle, Salisbury, NC 28146")
+        pollViewModel?.getLocations("704 E Lindsay St, Greensboro")
             .subscribe {
                 event -> Void in
                 switch event {

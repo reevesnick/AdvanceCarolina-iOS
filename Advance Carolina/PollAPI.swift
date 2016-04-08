@@ -60,7 +60,8 @@ extension PollAPI: TargetType {
         case .PollLocations(let address):
             return [
             "address": address,
-                "key": "AIzaSyBv_gphp6mNE2JbSmiPlu-QUNJyuviKMQg" // Google key
+                "key": "AIzaSyBv_gphp6mNE2JbSmiPlu-QUNJyuviKMQg", // Google key
+                "electionId":2000
             ]
         }
     }
