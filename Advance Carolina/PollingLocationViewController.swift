@@ -13,9 +13,10 @@ import KINWebBrowser
 import DZNEmptyDataSet
 import FontAwesomeKit
 
-class PollingLocationViewController: UIViewController {
+class PollingLocationViewController: UIViewController, UISearchBarDelegate {
     
     // MARK: Properties
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var pollTableView: UITableView!
     let disposeBag = DisposeBag()
     var pollViewModel: PollingLocationViewModel?
@@ -34,7 +35,26 @@ class PollingLocationViewController: UIViewController {
         
         let webBroswer = KINWebBrowserViewController()
         self.navigationController?.pushViewController(webBroswer, animated: true)
-        webBroswer.loadURLString("http://www.google.com")  // USA Voting How to Page
+        webBroswer.loadURLString("https://www.usa.gov/register-to-vote")  // USA Voting How to Page
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        if let text = searchBar.text {
+            if !text.isEmpty {
+                pollViewModel?.getLocations(text)
+                    .subscribe {
+                        event -> Void in
+                        switch event {
+                        case .Completed:
+                            print("Complete")
+                        case .Error(_):
+                            print("Error")
+                        case .Next(let loc):
+                            self.locations = loc
+                        }
+                    }.addDisposableTo(disposeBag)
+            }
+        }
     }
     
     @IBAction func registerToAdvancedCarolina(sender: UIButton){
@@ -53,9 +73,12 @@ class PollingLocationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchBar.delegate = self
+
+        
         pollViewModel = PollingLocationViewModel()
         
-        
+    /*
         pollViewModel?.getLocations("704 E Lindsay St, Greensboro")
             .subscribe {
                 event -> Void in
@@ -68,7 +91,7 @@ class PollingLocationViewController: UIViewController {
                     self.locations = loc
                 }
         }.addDisposableTo(disposeBag)
-        
+       */
         pollTableView.emptyDataSetDelegate = self
         pollTableView.emptyDataSetSource = self
         pollTableView.tableFooterView = UIView()

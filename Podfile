@@ -12,6 +12,8 @@ target 'Advance Carolina' do
     pod 'Moya-Argo/RxSwift'
     pod 'Curry'
     pod 'FontAwesomeKit'
+    pod 'ChameleonFramework/Swift'
+
 
 pod 'KINWebBrowser'
 pod 'MWFeedParser'
@@ -21,6 +23,7 @@ pod 'Parse'
 pod 'ParseUI'
 pod 'MBProgressHUD','~>0.9.2'
 pod 'LaunchKit'
+
 
 
 end

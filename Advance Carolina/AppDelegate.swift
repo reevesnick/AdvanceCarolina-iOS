@@ -11,6 +11,8 @@ import CoreData
 import Batch
 import Parse
 import LaunchKit
+import ChameleonFramework
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         //Custon UI
+        Chameleon.setGlobalThemeUsingPrimaryColor(UIColor.flatSkyBlueColor(), withContentStyle: .Contrast)
 
         
         

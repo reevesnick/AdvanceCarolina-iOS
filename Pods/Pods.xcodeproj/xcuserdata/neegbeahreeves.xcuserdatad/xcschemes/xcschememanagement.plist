@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
 		<key>Curry.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -192,12 +197,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5172ACAB7FEA22813859DC97CA0AA16F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6347BABC009241CF3919941499776C40</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>66B430207B132208DA143D41AB4BF82C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6B6564FF7530EAD5026CEB038722107D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -248,6 +263,11 @@
 			<true/>
 		</dict>
 		<key>9A28D7DA654B0D822D70CD09E4D4BC33</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E7787271D4B08140A42261B8E4C6A9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

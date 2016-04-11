@@ -4,6 +4,9 @@ PODS:
   - Argo (2.3.0)
   - Batch (1.5.1)
   - Bolts/Tasks (1.7.0)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
   - Curry (2.0.0)
   - DZNEmptyDataSet (1.7.3)
   - FontAwesomeKit (2.2.0):
@@ -64,6 +67,7 @@ PODS:
 
 DEPENDENCIES:
   - Batch (~> 1.5)
+  - ChameleonFramework/Swift
   - Curry
   - DZNEmptyDataSet
   - FontAwesomeKit
@@ -84,6 +88,7 @@ SPEC CHECKSUMS:
   Argo: 3dbecf4204b1a3cdd1df88ebd5e23d01b652d34b
   Batch: 968cfffd316d2f0e8cd652c97608c6c19e2ec099
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Curry: 5c5c5887d80fa22ca2133c7ea4d48c4d02283c0a
   DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
   FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
@@ -100,6 +105,6 @@ SPEC CHECKSUMS:
   RxSwift: 829b2843e9eddc77a02cb3f5117f0d55f8f646f1
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
 
-PODFILE CHECKSUM: 03d2fbbc3bee56aebee1e01c16ab7db9904478f9
+PODFILE CHECKSUM: fb869f8cd723318ef87a9dcaaf6e9dbccb790c84
 
 COCOAPODS: 1.0.0.beta.3
