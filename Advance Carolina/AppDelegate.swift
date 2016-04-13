@@ -30,9 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize LaunchKit
         LaunchKit.launchWithToken("PbQhmGwg52ntajnadBt2CrNrZa6tZkMIMo6DSuH57qi-")
         
-        let lk = LaunchKit.sharedInstance()
-        lk.presentOnboardingUIOnWindow(self.window!) { _ in
-            print("Showed onboarding!")
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let hasShownOnboarding = defaults.boolForKey("shownOnboardingBefore")
+        if !hasShownOnboarding {
+            let lk = LaunchKit.sharedInstance()
+            lk.presentOnboardingUIOnWindow(self.window!) { _ in
+                print("Showed onboarding!")
+                defaults.setBool(true, forKey: "shownOnboardingBefore")
+            }
         }
 
         //Custon UI
@@ -47,7 +52,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         Parse.initializeWithConfiguration(configuration)
 
-        
+        //Show Registration
+        let registrationDefaults = NSUserDefaults.standardUserDefaults()
+        let registrationShowFirstTime = registrationDefaults.boolForKey("showRegistrationFirstTime")
+        if !registrationShowFirstTime{
+           // var storyboard = UIStoryboard(name: "RegisterVoterInfo", bundle: nil)
+            //var initialViewController = storyboard.instantiateViewControllerWithIdentifier("RegisterVoterInfo") as! UIViewController
+            
+            //self.window?.rootViewController = initialViewController
+            //self.window?.makeKeyAndVisible()
+
+        }
         
         //Push Notifications - Batch
         //Batch.startWithAPIKey("DEV56F29C2F5520F6FE495D960485E"); //Developer Key
