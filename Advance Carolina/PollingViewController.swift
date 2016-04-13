@@ -47,7 +47,9 @@ class PollingViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+       // self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+       // self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+
 
     }
 

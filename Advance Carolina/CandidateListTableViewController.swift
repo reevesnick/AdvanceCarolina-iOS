@@ -19,8 +19,10 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
         super.viewDidLoad()
         
         
-        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
-        self.title = "Candidates"; 
+        //self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+       // self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+
+       // self.title = "Candidates";
 
 
         // Uncomment the following line to preserve selection between presentations

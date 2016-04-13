@@ -125,19 +125,13 @@
                                 <state key="normal" title="Register to Vote">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="registerToVote:" destination="PKR-AO-pHX" eventType="touchUpInside" id="nsb-SR-qSl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZl-UU-amJ">
-                                <rect key="frame" x="20" y="436" width="143" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.16493257680000001" blue="0.15507676649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Register to AC">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="registerToAdvancedCarolina:" destination="PKR-AO-pHX" eventType="touchUpInside" id="MlY-iI-10f"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -57,13 +57,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         }
     }
     
-    @IBAction func registerToAdvancedCarolina(sender: UIButton){
-        
-        let viewController:UIViewController = UIStoryboard(name: "RegisterVoterInfo", bundle: nil).instantiateInitialViewController()! as UIViewController
-        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
-        
-        self.presentViewController(viewController, animated: false, completion: nil)
-    }
+
  /*
     deinit {
         self.pollTableView.emptyDataSetSource = nil

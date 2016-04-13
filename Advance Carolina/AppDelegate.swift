@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+
+        
+
         
         // Initialize LaunchKit
         LaunchKit.launchWithToken("PbQhmGwg52ntajnadBt2CrNrZa6tZkMIMo6DSuH57qi-")
@@ -32,8 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         //Custon UI
-        Chameleon.setGlobalThemeUsingPrimaryColor(UIColor.flatSkyBlueColor(), withContentStyle: .Contrast)
-
+        Chameleon.setGlobalThemeUsingPrimaryColor(UIColor.flatSkyBlueColor(), withContentStyle: UIContentStyle.Contrast)
         
         
         //Parse Server API Key

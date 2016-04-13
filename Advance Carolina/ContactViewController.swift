@@ -17,11 +17,22 @@ class ContactViewController: UIViewController,MFMailComposeViewControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+      //  self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+      //  self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+
 
 
         // Do any additional setup after loading the view.
     }
+
+    @IBAction func registerToAdvancedCarolina(sender: UIButton){
+        
+        let viewController:UIViewController = UIStoryboard(name: "RegisterVoterInfo", bundle: nil).instantiateInitialViewController()! as UIViewController
+        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+        
+        self.presentViewController(viewController, animated: false, completion: nil)
+    }
+    
     
     @IBAction func sendEmailButtonTapped(sender: AnyObject){
         let mailComposeViewControlller = configuredMailComposeViewController();
