@@ -19,4 +19,5 @@ class PollCell: UITableViewCell {
     @IBOutlet weak var zip: UILabel!
     @IBOutlet weak var pollHours: UILabel!
     @IBOutlet weak var name: UILabel!
+    
 }

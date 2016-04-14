@@ -49,6 +49,7 @@
 		D19399B61CB0985500BC8E5D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19399B51CB0985500BC8E5D /* RegisterViewController.swift */; };
 		D19399B81CB0985C00BC8E5D /* RegisterVoterInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19399B71CB0985C00BC8E5D /* RegisterVoterInfo.storyboard */; };
 		D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC03481C8F872400D5563D /* FeedTableViewController.swift */; };
+		D1DCE1CF1CBEFAC0006EBCD7 /* PollingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DCE1CE1CBEFAC0006EBCD7 /* PollingDetailViewController.swift */; };
 		D1DEC2D81CB4C14200A48DBB /* CandidatesNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DEC2D71CB4C14200A48DBB /* CandidatesNotes.swift */; };
 		D1DEC2DA1CB4CBB600A48DBB /* CandidatesNotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DEC2D91CB4CBB600A48DBB /* CandidatesNotes.storyboard */; };
 /* End PBXBuildFile section */
@@ -126,6 +127,7 @@
 		D19399B71CB0985C00BC8E5D /* RegisterVoterInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterVoterInfo.storyboard; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		D1DC034A1C8F878A00D5563D /* Advance Carolina-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Advance Carolina-Bridging-Header.h"; sourceTree = "<group>"; };
+		D1DCE1CE1CBEFAC0006EBCD7 /* PollingDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingDetailViewController.swift; sourceTree = "<group>"; };
 		D1DEC2D71CB4C14200A48DBB /* CandidatesNotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatesNotes.swift; sourceTree = "<group>"; };
 		D1DEC2D91CB4CBB600A48DBB /* CandidatesNotes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CandidatesNotes.storyboard; sourceTree = "<group>"; };
 		D8D92BB2CF6AB8422DF10046 /* Pods_Advance_Carolina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advance_Carolina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -361,6 +363,7 @@
 			children = (
 				D19399A61CB0631B00BC8E5D /* Polling Schedule */,
 				D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */,
+				D1DCE1CE1CBEFAC0006EBCD7 /* PollingDetailViewController.swift */,
 				6467A3C51C986FF2002A1557 /* PollCell.swift */,
 			);
 			name = Polling;
@@ -797,6 +800,7 @@
 			files = (
 				64785D341C98E254009EB8B0 /* PollModelResponseHelper.swift in Sources */,
 				D19399AC1CB0634800BC8E5D /* CandidateTableViewCell.swift in Sources */,
+				D1DCE1CF1CBEFAC0006EBCD7 /* PollingDetailViewController.swift in Sources */,
 				64CE276A1CAE08DC008EE0E8 /* UIViewExtensions.swift in Sources */,
 				D19399B21CB0636900BC8E5D /* ScheduleListViewController.m in Sources */,
 				D128D80E1C8F6143002DE1CE /* SampleBallotViewController.swift in Sources */,

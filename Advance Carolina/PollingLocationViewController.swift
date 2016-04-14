@@ -12,6 +12,7 @@ import RxCocoa
 import KINWebBrowser
 import DZNEmptyDataSet
 import FontAwesomeKit
+import MBProgressHUD
 
 class PollingLocationViewController: UIViewController, UISearchBarDelegate {
     
@@ -30,6 +31,17 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
             }
         }
     }
+  
+    @IBAction func getDirections(sender: UIButton){
+        
+        let webBroswer = KINWebBrowserViewController()
+       //let stringAddress = locations.
+        self.navigationController?.pushViewController(webBroswer, animated: true)
+        webBroswer.loadURLString("maps://maps.apple.com/?q=")  // USA Voting How to Page
+ 
+
+    
+    }
     
     @IBAction func registerToVote(sender: UIButton){
         
@@ -40,6 +52,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         if let text = searchBar.text {
+            let loadingBar = MBProgressHUD.showHUDAddedTo(self.view, animated:true)
             if !text.isEmpty {
                 pollViewModel?.getLocations(text)
                     .subscribe {
@@ -54,6 +67,8 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
                         }
                     }.addDisposableTo(disposeBag)
             }
+            loadingBar.hide(true)
+
         }
     }
     
@@ -102,6 +117,9 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PollCell
         
+        cell.accessoryType = .DetailDisclosureButton
+
+        
         if let locationName = locations?[indexPath.row].locationName {
             cell.locationName.text = locationName
         }
@@ -143,24 +161,39 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         return cell
     }
     
+    func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+        let webBroswer = KINWebBrowserViewController()
+        let stringAddress = locations?[indexPath.row].line1
+        self.navigationController?.pushViewController(webBroswer, animated: true)
+        webBroswer.loadURLString("http://maps.apple.com/?q=")  // USA Voting How to Page
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
+    
 
-    /*
+    
     // MARK: - Navigation
-
+/*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showDetail" {
+            let indexPath = self.pollTableView.indexPathForSelectedRow
+            let detailVC = segue.destinationViewController as! PollingDetailViewController
+        }
     }
-    */
+   */
 
 }
+ 
 
 extension PollingLocationViewController: DZNEmptyDataSetDelegate, DZNEmptyDataSetSource {
     // MARK: EmptyDataSet Methods
