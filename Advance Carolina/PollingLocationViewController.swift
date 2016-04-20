@@ -165,7 +165,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         let webBroswer = KINWebBrowserViewController()
         let stringAddress = locations?[indexPath.row].line1
         self.navigationController?.pushViewController(webBroswer, animated: true)
-        webBroswer.loadURLString("http://maps.apple.com/?q=")  // USA Voting How to Page
+        webBroswer.loadURLString("maps://maps.apple.com/?q=\(stringAddress)")  // USA Voting How to Page
         
     }
     
