@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3P4-eC-9hA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--CandidatesNotes-->
@@ -99,8 +100,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Write your notes here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZGC-YF-NTf">
-                                <rect key="frame" x="0.0" y="169" width="320" height="350"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Write your notes here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZGC-YF-NTf">
+                                <rect key="frame" x="10" y="169" width="304" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
@@ -115,6 +116,11 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZGC-YF-NTf" secondAttribute="trailing" constant="-14" id="8JB-ys-EkZ"/>
+                            <constraint firstItem="ZGC-YF-NTf" firstAttribute="height" secondItem="hgl-gK-YA1" secondAttribute="height" id="QPx-TH-of4"/>
+                            <constraint firstItem="ZGC-YF-NTf" firstAttribute="leading" secondItem="hgl-gK-YA1" secondAttribute="leadingMargin" constant="-10" id="we2-dr-R5E"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Candidate Detail" id="srN-cs-G3c"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

@@ -11,6 +11,9 @@ import Foundation
 
 class PollingViewController: UIViewController {
     
+    var introModalDidDisplay = false
+
+    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!
@@ -53,6 +56,33 @@ class PollingViewController: UIViewController {
 
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        showRegisterInfo()
+
+        
+    }
+    
+    func showRegisterInfo(){
+        
+        let launchedBefore = NSUserDefaults.standardUserDefaults().boolForKey("launchedBefore")
+        if launchedBefore  {
+            print("Not first launch.")
+        }
+        else {
+            print("First launch, setting NSUserDefault.")
+            let viewController:UIViewController = UIStoryboard(name: "RegisterVoterInfo", bundle: nil).instantiateInitialViewController()! as UIViewController
+            self.presentViewController(viewController, animated: false, completion: nil)
+            
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "launchedBefore")
+        }
+        
+       
+        
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

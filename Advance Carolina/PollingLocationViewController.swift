@@ -162,10 +162,13 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
     }
     
     func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+      
         let webBroswer = KINWebBrowserViewController()
         let stringAddress = locations?[indexPath.row].line1
         self.navigationController?.pushViewController(webBroswer, animated: true)
-        webBroswer.loadURLString("maps://maps.apple.com/?q=\(stringAddress)")  // USA Voting How to Page
+        webBroswer.loadURLString("http://maps.apple.com/?q=\(stringAddress)/")  // USA Voting How to Page
+ 
+ 
         
     }
     
@@ -199,7 +202,7 @@ extension PollingLocationViewController: DZNEmptyDataSetDelegate, DZNEmptyDataSe
     // MARK: EmptyDataSet Methods
     
     func titleForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
-        let text = "No polling locations available"
+        let text = "No polling locations"
         
         let attributes = [
             NSFontAttributeName: UIFont.boldSystemFontOfSize(18.0),
@@ -210,7 +213,7 @@ extension PollingLocationViewController: DZNEmptyDataSetDelegate, DZNEmptyDataSe
     }
     
     func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
-        let text = "We are not able to find any polling locations."
+        let text = "You can search for you locations by typing your location in the search bar above."
         
         let paragraph = NSMutableParagraphStyle()
         
@@ -225,7 +228,7 @@ extension PollingLocationViewController: DZNEmptyDataSetDelegate, DZNEmptyDataSe
         
         return NSAttributedString(string: text, attributes: attributes)
     }
-    
+ /*
     func buttonTitleForEmptyDataSet(scrollView: UIScrollView!, forState state: UIControlState) -> NSAttributedString! {
         let attributes = [
             NSFontAttributeName: UIFont.boldSystemFontOfSize(17.0),
@@ -234,7 +237,7 @@ extension PollingLocationViewController: DZNEmptyDataSetDelegate, DZNEmptyDataSe
         
         return NSAttributedString(string: "Search for new location", attributes:attributes)
     }
-    
+    */
     func imageForEmptyDataSet(scrollView: UIScrollView!) -> UIImage! {
         return FAKFontAwesome.homeIconWithSize(50).imageWithSize(CGSize(width: 50, height: 50))
     }

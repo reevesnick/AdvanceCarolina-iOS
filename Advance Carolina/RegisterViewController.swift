@@ -50,6 +50,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         self.presentViewController(viewController, animated: false, completion: nil)
     }
     
+    
+    
     @IBAction func submitData(sender: AnyObject){
         
         //Convert into a string 
@@ -87,6 +89,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)
                     loadingBar.hide(true)
+
                 } else {
                     // Fallback on earlier versions
                     let button2Alert: UIAlertView = UIAlertView(title: "Success!", message: "Thank you for proividing you voter infomation to Advance Carolina.",
@@ -94,7 +97,11 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
                     button2Alert.show()
                     loadingBar.hide(true)
 
+
+
                 }
+                self.dismissViewControllerAnimated(true, completion: nil)
+
         
               /*  let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()! as UIViewController
                 self.presentViewController(viewController, animated: false, completion: nil)*/
@@ -113,18 +120,18 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
                     let button2Alert: UIAlertView = UIAlertView(title: "Error", message: "Your Data cannot be uploaded. Please check your infomation and try again",
                         delegate: nil, cancelButtonTitle: "Ok")
                     button2Alert.show()
-                    loadingBar.hide(true)
+
 
                 }
 
                 print("Your Data cannot be uploaded. Reason: ",error);
             }
             
-            
+
         
     })
     
- 
+
     }
     
     // UITextField Delegates

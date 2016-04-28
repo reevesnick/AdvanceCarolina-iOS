@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="914.13333333333333" y="-724.20000000000005"/>
         </scene>
-        <!--Register to Advance Carolina-->
+        <!--RegisterView-->
         <scene sceneID="Mad-MP-eRO">
             <objects>
-                <viewController id="g8f-rD-8Nx" customClass="RegisterViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterView" title="RegisterView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g8f-rD-8Nx" customClass="RegisterViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IVh-YE-Mbf"/>
                         <viewControllerLayoutGuide type="bottom" id="eCN-9K-osz"/>
@@ -35,35 +35,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-Vg-dbo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-Vg-dbo">
                                 <rect key="frame" x="20" y="200" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYP-8S-mtX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYP-8S-mtX">
                                 <rect key="frame" x="20" y="248" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSx-61-BU1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSx-61-BU1">
                                 <rect key="frame" x="20" y="301" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="COUNTY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tek-de-joH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="COUNTY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tek-de-joH">
                                 <rect key="frame" x="20" y="357" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNS-be-AQM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNS-be-AQM">
                                 <rect key="frame" x="20" y="417" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-Qf-ngt">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-Qf-ngt">
                                 <rect key="frame" x="164" y="518" width="136" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.16493257680000001" blue="0.15507676649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Cancel ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="5jR-Fz-gsg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="I Have Already Registered">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -75,12 +79,12 @@
                                     <action selector="cancelButton:" destination="g8f-rD-8Nx" eventType="touchUpInside" id="JeU-pm-OHO"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="et7-k6-hgL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="et7-k6-hgL">
                                 <rect key="frame" x="20" y="147" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsd-vy-Ffu">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsd-vy-Ffu">
                                 <rect key="frame" x="20" y="518" width="141" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Submit">
@@ -95,12 +99,12 @@
                                     <action selector="submitData:" destination="g8f-rD-8Nx" eventType="touchUpInside" id="B9I-u8-jiR"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Party (i.e. Democratic, Republican)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHi-bS-xMG">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Party (i.e. Democratic, Republican)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHi-bS-xMG">
                                 <rect key="frame" x="20" y="469" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Fill out your info to help us determine the voting status" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQq-aT-3gs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fill out your info to help us determine the voting status" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQq-aT-3gs">
                                 <rect key="frame" x="20" y="88" width="280" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,19 +114,30 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="rSx-61-BU1" secondAttribute="leading" id="604-EO-jDW"/>
+                            <constraint firstItem="et7-k6-hgL" firstAttribute="top" secondItem="cQq-aT-3gs" secondAttribute="bottom" constant="8" symbolic="YES" id="ALo-O7-M7d"/>
                             <constraint firstAttribute="leadingMargin" secondItem="NHi-bS-xMG" secondAttribute="leading" id="BzQ-We-ioj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cQq-aT-3gs" secondAttribute="trailing" id="CGn-i2-Lbi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tek-de-joH" secondAttribute="trailing" id="E0D-de-BXD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EnG-Vg-dbo" secondAttribute="trailing" id="ENN-Lk-aTi"/>
                             <constraint firstAttribute="leadingMargin" secondItem="nNS-be-AQM" secondAttribute="leading" id="Inl-bD-dtv"/>
+                            <constraint firstItem="ndf-Qf-ngt" firstAttribute="baseline" secondItem="rsd-vy-Ffu" secondAttribute="baseline" id="L4l-Sy-UIF"/>
+                            <constraint firstItem="EnG-Vg-dbo" firstAttribute="top" secondItem="et7-k6-hgL" secondAttribute="bottom" constant="23" id="LPE-pp-CGp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rSx-61-BU1" secondAttribute="trailing" id="Mut-yH-HhB"/>
+                            <constraint firstAttribute="bottom" secondItem="ndf-Qf-ngt" secondAttribute="bottom" constant="20" symbolic="YES" id="OFI-1I-tTx"/>
+                            <constraint firstItem="rYP-8S-mtX" firstAttribute="top" secondItem="EnG-Vg-dbo" secondAttribute="bottom" constant="18" id="Yd4-VG-aNi"/>
+                            <constraint firstItem="NHi-bS-xMG" firstAttribute="top" secondItem="nNS-be-AQM" secondAttribute="bottom" constant="22" id="aac-Ip-WVE"/>
                             <constraint firstAttribute="leadingMargin" secondItem="tek-de-joH" secondAttribute="leading" id="eAl-b1-VOD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NHi-bS-xMG" secondAttribute="trailing" id="ejG-tW-31N"/>
+                            <constraint firstItem="nNS-be-AQM" firstAttribute="top" secondItem="tek-de-joH" secondAttribute="bottom" constant="30" id="f0j-Zz-831"/>
+                            <constraint firstItem="et7-k6-hgL" firstAttribute="top" secondItem="Neb-e7-CsS" secondAttribute="top" constant="147" id="fkw-Ou-ORJ"/>
+                            <constraint firstItem="ndf-Qf-ngt" firstAttribute="top" secondItem="NHi-bS-xMG" secondAttribute="bottom" constant="19" id="h4B-4g-e9R"/>
                             <constraint firstAttribute="trailingMargin" secondItem="et7-k6-hgL" secondAttribute="trailing" id="hV8-wf-OaG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rYP-8S-mtX" secondAttribute="trailing" id="m3Z-1Z-wOc"/>
                             <constraint firstAttribute="leadingMargin" secondItem="et7-k6-hgL" secondAttribute="leading" id="mxm-GC-Mq9"/>
                             <constraint firstAttribute="leadingMargin" secondItem="EnG-Vg-dbo" secondAttribute="leading" id="q5e-S7-xLu"/>
                             <constraint firstAttribute="leadingMargin" secondItem="rsd-vy-Ffu" secondAttribute="leading" id="qm8-5u-hk2"/>
+                            <constraint firstItem="ndf-Qf-ngt" firstAttribute="leading" secondItem="rsd-vy-Ffu" secondAttribute="trailing" constant="3" id="rXN-KU-GBi"/>
+                            <constraint firstItem="rSx-61-BU1" firstAttribute="top" secondItem="rYP-8S-mtX" secondAttribute="bottom" constant="23" id="uiX-G0-AFm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nNS-be-AQM" secondAttribute="trailing" id="uvv-jK-aKd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ndf-Qf-ngt" secondAttribute="trailing" constant="-14" id="v5z-fL-bwN"/>
                             <constraint firstAttribute="leadingMargin" secondItem="cQq-aT-3gs" secondAttribute="leading" id="ydH-Ig-BJ3"/>

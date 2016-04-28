@@ -52,6 +52,7 @@
 		D1DCE1CF1CBEFAC0006EBCD7 /* PollingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DCE1CE1CBEFAC0006EBCD7 /* PollingDetailViewController.swift */; };
 		D1DEC2D81CB4C14200A48DBB /* CandidatesNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DEC2D71CB4C14200A48DBB /* CandidatesNotes.swift */; };
 		D1DEC2DA1CB4CBB600A48DBB /* CandidatesNotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DEC2D91CB4CBB600A48DBB /* CandidatesNotes.storyboard */; };
+		D1E612341CC7C2AD0047E65A /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E612331CC7C2AD0047E65A /* CustomSegmentControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		D1DCE1CE1CBEFAC0006EBCD7 /* PollingDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingDetailViewController.swift; sourceTree = "<group>"; };
 		D1DEC2D71CB4C14200A48DBB /* CandidatesNotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatesNotes.swift; sourceTree = "<group>"; };
 		D1DEC2D91CB4CBB600A48DBB /* CandidatesNotes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CandidatesNotes.storyboard; sourceTree = "<group>"; };
+		D1E612331CC7C2AD0047E65A /* CustomSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentControl.swift; sourceTree = "<group>"; };
 		D8D92BB2CF6AB8422DF10046 /* Pods_Advance_Carolina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advance_Carolina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA89F67263DED880897DB506 /* Pods-Advance Carolina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance Carolina.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance Carolina/Pods-Advance Carolina.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -313,6 +315,7 @@
 				D128D8101C8F63F9002DE1CE /* Frameworks */,
 				D128D80F1C8F63EE002DE1CE /* Supporting Files */,
 				D1DC034A1C8F878A00D5563D /* Advance Carolina-Bridging-Header.h */,
+				D1E612331CC7C2AD0047E65A /* CustomSegmentControl.swift */,
 			);
 			path = "Advance Carolina";
 			sourceTree = "<group>";
@@ -810,6 +813,7 @@
 				D19399AA1CB0634800BC8E5D /* CandidateDetailViewController.swift in Sources */,
 				D19399B61CB0985500BC8E5D /* RegisterViewController.swift in Sources */,
 				D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */,
+				D1E612341CC7C2AD0047E65A /* CustomSegmentControl.swift in Sources */,
 				D1DEC2D81CB4C14200A48DBB /* CandidatesNotes.swift in Sources */,
 				D19399AF1CB0635B00BC8E5D /* CreateScheduleViewController.m in Sources */,
 				6467A3C91C987353002A1557 /* PollModel.swift in Sources */,
