@@ -41,7 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         //Custon UI
-        Chameleon.setGlobalThemeUsingPrimaryColor(UIColor.flatSkyBlueColor(), withContentStyle: UIContentStyle.Contrast)
+        Chameleon.setGlobalThemeUsingPrimaryColor(UIColor.flatYellowColor(), withContentStyle: UIContentStyle.Contrast)
+        
+       // UIColor(contrastingBlackOrWhiteColorOn:UIColor!, isFlat:Bool)
+
         
         
         //Parse Server API Key

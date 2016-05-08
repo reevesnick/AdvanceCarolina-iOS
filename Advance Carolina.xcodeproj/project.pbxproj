@@ -40,6 +40,7 @@
 		D128D81B1C8F700E002DE1CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D81A1C8F700E002DE1CE /* MapKit.framework */; };
 		D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAB1C93A24500593DFD /* PollingViewController.swift */; };
 		D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */; };
+		D1894C631CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1894C621CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg */; };
 		D19399AA1CB0634800BC8E5D /* CandidateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19399A71CB0634800BC8E5D /* CandidateDetailViewController.swift */; };
 		D19399AB1CB0634800BC8E5D /* CandidateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19399A81CB0634800BC8E5D /* CandidateListTableViewController.swift */; };
 		D19399AC1CB0634800BC8E5D /* CandidateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19399A91CB0634800BC8E5D /* CandidateTableViewCell.swift */; };
@@ -116,6 +117,7 @@
 		D128D81A1C8F700E002DE1CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D173EFAB1C93A24500593DFD /* PollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingViewController.swift; sourceTree = "<group>"; };
 		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
+		D1894C621CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5098201883794.preview-620.jpg"; sourceTree = "<group>"; };
 		D19399A71CB0634800BC8E5D /* CandidateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateDetailViewController.swift; sourceTree = "<group>"; };
 		D19399A81CB0634800BC8E5D /* CandidateListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateListTableViewController.swift; sourceTree = "<group>"; };
 		D19399A91CB0634800BC8E5D /* CandidateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateTableViewCell.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 		D128D80F1C8F63EE002DE1CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D1894C621CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg */,
 				D128D8121C8F6435002DE1CE /* pdf.pdf */,
 			);
 			name = "Supporting Files";
@@ -522,6 +525,7 @@
 			files = (
 				D19399B41CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard in Resources */,
 				D19399B81CB0985C00BC8E5D /* RegisterVoterInfo.storyboard in Resources */,
+				D1894C631CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg in Resources */,
 				D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */,
 				64263FF71C99F27E00FBD584 /* FontAwesome.otf in Resources */,
 				64CE27781CAE0B8C008EE0E8 /* News Feed.storyboard in Resources */,

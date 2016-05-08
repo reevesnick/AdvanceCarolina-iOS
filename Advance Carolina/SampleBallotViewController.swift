@@ -25,7 +25,7 @@ class SampleBallotViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let localfilePath = NSBundle.mainBundle().URLForResource("pdf",withExtension: "pdf");
+        let localfilePath = NSBundle.mainBundle().URLForResource("5098201883794.preview-620",withExtension: "jpg");
         let myRequest = NSURLRequest(URL: localfilePath!);
         webView.loadRequest(myRequest);
         

@@ -28,6 +28,10 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
                 if loc.count > 0 {
                      self.pollTableView.reloadData()
                 }
+                else if loc.count == 0{
+                    let loadingBar = MBProgressHUD.showHUDAddedTo(self.view, animated:true)
+                    
+                }
             }
         }
     }
@@ -83,6 +87,8 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         
         searchBar.delegate = self
+        
+        
 
         
         pollViewModel = PollingLocationViewModel()
@@ -165,8 +171,9 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
       
         let webBroswer = KINWebBrowserViewController()
         let stringAddress = locations?[indexPath.row].line1
+        var stringAddressTest: String = String(format: "%d", (locations?[indexPath.row].line1)!)
         self.navigationController?.pushViewController(webBroswer, animated: true)
-        webBroswer.loadURLString("http://maps.apple.com/?q=\(stringAddress)/")  // USA Voting How to Page
+        webBroswer.loadURLString("http://maps.apple.com/?q=\(locations?[indexPath.row].line1)")  // USA Voting How to Page
  
  
         
