@@ -23,11 +23,11 @@ class TabBarController: UITabBarController {
             let news: UITabBarItem = tabs[3] as UITabBarItem
             let contact: UITabBarItem = tabs[4] as UITabBarItem
             
-            poll.image = FAKFontAwesome.pieChartIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
-            ballot.image = FAKFontAwesome.fileOIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
-            candidates.image = FAKFontAwesome.usersIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
-            news.image = FAKFontAwesome.newspaperOIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
-            contact.image = FAKFontAwesome.envelopeIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
+            //poll.image = FAKFontAwesome.pieChartIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
+            //ballot.image = FAKFontAwesome.fileOIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
+            //candidates.image = FAKFontAwesome.usersIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
+            //news.image = FAKFontAwesome.newspaperOIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
+            //contact.image = FAKFontAwesome.envelopeIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
         }
     }
 }

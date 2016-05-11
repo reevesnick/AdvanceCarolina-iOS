@@ -43,6 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Custon UI
         Chameleon.setGlobalThemeUsingPrimaryColor(UIColor.flatYellowColor(), withContentStyle: UIContentStyle.Contrast)
         
+        let textAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        UINavigationBar.appearance().titleTextAttributes = textAttributes
+        
        // UIColor(contrastingBlackOrWhiteColorOn:UIColor!, isFlat:Bool)
 
         

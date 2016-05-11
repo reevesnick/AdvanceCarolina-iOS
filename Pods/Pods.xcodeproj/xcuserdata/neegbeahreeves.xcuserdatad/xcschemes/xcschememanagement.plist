@@ -74,6 +74,11 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>Moya-Argo 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
 		<key>Moya-Argo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -298,6 +303,11 @@
 			<true/>
 		</dict>
 		<key>B272B33F162D6E5C3510BA50ECF2684B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD12ED9C60096C3124CF6FEEC75397E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

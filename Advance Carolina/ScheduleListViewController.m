@@ -69,6 +69,7 @@
     NSArray *localNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
     UILocalNotification *localNotification = [localNotifications objectAtIndex:indexPath.row];
     
+    
     // Display notification info
     [cell.textLabel setText:localNotification.alertBody];
     [cell.detailTextLabel setText:[localNotification.fireDate description]];
