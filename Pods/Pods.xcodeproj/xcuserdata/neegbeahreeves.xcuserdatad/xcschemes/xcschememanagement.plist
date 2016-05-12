@@ -6,168 +6,133 @@
 	<dict>
 		<key>ARChromeActivity.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Argo.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>ChameleonFramework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>28</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Curry.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>DZNEmptyDataSet.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FontAwesomeKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>KINWebBrowser.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
-		</dict>
-		<key>KVNProgress.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>25</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>LaunchKit-LaunchKitResources.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>27</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>LaunchKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>26</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>24</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>MWFeedParser.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
-		</dict>
-		<key>Moya-Argo 2.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>29</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Moya-Argo.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Moya.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>ParseUI.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
-		</dict>
-		<key>Pods-Advance Carolina 2.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>22</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Advance Carolina.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Advance CarolinaTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Advance CarolinaUITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Result.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
-		</dict>
-		<key>RxCocoa 2.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>23</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>RxCocoa.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>18</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>RxSwift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>19</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>TUSafariActivity-TUSafariActivity.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>TUSafariActivity.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>20</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0186EE20AB4D310515B8041966DB7AEB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>03857CB7ED3EB7019D4BEDE0F18E2FB3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>059B6BF1A5D5A2CE95600A4653F7577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>09E8272858364E02204C6162D237A11D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -188,11 +153,6 @@
 			<true/>
 		</dict>
 		<key>2C8AA1BAF35413BDB954A1DF93576ED1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>42221BDAFF2E9A7C1F35A0DE06E494E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -222,32 +182,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6C7E98C6AECE3261714C30EE295E71E5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6DD9475D15AEE6C1684A6511D9BCE748</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>777CC9EB6D0C9EF3AE186B3FC8B50B95</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>8150D31656E944FEE4DAC7062A8F5810</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8A839DB3E7E65AC846858AA8E190CB7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -277,27 +217,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FB41E8816E40FF5E683768D6D92FCDA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>A0933FC1307AD48F89C9FB7CEA3C29C5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A3199FDC286637EA87AB47298F3E6C0E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B0AD89FAE7AFE0924D447D9FDC5D66D1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B0FF4FDA599C82A79B991E72913CD084</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -322,11 +242,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D72C59BC75F590B35DD8AAEF9A0B0A2B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E1F78B1C5F8F2CCD0E68552EAF2B9B52</key>
 		<dict>
 			<key>primary</key>
@@ -338,11 +253,6 @@
 			<true/>
 		</dict>
 		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E664B39503C783BB687991D435BD4042</key>
 		<dict>
 			<key>primary</key>
 			<true/>
