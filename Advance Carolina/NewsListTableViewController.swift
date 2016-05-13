@@ -50,6 +50,14 @@ class NewsListTableViewController: PFQueryTableViewController,DZNEmptyDataSetSou
         
          let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! NewsTableViewCell
         
+        var formatter = NSDateFormatter()
+        formatter.dateFormat = "M/dd/yyyy, H:mm"
+        let date = formatter.stringFromDate((object?.createdAt as NSDate?)!)
+        
+        cell.headlineDateLabel?.text = date;
+
+
+        
         cell.headlineTitleLabel?.text = object?.objectForKey("headline") as? String
         cell.headlineArticleLabel?.text = object?.objectForKey("article_description") as? String
         
@@ -69,15 +77,20 @@ class NewsListTableViewController: PFQueryTableViewController,DZNEmptyDataSetSou
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
+        var formatter = NSDateFormatter()
+        formatter.dateFormat = "M/dd/yyyy, H:mm"
+        
         if segue.identifier == "showDetail"
         {
             let indexPath = self.tableView.indexPathForSelectedRow
             let detailVC = segue.destinationViewController as! NewsDetailViewController
             let object = self.objectAtIndexPath(indexPath)
+            let date = formatter.stringFromDate((object?.createdAt as NSDate?)!)
+
             detailVC.titleString = object?.objectForKey("headline") as! String
             detailVC.articleString = object?.objectForKey("article_description") as! String
-          //  detailVC.websiteString = object?.objectForKey("website") as! String
-          //  detailVC.bioString = object?.objectForKey("candidate_bio") as! String
+            detailVC.createdString = date
+            //  detailVC.bioString = object?.objectForKey("candidate_bio") as! String
             
             detailVC.headlineFile = object?.objectForKey("headline_pic") as! PFFile
             self.tableView.deselectRowAtIndexPath(indexPath!, animated: true)

@@ -23,6 +23,12 @@ class TabBarController: UITabBarController {
             let news: UITabBarItem = tabs[3] as UITabBarItem
             let contact: UITabBarItem = tabs[4] as UITabBarItem
             
+            poll.image = UIImage(named:"Box-30")
+            ballot.image = UIImage(named:"Clipboard-30")
+            candidates.image = UIImage(named:"User Groups-30")
+            news.image = UIImage(named:"RSS-30")
+            contact.image = UIImage(named:"Message-30")
+            
             //poll.image = FAKFontAwesome.pieChartIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
             //ballot.image = FAKFontAwesome.fileOIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))
             //candidates.image = FAKFontAwesome.usersIconWithSize(28).imageWithSize(CGSize(width: 28, height: 28))

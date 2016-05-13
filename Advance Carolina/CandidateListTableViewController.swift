@@ -90,6 +90,7 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell?
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CandidateTableViewCell
+        cell.contentView.superview!.backgroundColor = UIColor.whiteColor()
         
         cell.candidateNameLabel?.text = object?.objectForKey("candidate_name") as? String
         cell.candidatePartyLabel?.text = object?.objectForKey("candidate_party") as? String

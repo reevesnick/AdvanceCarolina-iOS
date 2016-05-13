@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CSY-xa-ZbJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--News Feed-->
@@ -67,26 +68,45 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="279.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-kS-vaE">
-                                            <rect key="frame" x="10" y="8" width="301" height="248.5"/>
+                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-kS-vaE">
+                                            <rect key="frame" x="10" y="8" width="301" height="249"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HId-wy-v2X" customClass="PFImageView">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HId-wy-v2X" customClass="PFImageView">
                                                     <rect key="frame" x="0.0" y="0.0" width="301" height="182"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-QH-reO">
-                                                    <rect key="frame" x="-2" y="180" width="304" height="68"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Article" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-QH-reO">
+                                                    <rect key="frame" x="-2" y="180" width="304" height="35"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mT-5b-rEb">
+                                                    <rect key="frame" x="8" y="220" width="285" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="9mT-5b-rEb" firstAttribute="leading" secondItem="g9s-kS-vaE" secondAttribute="leading" constant="8" id="IAQ-3g-e1x"/>
+                                                <constraint firstAttribute="trailing" secondItem="qFN-QH-reO" secondAttribute="trailing" constant="-1" id="PEY-h2-Qym"/>
+                                                <constraint firstItem="qFN-QH-reO" firstAttribute="leading" secondItem="g9s-kS-vaE" secondAttribute="leading" constant="-2" id="bv6-B5-1lL"/>
+                                                <constraint firstAttribute="trailing" secondItem="9mT-5b-rEb" secondAttribute="trailing" constant="8" id="hea-E5-dZJ"/>
+                                                <constraint firstItem="HId-wy-v2X" firstAttribute="leading" secondItem="g9s-kS-vaE" secondAttribute="leading" id="uA5-DA-iax"/>
+                                                <constraint firstAttribute="trailing" secondItem="HId-wy-v2X" secondAttribute="trailing" id="wlK-WF-fmG"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="g9s-kS-vaE" firstAttribute="leading" secondItem="Ps1-jL-wVe" secondAttribute="leadingMargin" constant="2" id="WPi-mu-Cyc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="g9s-kS-vaE" secondAttribute="trailing" constant="1" id="sVW-y4-M9y"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.80885022100000004" green="0.80885022100000004" blue="0.80885022100000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="cardView" destination="g9s-kS-vaE" id="NVT-gS-PJm"/>
+                                    <outlet property="headlineDateLabel" destination="9mT-5b-rEb" id="lxV-04-jE4"/>
                                     <outlet property="headlinePicure" destination="HId-wy-v2X" id="ha3-0d-ZOk"/>
                                     <outlet property="headlineTitleLabel" destination="qFN-QH-reO" id="FQE-aB-j8q"/>
                                     <segue destination="2dI-MK-xpZ" kind="push" identifier="showDetail" id="d0F-gU-H3W"/>
@@ -115,33 +135,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-nP-SOZ" customClass="PFImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-nP-SOZ" customClass="PFImageView">
                                 <rect key="frame" x="0.0" y="55" width="320" height="182"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CT4-WR-BRE">
-                                <rect key="frame" x="139" y="306" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CT4-WR-BRE">
+                                <rect key="frame" x="20" y="273" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Article " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IXR-4r-HhT">
-                                <rect key="frame" x="0.0" y="335" width="320" height="187"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Headline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scM-ra-gBT">
+                                <rect key="frame" x="20" y="238" width="280" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Article " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IXR-4r-HhT">
+                                <rect key="frame" x="0.0" y="302" width="320" height="220"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Headline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scM-ra-gBT">
-                                <rect key="frame" x="20" y="238" width="280" height="53"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="scM-ra-gBT" secondAttribute="trailing" id="2Lt-ro-Snl"/>
+                            <constraint firstItem="IXR-4r-HhT" firstAttribute="leading" secondItem="GzX-En-ml2" secondAttribute="leadingMargin" constant="-20" id="2Ub-PP-FCg"/>
+                            <constraint firstItem="Wz4-nP-SOZ" firstAttribute="leading" secondItem="GzX-En-ml2" secondAttribute="leadingMargin" constant="-20" id="LJN-bZ-lft"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="CT4-WR-BRE" secondAttribute="leading" id="OLZ-YT-Xn3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wz4-nP-SOZ" secondAttribute="trailing" constant="-20" id="QQr-ec-fXQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="scM-ra-gBT" secondAttribute="leading" id="Vpl-P2-YCF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CT4-WR-BRE" secondAttribute="trailing" id="kvv-yu-EBY"/>
+                            <constraint firstItem="tub-Og-t2c" firstAttribute="top" secondItem="IXR-4r-HhT" secondAttribute="bottom" constant="46" id="m6P-Nd-aTj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IXR-4r-HhT" secondAttribute="trailing" constant="-20" id="sbL-yF-o0V"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zXV-tK-4pc"/>
                     <connections>
                         <outlet property="headlineArticleString" destination="IXR-4r-HhT" id="J2H-xa-FiJ"/>
+                        <outlet property="headlineCreatedDate" destination="CT4-WR-BRE" id="Hwh-EC-0Hf"/>
                         <outlet property="headlinePictureFile" destination="Wz4-nP-SOZ" id="4SE-aS-QpJ"/>
                         <outlet property="headlineTitleString" destination="scM-ra-gBT" id="jCq-BL-dcP"/>
                     </connections>

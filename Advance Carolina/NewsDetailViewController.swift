@@ -15,23 +15,23 @@ class NewsDetailViewController: UIViewController {
     @IBOutlet weak var headlinePictureFile: PFImageView!
     @IBOutlet weak var headlineTitleString: UILabel!
     @IBOutlet weak var headlineArticleString: UITextView!
-   // @IBOutlet weak var headlineCreatedDate: UILabel!
+    @IBOutlet weak var headlineCreatedDate: UILabel!
     
     
     var headlineFile: PFFile!
     var titleString: String!
     var articleString: String!
-    //var createdString: String!
+    var createdString: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
         
         self.headlinePictureFile.file = headlineFile;
         self.headlineTitleString.text = titleString;
         self.headlineArticleString.text = articleString;
-        //self.createdString.text
+        self.headlineCreatedDate.text = createdString;
     }
 
     override func didReceiveMemoryWarning() {

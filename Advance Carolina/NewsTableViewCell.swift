@@ -15,6 +15,9 @@ class NewsTableViewCell: PFTableViewCell {
     @IBOutlet weak var headlinePicure: PFImageView!
     @IBOutlet weak var headlineTitleLabel: UILabel!
     @IBOutlet weak var headlineArticleLabel: UILabel!
+    @IBOutlet weak var headlineDateLabel: UILabel!
+    
+    
     
     @IBOutlet weak var cardView: UIView!
     
@@ -30,6 +33,7 @@ class NewsTableViewCell: PFTableViewCell {
     }
     
     func cardViewLayout(){
+        self.cardView.alpha = 1.0
         self.cardView.layer.masksToBounds = false;
         self.cardView.layer.cornerRadius = 1; // if you like rounded corners
         self.cardView.layer.shadowOffset = CGSizeMake(-0.2, 0.2) //%%% this shadow will hang slightly down and to the right

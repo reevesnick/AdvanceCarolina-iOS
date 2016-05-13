@@ -49,14 +49,24 @@
 		D19399B41CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19399B31CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard */; };
 		D19399B61CB0985500BC8E5D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19399B51CB0985500BC8E5D /* RegisterViewController.swift */; };
 		D19399B81CB0985C00BC8E5D /* RegisterVoterInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19399B71CB0985C00BC8E5D /* RegisterVoterInfo.storyboard */; };
-		D1BE33D31CE1383200BF0F55 /* Box-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BE33CE1CE1383200BF0F55 /* Box-50.png */; };
-		D1BE33D41CE1383200BF0F55 /* Clipboard-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BE33CF1CE1383200BF0F55 /* Clipboard-50.png */; };
-		D1BE33D51CE1383200BF0F55 /* Message-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BE33D01CE1383200BF0F55 /* Message-50.png */; };
-		D1BE33D61CE1383200BF0F55 /* RSS-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BE33D11CE1383200BF0F55 /* RSS-50.png */; };
-		D1BE33D71CE1383200BF0F55 /* User Groups-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BE33D21CE1383200BF0F55 /* User Groups-50.png */; };
 		D1BE33DA1CE2A18100BF0F55 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE33D91CE2A18100BF0F55 /* NewsTableViewCell.swift */; };
 		D1BE33DC1CE2A19700BF0F55 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE33DB1CE2A19700BF0F55 /* NewsListTableViewController.swift */; };
 		D1BE33DE1CE2A1B200BF0F55 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE33DD1CE2A1B200BF0F55 /* NewsDetailViewController.swift */; };
+		D1CFD5821CE63A930082C394 /* Box-30.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5711CE63A930082C394 /* Box-30.png */; };
+		D1CFD5831CE63A930082C394 /* Clipboard-30.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5721CE63A930082C394 /* Clipboard-30.png */; };
+		D1CFD5841CE63A930082C394 /* Message-30.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5731CE63A930082C394 /* Message-30.png */; };
+		D1CFD5851CE63A930082C394 /* RSS-30.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5741CE63A930082C394 /* RSS-30.png */; };
+		D1CFD5861CE63A930082C394 /* User Groups-30.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5751CE63A930082C394 /* User Groups-30.png */; };
+		D1CFD5871CE63A930082C394 /* Box-60.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5771CE63A930082C394 /* Box-60.png */; };
+		D1CFD5881CE63A930082C394 /* Clipboard-60.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5781CE63A930082C394 /* Clipboard-60.png */; };
+		D1CFD5891CE63A930082C394 /* Message-60.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5791CE63A930082C394 /* Message-60.png */; };
+		D1CFD58A1CE63A930082C394 /* RSS-60.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD57A1CE63A930082C394 /* RSS-60.png */; };
+		D1CFD58B1CE63A930082C394 /* User Groups-60.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD57B1CE63A930082C394 /* User Groups-60.png */; };
+		D1CFD58C1CE63A930082C394 /* Box-90.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD57D1CE63A930082C394 /* Box-90.png */; };
+		D1CFD58D1CE63A930082C394 /* Clipboard-90.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD57E1CE63A930082C394 /* Clipboard-90.png */; };
+		D1CFD58E1CE63A930082C394 /* Message-90.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD57F1CE63A930082C394 /* Message-90.png */; };
+		D1CFD58F1CE63A930082C394 /* RSS-90.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5801CE63A930082C394 /* RSS-90.png */; };
+		D1CFD5901CE63A930082C394 /* User Groups-90.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5811CE63A930082C394 /* User Groups-90.png */; };
 		D1DC03491C8F872400D5563D /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC03481C8F872400D5563D /* FeedTableViewController.swift */; };
 		D1DCE1CF1CBEFAC0006EBCD7 /* PollingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DCE1CE1CBEFAC0006EBCD7 /* PollingDetailViewController.swift */; };
 		D1DEC2D81CB4C14200A48DBB /* CandidatesNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DEC2D71CB4C14200A48DBB /* CandidatesNotes.swift */; };
@@ -136,14 +146,24 @@
 		D19399B31CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateScheduleStoryboard.storyboard; sourceTree = "<group>"; };
 		D19399B51CB0985500BC8E5D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D19399B71CB0985C00BC8E5D /* RegisterVoterInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterVoterInfo.storyboard; sourceTree = "<group>"; };
-		D1BE33CE1CE1383200BF0F55 /* Box-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Box-50.png"; sourceTree = "<group>"; };
-		D1BE33CF1CE1383200BF0F55 /* Clipboard-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clipboard-50.png"; sourceTree = "<group>"; };
-		D1BE33D01CE1383200BF0F55 /* Message-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message-50.png"; sourceTree = "<group>"; };
-		D1BE33D11CE1383200BF0F55 /* RSS-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RSS-50.png"; sourceTree = "<group>"; };
-		D1BE33D21CE1383200BF0F55 /* User Groups-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Groups-50.png"; sourceTree = "<group>"; };
 		D1BE33D91CE2A18100BF0F55 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		D1BE33DB1CE2A19700BF0F55 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 		D1BE33DD1CE2A1B200BF0F55 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		D1CFD5711CE63A930082C394 /* Box-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Box-30.png"; sourceTree = "<group>"; };
+		D1CFD5721CE63A930082C394 /* Clipboard-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clipboard-30.png"; sourceTree = "<group>"; };
+		D1CFD5731CE63A930082C394 /* Message-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message-30.png"; sourceTree = "<group>"; };
+		D1CFD5741CE63A930082C394 /* RSS-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RSS-30.png"; sourceTree = "<group>"; };
+		D1CFD5751CE63A930082C394 /* User Groups-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Groups-30.png"; sourceTree = "<group>"; };
+		D1CFD5771CE63A930082C394 /* Box-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Box-60.png"; sourceTree = "<group>"; };
+		D1CFD5781CE63A930082C394 /* Clipboard-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clipboard-60.png"; sourceTree = "<group>"; };
+		D1CFD5791CE63A930082C394 /* Message-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message-60.png"; sourceTree = "<group>"; };
+		D1CFD57A1CE63A930082C394 /* RSS-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RSS-60.png"; sourceTree = "<group>"; };
+		D1CFD57B1CE63A930082C394 /* User Groups-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Groups-60.png"; sourceTree = "<group>"; };
+		D1CFD57D1CE63A930082C394 /* Box-90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Box-90.png"; sourceTree = "<group>"; };
+		D1CFD57E1CE63A930082C394 /* Clipboard-90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clipboard-90.png"; sourceTree = "<group>"; };
+		D1CFD57F1CE63A930082C394 /* Message-90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message-90.png"; sourceTree = "<group>"; };
+		D1CFD5801CE63A930082C394 /* RSS-90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RSS-90.png"; sourceTree = "<group>"; };
+		D1CFD5811CE63A930082C394 /* User Groups-90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Groups-90.png"; sourceTree = "<group>"; };
 		D1DC03481C8F872400D5563D /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		D1DC034A1C8F878A00D5563D /* Advance Carolina-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Advance Carolina-Bridging-Header.h"; sourceTree = "<group>"; };
 		D1DCE1CE1CBEFAC0006EBCD7 /* PollingDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingDetailViewController.swift; sourceTree = "<group>"; };
@@ -360,7 +380,7 @@
 		D128D80F1C8F63EE002DE1CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D1BE33CD1CE1383200BF0F55 /* icons */,
+				D1CFD56F1CE63A930082C394 /* icons */,
 				D1894C621CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg */,
 				D128D8121C8F6435002DE1CE /* pdf.pdf */,
 			);
@@ -415,18 +435,6 @@
 			name = "Polling Schedule";
 			sourceTree = "<group>";
 		};
-		D1BE33CD1CE1383200BF0F55 /* icons */ = {
-			isa = PBXGroup;
-			children = (
-				D1BE33CE1CE1383200BF0F55 /* Box-50.png */,
-				D1BE33CF1CE1383200BF0F55 /* Clipboard-50.png */,
-				D1BE33D01CE1383200BF0F55 /* Message-50.png */,
-				D1BE33D11CE1383200BF0F55 /* RSS-50.png */,
-				D1BE33D21CE1383200BF0F55 /* User Groups-50.png */,
-			);
-			path = icons;
-			sourceTree = "<group>";
-		};
 		D1BE33D81CE2810D00BF0F55 /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +443,52 @@
 				D1BE33DD1CE2A1B200BF0F55 /* NewsDetailViewController.swift */,
 			);
 			name = News;
+			sourceTree = "<group>";
+		};
+		D1CFD56F1CE63A930082C394 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				D1CFD5701CE63A930082C394 /* 1x */,
+				D1CFD5761CE63A930082C394 /* 2x */,
+				D1CFD57C1CE63A930082C394 /* 3x */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		D1CFD5701CE63A930082C394 /* 1x */ = {
+			isa = PBXGroup;
+			children = (
+				D1CFD5711CE63A930082C394 /* Box-30.png */,
+				D1CFD5721CE63A930082C394 /* Clipboard-30.png */,
+				D1CFD5731CE63A930082C394 /* Message-30.png */,
+				D1CFD5741CE63A930082C394 /* RSS-30.png */,
+				D1CFD5751CE63A930082C394 /* User Groups-30.png */,
+			);
+			path = 1x;
+			sourceTree = "<group>";
+		};
+		D1CFD5761CE63A930082C394 /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+				D1CFD5771CE63A930082C394 /* Box-60.png */,
+				D1CFD5781CE63A930082C394 /* Clipboard-60.png */,
+				D1CFD5791CE63A930082C394 /* Message-60.png */,
+				D1CFD57A1CE63A930082C394 /* RSS-60.png */,
+				D1CFD57B1CE63A930082C394 /* User Groups-60.png */,
+			);
+			path = 2x;
+			sourceTree = "<group>";
+		};
+		D1CFD57C1CE63A930082C394 /* 3x */ = {
+			isa = PBXGroup;
+			children = (
+				D1CFD57D1CE63A930082C394 /* Box-90.png */,
+				D1CFD57E1CE63A930082C394 /* Clipboard-90.png */,
+				D1CFD57F1CE63A930082C394 /* Message-90.png */,
+				D1CFD5801CE63A930082C394 /* RSS-90.png */,
+				D1CFD5811CE63A930082C394 /* User Groups-90.png */,
+			);
+			path = 3x;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,25 +617,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CFD58E1CE63A930082C394 /* Message-90.png in Resources */,
 				D19399B41CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard in Resources */,
+				D1CFD58B1CE63A930082C394 /* User Groups-60.png in Resources */,
 				D19399B81CB0985C00BC8E5D /* RegisterVoterInfo.storyboard in Resources */,
 				D1894C631CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg in Resources */,
 				D10C06C01C8E2F92005B6B23 /* LaunchScreen.storyboard in Resources */,
+				D1CFD5901CE63A930082C394 /* User Groups-90.png in Resources */,
 				64263FF71C99F27E00FBD584 /* FontAwesome.otf in Resources */,
 				64CE27781CAE0B8C008EE0E8 /* News Feed.storyboard in Resources */,
-				D1BE33D71CE1383200BF0F55 /* User Groups-50.png in Resources */,
+				D1CFD5821CE63A930082C394 /* Box-30.png in Resources */,
 				64CE277A1CAE0B99008EE0E8 /* Contact Us.storyboard in Resources */,
+				D1CFD5831CE63A930082C394 /* Clipboard-30.png in Resources */,
+				D1CFD58F1CE63A930082C394 /* RSS-90.png in Resources */,
+				D1CFD5871CE63A930082C394 /* Box-60.png in Resources */,
 				D1DEC2DA1CB4CBB600A48DBB /* CandidatesNotes.storyboard in Resources */,
-				D1BE33D31CE1383200BF0F55 /* Box-50.png in Resources */,
-				D1BE33D61CE1383200BF0F55 /* RSS-50.png in Resources */,
-				D1BE33D41CE1383200BF0F55 /* Clipboard-50.png in Resources */,
 				D128D8131C8F6435002DE1CE /* pdf.pdf in Resources */,
+				D1CFD5881CE63A930082C394 /* Clipboard-60.png in Resources */,
 				64CE276E1CAE0AC0008EE0E8 /* Home.storyboard in Resources */,
+				D1CFD5841CE63A930082C394 /* Message-30.png in Resources */,
+				D1CFD5891CE63A930082C394 /* Message-60.png in Resources */,
+				D1CFD58A1CE63A930082C394 /* RSS-60.png in Resources */,
+				D1CFD58C1CE63A930082C394 /* Box-90.png in Resources */,
 				64CE27751CAE0B7F008EE0E8 /* Candidates.storyboard in Resources */,
 				D10C06BD1C8E2F92005B6B23 /* Assets.xcassets in Resources */,
-				D1BE33D51CE1383200BF0F55 /* Message-50.png in Resources */,
+				D1CFD5851CE63A930082C394 /* RSS-30.png in Resources */,
+				D1CFD5861CE63A930082C394 /* User Groups-30.png in Resources */,
 				64CE27701CAE0B4A008EE0E8 /* Poll View.storyboard in Resources */,
 				D10C06B81C8E2F92005B6B23 /* Main.storyboard in Resources */,
+				D1CFD58D1CE63A930082C394 /* Clipboard-90.png in Resources */,
 				64CE27731CAE0B6E008EE0E8 /* Sample Ballot.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -68,11 +68,19 @@
     // Get list of local notifications
     NSArray *localNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
     UILocalNotification *localNotification = [localNotifications objectAtIndex:indexPath.row];
+    /*
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"M/dd/yyyy H:mm"];
+    
+    
+    NSString *stringFromDate = [formatter stringFromDate:cell.detailTextLabel];
+*/
+   //[formatter release];
     
     
     // Display notification info
     [cell.textLabel setText:localNotification.alertBody];
-    [cell.detailTextLabel setText:[localNotification.fireDate description]];
+   // [cell.detailTextLabel setText:[localNotification.fireDate description]];
     
     return cell;
 }

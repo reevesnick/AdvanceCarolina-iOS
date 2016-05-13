@@ -56,6 +56,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="0KG-dF-Fvb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MVg-Bn-1bA">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addSchedule:" destination="uYS-mr-r6v" id="TZE-aa-0SO"/>
                             </connections>
