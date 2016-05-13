@@ -23,6 +23,8 @@ pod 'Parse'
 pod 'ParseUI'
 pod 'MBProgressHUD','~>0.9.2'
 pod 'LaunchKit'
+pod 'Fabric'
+pod 'Crashlytics'
 
 
 

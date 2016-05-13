@@ -12,6 +12,9 @@ import Batch
 import Parse
 import LaunchKit
 import ChameleonFramework
+import Fabric
+import Crashlytics
+
 
 
 @UIApplicationMain
@@ -25,7 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
 
-        
+        // Fabric SDK
+        Fabric.with([Crashlytics.self])
+
 
         
         // Initialize LaunchKit
