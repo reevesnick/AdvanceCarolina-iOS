@@ -35,9 +35,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w9P-n2-PL0">
                                 <rect key="frame" x="0.0" y="64" width="320" height="371"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Advance North Carolina stands for sustainable progress. We commit to address our state’s racial, political, economic, health, environmental and educational inequities. Through consistent and strategic activity this vision is achievable with each successive election and every vote cast.
+                                <string key="text">Advance North Carolina stands for sustainable progress. We commit to address our state’s racial, political, economic, health, environmental and educational inequities. Through consistent and strategic activity this vision is achievable with each successive election and every vote cast.
 
-It is the mission of Advance Carolina to build a statewide, independent Black-Led 501(c)4 political and electoral vehicle centered in Black communities and institutions. Advance Carolina seeks to build and expand the power and political participation of Black citizens through the creation of a federated, statewide network of chapters and affiliates.</mutableString>
+It is the mission of Advance Carolina to build a statewide, independent Black-Led 501(c)4 political and electoral vehicle centered in Black communities and institutions. Advance Carolina seeks to build and expand the power and political participation of Black citizens through the creation of a federated, statewide network of chapters and affiliates.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

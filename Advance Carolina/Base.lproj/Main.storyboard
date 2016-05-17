@@ -15,10 +15,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="15o-8b-B6V" kind="relationship" relationship="viewControllers" id="6SS-EP-wVS"/>
-                        <segue destination="sqK-dG-Wb6" kind="relationship" relationship="viewControllers" id="bCS-tU-4jZ"/>
-                        <segue destination="bll-bq-HKa" kind="relationship" relationship="viewControllers" id="xHl-gX-f9C"/>
                         <segue destination="jbI-r0-0R2" kind="relationship" relationship="viewControllers" id="KaL-K5-uth"/>
+                        <segue destination="sqK-dG-Wb6" kind="relationship" relationship="viewControllers" id="bCS-tU-4jZ"/>
+                        <segue destination="15o-8b-B6V" kind="relationship" relationship="viewControllers" id="6SS-EP-wVS"/>
+                        <segue destination="bll-bq-HKa" kind="relationship" relationship="viewControllers" id="xHl-gX-f9C"/>
                         <segue destination="eum-wc-I26" kind="relationship" relationship="viewControllers" id="Mw9-O0-u8q"/>
                     </connections>
                 </tabBarController>
@@ -102,11 +102,11 @@
             </objects>
             <point key="canvasLocation" x="374.39999999999998" y="1772.1600000000001"/>
         </scene>
-        <!--Home-->
+        <!--Poll Place-->
         <scene sceneID="lpv-42-FGO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="15o-8b-B6V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="ST5-ip-QzR"/>
+                    <tabBarItem key="tabBarItem" title="Poll Place" id="ST5-ip-QzR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Bd-Q8-Z8a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

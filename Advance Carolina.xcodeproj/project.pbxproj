@@ -499,14 +499,11 @@
 			buildConfigurationList = D10C06DA1C8E2F93005B6B23 /* Build configuration list for PBXNativeTarget "Advance Carolina" */;
 			buildPhases = (
 				44E93549CAFCC91AA740C877 /* 📦 Check Pods Manifest.lock */,
-				C5F88A85F136A75676455B13 /* Check Pods Manifest.lock */,
 				D10C06AB1C8E2F92005B6B23 /* Sources */,
 				D10C06AC1C8E2F92005B6B23 /* Frameworks */,
 				D10C06AD1C8E2F92005B6B23 /* Resources */,
 				C18A2E6C0760428ADC68D60C /* 📦 Embed Pods Frameworks */,
 				B57614CDC20141A3963700B8 /* 📦 Copy Pods Resources */,
-				7652C995D093CFE3B79A119F /* Embed Pods Frameworks */,
-				E348C8B76C9B9B1D2768E4B6 /* Copy Pods Resources */,
 				D1CFD5911CE645C50082C394 /* ShellScript */,
 			);
 			buildRules = (
@@ -758,21 +755,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Advance CarolinaTests/Pods-Advance CarolinaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7652C995D093CFE3B79A119F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Advance Carolina/Pods-Advance Carolina-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		986422C1B0B61CF45759E480 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -848,21 +830,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Advance Carolina/Pods-Advance Carolina-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5F88A85F136A75676455B13 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		D1CFD5911CE645C50082C394 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -889,21 +856,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E348C8B76C9B9B1D2768E4B6 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Advance Carolina/Pods-Advance Carolina-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF241E55DC9F01420988D436 /* 📦 Check Pods Manifest.lock */ = {
