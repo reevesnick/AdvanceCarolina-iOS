@@ -1,16 +1,16 @@
 PODS:
-  - Alamofire (3.4.0)
+  - Alamofire (3.4.1)
   - ARChromeActivity (1.0.5)
   - Argo (3.0.1)
-  - Batch (1.5.3)
+  - Batch (1.5.4)
   - Bolts/Tasks (1.7.0)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
-  - Crashlytics (3.7.0):
+  - Crashlytics (3.7.1):
     - Fabric (~> 1.6.3)
-  - Curry (2.2.0)
-  - DZNEmptyDataSet (1.8)
+  - Curry (2.3.1)
+  - DZNEmptyDataSet (1.8.1)
   - Fabric (1.6.7)
   - FontAwesomeKit (2.2.0):
     - FontAwesomeKit/Core (= 2.2.0)
@@ -34,18 +34,18 @@ PODS:
     - LaunchKit/LaunchKit (= 2.1.4)
   - LaunchKit/LaunchKit (2.1.4)
   - MBProgressHUD (0.9.2)
-  - Moya (6.4.0):
-    - Moya/Core (= 6.4.0)
+  - Moya (6.5.0):
+    - Moya/Core (= 6.5.0)
   - Moya-Argo/Core (1.1.0):
     - Argo (~> 3.0.0)
     - Moya
   - Moya-Argo/RxSwift (1.1.0):
     - Moya-Argo/Core
     - Moya/RxSwift
-  - Moya/Core (6.4.0):
+  - Moya/Core (6.5.0):
     - Alamofire (~> 3.0)
     - Result (~> 2.0)
-  - Moya/RxSwift (6.4.0):
+  - Moya/RxSwift (6.5.0):
     - Moya/Core
     - RxSwift (~> 2.0)
   - MWFeedParser (1.0.1):
@@ -62,10 +62,10 @@ PODS:
   - ParseUI (1.2.0):
     - Bolts/Tasks (~> 1.3)
     - Parse (~> 1.9)
-  - Result (2.0.0)
-  - RxCocoa (2.4):
-    - RxSwift (~> 2.4)
-  - RxSwift (2.4)
+  - Result (2.1.1)
+  - RxCocoa (2.5.0):
+    - RxSwift (~> 2.5)
+  - RxSwift (2.5.0)
   - TUSafariActivity (1.0.4)
 
 DEPENDENCIES:
@@ -88,30 +88,30 @@ DEPENDENCIES:
   - RxSwift (~> 2.0)
 
 SPEC CHECKSUMS:
-  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   ARChromeActivity: 821c7849b566f49583987468733a896fee35aa4d
   Argo: 22c5d62b7967020a641468c91dc9488bea9523b8
-  Batch: e8b878faad90083e572812d725da0e6e536490a7
+  Batch: 13083f81837fe1da9ea84b0533a2965c73ff74c6
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
-  Curry: c22d80fff7f5a4b1bbd531455c3e2dbb099658a3
-  DZNEmptyDataSet: d2351b2e8daefa40433ef292e246e21f6be31a7b
+  Crashlytics: 3cdd4c9655be68032a0cf0379e0fb5ef6af22cad
+  Curry: c8f65c8ade091aad5cb86f7b51dd408d698810ca
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
   KINWebBrowser: 27aa857a2aa39063ed102cca781d130b679d205f
   LaunchKit: 95ad4fb171a0f8ea1c80aa26d4fb7bd637788f9c
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  Moya: 4d526954c8afd79820991393d40d7d8af756ceee
+  Moya: f7a4044719381cc6299f9ad3e0ef05f426f0557b
   Moya-Argo: 04d496168adde73921c04c03a9fa89dc3770fc53
   MWFeedParser: 2cf646014c1baf6ad1b08c480b40a08180079247
   Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
   ParseUI: af2eba584799da4a9fbdac0e178662d7438b502e
-  Result: 9e75e1111c774c6ac594e14907b15057053a7959
-  RxCocoa: 7d6cd877de99f5640306b3d6cf87f580c1d91b61
-  RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
+  Result: 822c879f145943320cc80a9a8372378e3d699fe4
+  RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
+  RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
 
 PODFILE CHECKSUM: 132ba43d510632f3ecdea052a5ff8edb0ce66bed
 
-COCOAPODS: 1.0.0.beta.6
+COCOAPODS: 1.0.0.rc.1

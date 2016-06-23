@@ -28,10 +28,6 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
                 if loc.count > 0 {
                      self.pollTableView.reloadData()
                 }
-                else if loc.count == 0{
-                    let loadingBar = MBProgressHUD.showHUDAddedTo(self.view, animated:true)
-                    
-                }
             }
         }
     }
@@ -107,9 +103,9 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
                 }
         }.addDisposableTo(disposeBag)
        */
-        pollTableView.emptyDataSetDelegate = self
-        pollTableView.emptyDataSetSource = self
-        pollTableView.tableFooterView = UIView()
+        //pollTableView.emptyDataSetDelegate = self
+        //pollTableView.emptyDataSetSource = self
+        //pollTableView.tableFooterView = UIView()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -123,7 +119,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PollCell
         
-        cell.accessoryType = .DetailDisclosureButton
+      //  cell.accessoryType = .DetailDisclosureButton
 
         
         if let locationName = locations?[indexPath.row].locationName {
@@ -135,7 +131,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         } else {
             cell.line1.hidden = true
         }
-        
+        /*
         if let line2 = locations?[indexPath.row].line2 {
             cell.line2.text = line2
         } else {
@@ -147,7 +143,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         } else {
             cell.line3.hidden = true
         }
-        
+        */
         if let city = locations?[indexPath.row].city {
             cell.city.text = city
         }
@@ -166,7 +162,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         
         return cell
     }
-    
+  /*
     func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
       
         let webBroswer = KINWebBrowserViewController()
@@ -178,7 +174,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
  
         
     }
-    
+    */
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

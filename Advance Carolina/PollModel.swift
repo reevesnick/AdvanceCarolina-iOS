@@ -24,11 +24,13 @@ struct PollModel: Decodable {
     
     
     static func decode(json: JSON) -> Decoded<PollModel> {
-        return curry(PollModel.init)
+        let s = curry(PollModel.init)
             <^> json <|? ["address", "locationName"]
             <*> json <|? ["address", "line1"]
             <*> json <|? ["address", "line2"]
             <*> json <|? ["address", "line3"]
+        return s
+
             <*> json <|? ["address", "city"]
             <*> json <|? ["address", "state"]
             <*> json <|? ["address", "zip"]
