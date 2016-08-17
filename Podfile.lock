@@ -7,7 +7,7 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
-  - Crashlytics (3.7.1):
+  - Crashlytics (3.7.3):
     - Fabric (~> 1.6.3)
   - Curry (2.3.1)
   - DZNEmptyDataSet (1.8.1)
@@ -94,7 +94,7 @@ SPEC CHECKSUMS:
   Batch: 13083f81837fe1da9ea84b0533a2965c73ff74c6
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Crashlytics: 3cdd4c9655be68032a0cf0379e0fb5ef6af22cad
+  Crashlytics: 76f6beaff70acf226139582c09c78461597c2b98
   Curry: c8f65c8ade091aad5cb86f7b51dd408d698810ca
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7

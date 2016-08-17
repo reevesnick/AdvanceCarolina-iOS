@@ -33,8 +33,11 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
     }
   
     @IBAction func getDirections(sender: UIButton){
-        
+        let hitPoint = sender.convertPoint(CGPointZero, toView: self.pollTableView)
+        let hitIndex = self.pollTableView.indexPathForRowAtPoint(hitPoint)
         let webBroswer = KINWebBrowserViewController()
+        
+        //let stringAddress = locations?.line1
        //let stringAddress = locations.
         self.navigationController?.pushViewController(webBroswer, animated: true)
         webBroswer.loadURLString("maps://maps.apple.com/?q=")  // USA Voting How to Page
@@ -159,6 +162,8 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         if let pollHours = locations?[indexPath.row].pollingHours {
             cell.pollHours.text = pollHours
         }
+        
+        
         
         return cell
     }

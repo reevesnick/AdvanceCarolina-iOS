@@ -16,6 +16,7 @@ class NewsDetailViewController: UIViewController {
     @IBOutlet weak var headlineTitleString: UILabel!
     @IBOutlet weak var headlineArticleString: UITextView!
     @IBOutlet weak var headlineCreatedDate: UILabel!
+    @IBOutlet var scroller: UIScrollView!
     
     
     var headlineFile: PFFile!
@@ -27,6 +28,9 @@ class NewsDetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.scroller.scrollEnabled = true
+        self.scroller.contentSize = (CGSizeMake(320, 1000))
+
         
         self.headlinePictureFile.file = headlineFile;
         self.headlineTitleString.text = titleString;

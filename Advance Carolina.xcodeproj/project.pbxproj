@@ -113,7 +113,7 @@
 		76B77AEC8D3AF6BA8D5ECAC2 /* Pods-Advance CarolinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaTests/Pods-Advance CarolinaTests.release.xcconfig"; sourceTree = "<group>"; };
 		99B839B7C584F4AF091FC6B7 /* Pods-Advance CarolinaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A15BC5EE2430D90FA7DAC27 /* Pods-Advance CarolinaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D10C06AF1C8E2F92005B6B23 /* Advance Carolina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advance Carolina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10C06AF1C8E2F92005B6B23 /* AdvanceUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvanceUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D10C06B41C8E2F92005B6B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D10C06B71C8E2F92005B6B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -326,7 +326,7 @@
 		D10C06B01C8E2F92005B6B23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D10C06AF1C8E2F92005B6B23 /* Advance Carolina.app */,
+				D10C06AF1C8E2F92005B6B23 /* AdvanceUS.app */,
 				D10C06C61C8E2F92005B6B23 /* Advance CarolinaTests.xctest */,
 				D10C06D11C8E2F93005B6B23 /* Advance CarolinaUITests.xctest */,
 			);
@@ -512,7 +512,7 @@
 			);
 			name = "Advance Carolina";
 			productName = "Advance Carolina";
-			productReference = D10C06AF1C8E2F92005B6B23 /* Advance Carolina.app */;
+			productReference = D10C06AF1C8E2F92005B6B23 /* AdvanceUS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D10C06C51C8E2F92005B6B23 /* Advance CarolinaTests */ = {
@@ -1078,7 +1078,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.AdvanceCarolina;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AdvanceUS;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Advance Carolina/Advance Carolina-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1097,7 +1097,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.AdvanceCarolina;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AdvanceUS;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Advance Carolina/Advance Carolina-Bridging-Header.h";
 			};

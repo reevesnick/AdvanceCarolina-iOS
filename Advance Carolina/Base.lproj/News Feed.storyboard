@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CSY-xa-ZbJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CSY-xa-ZbJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -131,52 +131,45 @@
                         <viewControllerLayoutGuide type="top" id="itX-8j-oQh"/>
                         <viewControllerLayoutGuide type="bottom" id="tub-Og-t2c"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GzX-En-ml2">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="42n-po-VvU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-nP-SOZ" customClass="PFImageView">
-                                <rect key="frame" x="0.0" y="55" width="320" height="288"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CT4-WR-BRE">
-                                <rect key="frame" x="20" y="388" width="280" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Article " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IXR-4r-HhT">
-                                <rect key="frame" x="0.0" y="417" width="320" height="105"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Article " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XvS-2s-JDo">
+                                <rect key="frame" x="0.0" y="413" width="320" height="1000"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Headline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scM-ra-gBT">
-                                <rect key="frame" x="20" y="351" width="280" height="33"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-97-oaT" customClass="PFImageView">
+                                <rect key="frame" x="0.0" y="51" width="320" height="288"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Headline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrD-Db-Zca">
+                                <rect key="frame" x="8" y="347" width="304" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzd-Fx-gqd">
+                                <rect key="frame" x="8" y="384" width="304" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="scM-ra-gBT" secondAttribute="trailing" id="2Lt-ro-Snl"/>
-                            <constraint firstItem="IXR-4r-HhT" firstAttribute="leading" secondItem="GzX-En-ml2" secondAttribute="leadingMargin" constant="-20" id="2Ub-PP-FCg"/>
-                            <constraint firstItem="Wz4-nP-SOZ" firstAttribute="leading" secondItem="GzX-En-ml2" secondAttribute="leadingMargin" constant="-20" id="LJN-bZ-lft"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="CT4-WR-BRE" secondAttribute="leading" id="OLZ-YT-Xn3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Wz4-nP-SOZ" secondAttribute="trailing" constant="-20" id="QQr-ec-fXQ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="scM-ra-gBT" secondAttribute="leading" id="Vpl-P2-YCF"/>
-                            <constraint firstItem="IXR-4r-HhT" firstAttribute="top" secondItem="CT4-WR-BRE" secondAttribute="bottom" constant="8" id="c1z-La-LoD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CT4-WR-BRE" secondAttribute="trailing" id="kvv-yu-EBY"/>
-                            <constraint firstItem="tub-Og-t2c" firstAttribute="top" secondItem="IXR-4r-HhT" secondAttribute="bottom" constant="46" id="m6P-Nd-aTj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IXR-4r-HhT" secondAttribute="trailing" constant="-20" id="sbL-yF-o0V"/>
+                            <constraint firstItem="XvS-2s-JDo" firstAttribute="top" secondItem="zzd-Fx-gqd" secondAttribute="bottom" constant="8" id="mYL-4I-nXV"/>
                         </constraints>
-                    </view>
+                    </scrollView>
                     <navigationItem key="navigationItem" id="zXV-tK-4pc"/>
                     <connections>
-                        <outlet property="headlineArticleString" destination="IXR-4r-HhT" id="J2H-xa-FiJ"/>
-                        <outlet property="headlineCreatedDate" destination="CT4-WR-BRE" id="Hwh-EC-0Hf"/>
-                        <outlet property="headlinePictureFile" destination="Wz4-nP-SOZ" id="4SE-aS-QpJ"/>
-                        <outlet property="headlineTitleString" destination="scM-ra-gBT" id="jCq-BL-dcP"/>
+                        <outlet property="headlineArticleString" destination="XvS-2s-JDo" id="XvK-oK-Spf"/>
+                        <outlet property="headlineCreatedDate" destination="zzd-Fx-gqd" id="nb6-aR-jQg"/>
+                        <outlet property="headlinePictureFile" destination="nzt-97-oaT" id="z6K-Aa-yvO"/>
+                        <outlet property="headlineTitleString" destination="ZrD-Db-Zca" id="e6k-P5-uNH"/>
+                        <outlet property="scroller" destination="42n-po-VvU" id="2nb-rh-LBM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gW6-Ga-gcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
