@@ -8,7 +8,7 @@
         <!--News Feed-->
         <scene sceneID="h1x-ng-fzZ">
             <objects>
-                <tableViewController id="uak-eZ-w2m" customClass="FeedTableViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uak-eZ-w2m" customClass="FeedTableViewController" customModule="AdvanceUS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" id="g9B-eW-380">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,13 +55,13 @@
         <!--News List Table View Controller-->
         <scene sceneID="yW3-cL-4ma">
             <objects>
-                <tableViewController id="CSY-xa-ZbJ" customClass="NewsListTableViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="CSY-xa-ZbJ" customClass="NewsListTableViewController" customModule="AdvanceUS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="405" sectionHeaderHeight="28" sectionFooterHeight="28" id="AsZ-DJ-IZm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="405" id="YiD-pc-eZC" customClass="NewsTableViewCell" customModule="Advance_Carolina" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="405" id="YiD-pc-eZC" customClass="NewsTableViewCell" customModule="AdvanceUS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="405"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YiD-pc-eZC" id="Ps1-jL-wVe">
@@ -126,7 +126,7 @@
         <!--News Detail View Controller-->
         <scene sceneID="3GD-RG-n9C">
             <objects>
-                <viewController id="2dI-MK-xpZ" customClass="NewsDetailViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2dI-MK-xpZ" customClass="NewsDetailViewController" customModule="AdvanceUS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="itX-8j-oQh"/>
                         <viewControllerLayoutGuide type="bottom" id="tub-Og-t2c"/>
@@ -142,7 +142,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-97-oaT" customClass="PFImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-97-oaT" customClass="PFImageView">
                                 <rect key="frame" x="0.0" y="51" width="320" height="288"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Headline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrD-Db-Zca">
@@ -160,6 +160,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="nzt-97-oaT" firstAttribute="top" secondItem="itX-8j-oQh" secondAttribute="bottom" constant="31" id="WuU-yk-ezf"/>
                             <constraint firstItem="XvS-2s-JDo" firstAttribute="top" secondItem="zzd-Fx-gqd" secondAttribute="bottom" constant="8" id="mYL-4I-nXV"/>
                         </constraints>
                     </scrollView>

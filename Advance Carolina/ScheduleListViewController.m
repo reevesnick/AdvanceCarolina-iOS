@@ -68,19 +68,19 @@
     // Get list of local notifications
     NSArray *localNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
     UILocalNotification *localNotification = [localNotifications objectAtIndex:indexPath.row];
-    /*
+    
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"M/dd/yyyy H:mm"];
     
     
     NSString *stringFromDate = [formatter stringFromDate:cell.detailTextLabel];
-*/
+ 
    //[formatter release];
     
     
     // Display notification info
     [cell.textLabel setText:localNotification.alertBody];
-   // [cell.detailTextLabel setText:[localNotification.fireDate description]];
+    [cell.detailTextLabel setText:[localNotification.fireDate description]];
     
     return cell;
 }
@@ -124,7 +124,7 @@
 // The attributed string for the description of the empty state:
 - (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView
 {
-    NSString *text = @"This allows you to schedule your vote and notifify of your next polling schedule. To get started, tap 'Add A Schedule' to create you first schedule.";
+    NSString *text = @"This allows you to schedule your vote and notify you of your next polling event. To get started, tap 'Add A Schedule' to create your first event.";
     
     NSMutableParagraphStyle *paragraph = [NSMutableParagraphStyle new];
     paragraph.lineBreakMode = NSLineBreakByWordWrapping;
@@ -136,9 +136,15 @@
     
     return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
+
+// The image for the empty state
+-(UIImage *)imageForEmptyDataSet:(UIScrollView* )scrollView{
+    return [UIImage imageNamed:@"Box-30"];
+}
+
 //The attributed string to be used for the specified button state:
 
-
+/*
 - (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state
 {
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0f]};
@@ -157,7 +163,7 @@
 
 }
 
-
+*/
 
 
 #pragma mark - Table view delegate

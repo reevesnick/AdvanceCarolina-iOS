@@ -18,13 +18,13 @@
         <!--Candidate List Table View Controller-->
         <scene sceneID="WlB-Pf-j9E">
             <objects>
-                <tableViewController id="3P4-eC-9hA" customClass="CandidateListTableViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="3P4-eC-9hA" customClass="CandidateListTableViewController" customModule="AdvanceUS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="114" sectionHeaderHeight="28" sectionFooterHeight="28" id="WGE-VN-gtz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="114" id="hxP-jd-j69" customClass="CandidateTableViewCell" customModule="Advance_Carolina" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="114" id="hxP-jd-j69" customClass="CandidateTableViewCell" customModule="AdvanceUS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hxP-jd-j69" id="DMR-O9-uRM">
@@ -46,11 +46,18 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRIMARY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VE-1x-Ea3">
+                                            <rect key="frame" x="105" y="78" width="200" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.58357319078947367" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="candidateNameLabel" destination="xED-al-Aaj" id="9xf-f9-O5T"/>
                                     <outlet property="candidatePartyLabel" destination="ecj-iD-Mbk" id="9eV-d7-Tez"/>
+                                    <outlet property="candidateStatus" destination="7VE-1x-Ea3" id="fsc-uH-MyN"/>
                                     <outlet property="candidiatePicture" destination="2Kq-cW-WTz" id="li3-1x-6CC"/>
                                     <segue destination="ZUj-Si-dyc" kind="push" identifier="showDetail" id="gxV-rh-DdP"/>
                                 </connections>
@@ -77,7 +84,7 @@
         <!--Candidate Detail-->
         <scene sceneID="9Jt-DE-YW4">
             <objects>
-                <viewController id="ZUj-Si-dyc" customClass="CandidateDetailViewController" customModule="Advance_Carolina" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZUj-Si-dyc" customClass="CandidateDetailViewController" customModule="AdvanceUS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Bf-pG-AGj"/>
                         <viewControllerLayoutGuide type="bottom" id="ahU-YP-MkY"/>

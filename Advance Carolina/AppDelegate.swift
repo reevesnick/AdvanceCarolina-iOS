@@ -25,13 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        //UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
 
         // Fabric SDK
         Fabric.with([Crashlytics.self])
 
-
+/*
         
         // Initialize LaunchKit
         LaunchKit.launchWithToken("PbQhmGwg52ntajnadBt2CrNrZa6tZkMIMo6DSuH57qi-")
@@ -45,9 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 defaults.setBool(true, forKey: "shownOnboardingBefore")
             }
         }
-
+*/
         //Custon UI
-        Chameleon.setGlobalThemeUsingPrimaryColor(UIColor.flatYellowColorDark(), withContentStyle: UIContentStyle.Contrast)
+        Chameleon.setGlobalThemeUsingPrimaryColor(UIColor(hexString: "f9ce14"), withContentStyle: UIContentStyle.Contrast)
         
         let textAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         UINavigationBar.appearance().titleTextAttributes = textAttributes
