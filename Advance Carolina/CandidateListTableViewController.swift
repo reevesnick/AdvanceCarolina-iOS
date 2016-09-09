@@ -24,6 +24,8 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
 
        self.title = "Candidates";
 
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

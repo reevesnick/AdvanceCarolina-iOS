@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D10C06AE1C8E2F92005B6B23"
-               BuildableName = "Advance Carolina.app"
+               BuildableName = "AdvanceUS.app"
                BlueprintName = "Advance Carolina"
                ReferencedContainer = "container:Advance Carolina.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D10C06AE1C8E2F92005B6B23"
-            BuildableName = "Advance Carolina.app"
+            BuildableName = "AdvanceUS.app"
             BlueprintName = "Advance Carolina"
             ReferencedContainer = "container:Advance Carolina.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D10C06AE1C8E2F92005B6B23"
-            BuildableName = "Advance Carolina.app"
+            BuildableName = "AdvanceUS.app"
             BlueprintName = "Advance Carolina"
             ReferencedContainer = "container:Advance Carolina.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D10C06AE1C8E2F92005B6B23"
-            BuildableName = "Advance Carolina.app"
+            BuildableName = "AdvanceUS.app"
             BlueprintName = "Advance Carolina"
             ReferencedContainer = "container:Advance Carolina.xcodeproj">
          </BuildableReference>

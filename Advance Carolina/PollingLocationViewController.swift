@@ -66,7 +66,13 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
                         case .Error(_):
                             print("Error")
                         case .Next(let loc):
+                            if (loc == nil){
+                            let alert = UIAlertController(title: "Error", message: "Cannot find location from the search query above. Please check your input and try again.", preferredStyle: UIAlertControllerStyle.Alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                            self.presentViewController(alert, animated: true, completion: nil)
+                            }
                             self.locations = loc
+                            
                         }
                     }.addDisposableTo(disposeBag)
             }

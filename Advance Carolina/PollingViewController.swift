@@ -48,6 +48,13 @@ class PollingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
+        
+        let titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, forState: .Selected)
+        
+
         // Do any additional setup after loading the view.
         
        // self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
@@ -55,7 +62,7 @@ class PollingViewController: UIViewController {
 
 
     }
-
+/*
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         showRegisterInfo()
@@ -81,7 +88,7 @@ class PollingViewController: UIViewController {
         
         
     }
-    
+  */  
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -16,6 +16,9 @@ class NewsListTableViewController: PFQueryTableViewController,DZNEmptyDataSetSou
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
+
+        
         self.title = "News"
         
         
@@ -31,6 +34,33 @@ class NewsListTableViewController: PFQueryTableViewController,DZNEmptyDataSetSou
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        showRegisterInfo()
+        
+        
+    }
+    
+    func showRegisterInfo(){
+        
+        let launchedBefore = NSUserDefaults.standardUserDefaults().boolForKey("launchedBefore")
+        if launchedBefore  {
+            print("Not first launch.")
+        }
+        else {
+            print("First launch, setting NSUserDefault.")
+            let viewController:UIViewController = UIStoryboard(name: "RegisterVoterInfo", bundle: nil).instantiateInitialViewController()! as UIViewController
+            self.presentViewController(viewController, animated: false, completion: nil)
+            
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "launchedBefore")
+        }
+        
+        
+        
+        
+    }
+
     
     
     override func queryForTable() -> PFQuery {

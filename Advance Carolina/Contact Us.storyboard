@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Contact Us-->
@@ -17,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5z-qr-gAn">
-                                <rect key="frame" x="78" y="443" width="165" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5z-qr-gAn">
+                                <frame key="frameInset" minX="78" minY="443" width="165" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Contact Us">
-                                    <color key="titleColor" red="0.99771148990000003" green="0.99771148990000003" blue="0.99771148990000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -32,25 +33,27 @@
                                     <action selector="sendEmailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aH0-rs-o03"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w9P-n2-PL0">
-                                <rect key="frame" x="0.0" y="64" width="320" height="371"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w9P-n2-PL0">
+                                <frame key="frameInset" minY="157" width="320" height="283"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Advance North Carolina stands for sustainable progress. We commit to address our state’s racial, political, economic, health, environmental and educational inequities. Through consistent and strategic activity this vision is achievable with each successive election and every vote cast.
 
 It is the mission of Advance Carolina to build a statewide, independent Black-Led 501(c)4 political and electoral vehicle centered in Black communities and institutions. Advance Carolina seeks to build and expand the power and political participation of Black citizens through the creation of a federated, statewide network of chapters and affiliates.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-Aj-YAz">
+                                <frame key="frameInset" minX="147" minY="72" width="86" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="w9P-n2-PL0" firstAttribute="top" secondItem="LGN-ei-Dju" secondAttribute="bottom" id="4an-H9-X1x"/>
-                            <constraint firstItem="q5z-qr-gAn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="5y8-r7-aqJ"/>
-                            <constraint firstItem="q5z-qr-gAn" firstAttribute="top" secondItem="w9P-n2-PL0" secondAttribute="bottom" constant="8" symbolic="YES" id="GY3-NE-dih"/>
-                            <constraint firstItem="w9P-n2-PL0" firstAttribute="centerX" secondItem="q5z-qr-gAn" secondAttribute="centerX" id="NrN-mv-DH4"/>
-                            <constraint firstItem="EB8-go-Qm0" firstAttribute="top" secondItem="q5z-qr-gAn" secondAttribute="bottom" constant="46" id="Y9t-oK-x4G"/>
-                            <constraint firstAttribute="trailing" secondItem="w9P-n2-PL0" secondAttribute="trailing" id="slp-wW-zgi"/>
-                            <constraint firstItem="w9P-n2-PL0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wXq-gT-onG"/>
+                            <constraint firstItem="w9P-n2-PL0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1jh-rG-p6M"/>
+                            <constraint firstItem="q5z-qr-gAn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="58" id="879-S0-Yin"/>
+                            <constraint firstItem="q5z-qr-gAn" firstAttribute="top" secondItem="w9P-n2-PL0" secondAttribute="bottom" constant="3" id="jK2-h0-UtT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w9P-n2-PL0" secondAttribute="trailing" constant="-20" id="tph-fW-DGH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q5z-qr-gAn" secondAttribute="trailing" constant="57" id="uMf-36-Z3e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Us" id="E2n-yB-a3d"/>
@@ -65,4 +68,12 @@ It is the mission of Advance Carolina to build a statewide, independent Black-Le
             <point key="canvasLocation" x="825" y="2606"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.png" width="968" height="974"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>

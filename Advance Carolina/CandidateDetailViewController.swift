@@ -39,6 +39,7 @@ class CandidateDetailViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         
         //self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
 
 
         // Do any additional setup after loading the view.

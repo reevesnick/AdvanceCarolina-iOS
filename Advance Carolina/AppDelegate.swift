@@ -51,6 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let textAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         UINavigationBar.appearance().titleTextAttributes = textAttributes
+        //UIButton.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.blackColor()()]
+
         
        // UIColor(contrastingBlackOrWhiteColorOn:UIColor!, isFlat:Bool)
 

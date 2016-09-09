@@ -20,6 +20,8 @@ class ContactViewController: UIViewController,MFMailComposeViewControllerDelegat
       //  self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
       //  self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
 
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
+
 
 
         // Do any additional setup after loading the view.

@@ -28,6 +28,9 @@ class NewsDetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
+
+        
         self.scroller.scrollEnabled = true
         self.scroller.contentSize = (CGSizeMake(320, 1000))
 
