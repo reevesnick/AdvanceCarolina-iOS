@@ -21,7 +21,6 @@
 		64CE27731CAE0B6E008EE0E8 /* Sample Ballot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE27711CAE0B6E008EE0E8 /* Sample Ballot.storyboard */; };
 		64CE27751CAE0B7F008EE0E8 /* Candidates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE27741CAE0B7F008EE0E8 /* Candidates.storyboard */; };
 		64CE27781CAE0B8C008EE0E8 /* News Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE27761CAE0B8C008EE0E8 /* News Feed.storyboard */; };
-		64CE277A1CAE0B99008EE0E8 /* Contact Us.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CE27791CAE0B99008EE0E8 /* Contact Us.storyboard */; };
 		78127160650C1F98C6E09752 /* Pods_Advance_CarolinaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236C57677CAB25482899B653 /* Pods_Advance_CarolinaUITests.framework */; };
 		A7EDB24F7E89EF9F5B92AAF2 /* Pods_Advance_CarolinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293D6150D4B7A68F7527E826 /* Pods_Advance_CarolinaTests.framework */; };
 		D10C06B31C8E2F92005B6B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C06B21C8E2F92005B6B23 /* AppDelegate.swift */; };
@@ -38,6 +37,7 @@
 		D128D8171C8F6FFF002DE1CE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D8161C8F6FFF002DE1CE /* CoreData.framework */; };
 		D128D8191C8F7008002DE1CE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D8181C8F7008002DE1CE /* MessageUI.framework */; };
 		D128D81B1C8F700E002DE1CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D128D81A1C8F700E002DE1CE /* MapKit.framework */; };
+		D134ADCC1D861A4F008E2A02 /* Contact Us 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D134ADCB1D861A4F008E2A02 /* Contact Us 2.storyboard */; };
 		D173EFAC1C93A24500593DFD /* PollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAB1C93A24500593DFD /* PollingViewController.swift */; };
 		D173EFAF1C93BB0200593DFD /* PollingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */; };
 		D1894C631CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1894C621CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg */; };
@@ -110,7 +110,6 @@
 		64CE27721CAE0B6E008EE0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Sample Ballot.storyboard"; sourceTree = "<group>"; };
 		64CE27741CAE0B7F008EE0E8 /* Candidates.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Candidates.storyboard; sourceTree = "<group>"; };
 		64CE27771CAE0B8C008EE0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/News Feed.storyboard"; sourceTree = "<group>"; };
-		64CE27791CAE0B99008EE0E8 /* Contact Us.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Contact Us.storyboard"; sourceTree = "<group>"; };
 		76B77AEC8D3AF6BA8D5ECAC2 /* Pods-Advance CarolinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaTests/Pods-Advance CarolinaTests.release.xcconfig"; sourceTree = "<group>"; };
 		99B839B7C584F4AF091FC6B7 /* Pods-Advance CarolinaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A15BC5EE2430D90FA7DAC27 /* Pods-Advance CarolinaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advance CarolinaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advance CarolinaUITests/Pods-Advance CarolinaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +133,7 @@
 		D128D8161C8F6FFF002DE1CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D128D8181C8F7008002DE1CE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D128D81A1C8F700E002DE1CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D134ADCB1D861A4F008E2A02 /* Contact Us 2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Contact Us 2.storyboard"; sourceTree = "<group>"; };
 		D173EFAB1C93A24500593DFD /* PollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingViewController.swift; sourceTree = "<group>"; };
 		D173EFAE1C93BB0200593DFD /* PollingLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingLocationViewController.swift; sourceTree = "<group>"; };
 		D1894C621CDD40F200B6A8E6 /* 5098201883794.preview-620.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5098201883794.preview-620.jpg"; sourceTree = "<group>"; };
@@ -288,7 +288,6 @@
 			children = (
 				D19399B71CB0985C00BC8E5D /* RegisterVoterInfo.storyboard */,
 				D10C06B61C8E2F92005B6B23 /* Main.storyboard */,
-				64CE27791CAE0B99008EE0E8 /* Contact Us.storyboard */,
 				64CE27761CAE0B8C008EE0E8 /* News Feed.storyboard */,
 				64CE27741CAE0B7F008EE0E8 /* Candidates.storyboard */,
 				64CE27711CAE0B6E008EE0E8 /* Sample Ballot.storyboard */,
@@ -296,6 +295,7 @@
 				64CE276C1CAE0AC0008EE0E8 /* Home.storyboard */,
 				D19399B31CB0659A00BC8E5D /* CreateScheduleStoryboard.storyboard */,
 				D1DEC2D91CB4CBB600A48DBB /* CandidatesNotes.storyboard */,
+				D134ADCB1D861A4F008E2A02 /* Contact Us 2.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -629,7 +629,6 @@
 				64263FF71C99F27E00FBD584 /* FontAwesome.otf in Resources */,
 				64CE27781CAE0B8C008EE0E8 /* News Feed.storyboard in Resources */,
 				D1CFD5821CE63A930082C394 /* Box-30.png in Resources */,
-				64CE277A1CAE0B99008EE0E8 /* Contact Us.storyboard in Resources */,
 				D1CFD5831CE63A930082C394 /* Clipboard-30.png in Resources */,
 				D1CFD58F1CE63A930082C394 /* RSS-90.png in Resources */,
 				D1CFD5871CE63A930082C394 /* Box-60.png in Resources */,
@@ -639,6 +638,7 @@
 				D1CFD5881CE63A930082C394 /* Clipboard-60.png in Resources */,
 				64CE276E1CAE0AC0008EE0E8 /* Home.storyboard in Resources */,
 				D1CFD5841CE63A930082C394 /* Message-30.png in Resources */,
+				D134ADCC1D861A4F008E2A02 /* Contact Us 2.storyboard in Resources */,
 				D1CFD5891CE63A930082C394 /* Message-60.png in Resources */,
 				D1CFD58A1CE63A930082C394 /* RSS-60.png in Resources */,
 				D1CFD58C1CE63A930082C394 /* Box-90.png in Resources */,

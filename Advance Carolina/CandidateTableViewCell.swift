@@ -16,7 +16,8 @@ class CandidateTableViewCell: PFTableViewCell {
     @IBOutlet weak var candidateNameLabel: UILabel!
     @IBOutlet weak var candidatePartyLabel: UILabel!
     @IBOutlet weak var candidiatePicture: PFImageView!
-    @IBOutlet weak var candidateStatus: UILabel!
+    @IBOutlet weak var candidateOfficeLabel: UILabel!
+    
     
     
     
@@ -24,7 +25,7 @@ class CandidateTableViewCell: PFTableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        /*
         let cstatus = parseObject?.objectForKey("primary") as? Bool
         if (cstatus == true){
             candidateStatus!.hidden = false
@@ -32,7 +33,7 @@ class CandidateTableViewCell: PFTableViewCell {
         else {
             candidateStatus!.hidden = true
         }
-        
+        */
         
         candidiatePicture.layer.cornerRadius = candidiatePicture.frame.size.width/2
         candidiatePicture.clipsToBounds = true;
@@ -42,9 +43,9 @@ class CandidateTableViewCell: PFTableViewCell {
 
     
    /// override func view
-    
+    /*
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+*/
 }

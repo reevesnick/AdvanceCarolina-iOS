@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bs0-I1-td0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="hxH-ON-5hD">
+            <objects>
+                <viewController id="bs0-I1-td0" customClass="ContactViewController" customModule="AdvanceUS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tcO-It-e6N"/>
+                        <viewControllerLayoutGuide type="bottom" id="try-o9-hmz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yKx-8Y-mhF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xmy-hL-H79">
+                                <rect key="frame" x="0.0" y="235" width="600" height="224"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Advance North Carolina stands for sustainable progress. We commit to address our state’s racial, political, economic, health, environmental and educational inequities. Through consistent and strategic activity this vision is achievable with each successive election and every vote cast.
+
+It is the mission of Advance Carolina to build a statewide, independent Black-Led 501(c)4 political and electoral vehicle centered in Black communities and institutions. Advance Carolina seeks to build and expand the power and political participation of Black citizens through the creation of a federated, statewide network of chapters and affiliates.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL0-I1-Uqr">
+                                <rect key="frame" x="20" y="525" width="560" height="30"/>
+                                <state key="normal" title="Contact Us">
+                                    <color key="titleColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendEmailButtonTapped:" destination="bs0-I1-td0" eventType="touchUpInside" id="kjw-0u-ggr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="w8a-x8-Ive">
+                                <rect key="frame" x="233" y="93" width="134" height="134"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xmy-hL-H79" firstAttribute="leading" secondItem="yKx-8Y-mhF" secondAttribute="leadingMargin" constant="-20" id="Ccq-I4-QJr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="AL0-I1-Uqr" secondAttribute="leading" id="Mp5-m4-QuG"/>
+                            <constraint firstItem="try-o9-hmz" firstAttribute="top" secondItem="AL0-I1-Uqr" secondAttribute="bottom" constant="45" id="QVL-d8-Rgw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AL0-I1-Uqr" secondAttribute="trailing" id="Uhf-6w-tlF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xmy-hL-H79" secondAttribute="trailing" constant="-20" id="a7t-Mo-8Hm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sY-gK-oGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="439"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="968" height="974"/>
+    </resources>
+</document>

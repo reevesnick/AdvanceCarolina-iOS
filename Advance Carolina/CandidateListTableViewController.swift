@@ -63,7 +63,7 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
             query.cachePolicy = PFCachePolicy.CacheThenNetwork
         }
         
-        query.orderByAscending("party")
+        query.orderByDescending("office")
         
         return query
     }
@@ -96,6 +96,7 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
        
         cell.candidateNameLabel?.text = object?.objectForKey("candidate_name") as? String
         cell.candidatePartyLabel?.text = object?.objectForKey("candidate_party") as? String
+        cell.candidateOfficeLabel?.text = object?.objectForKey("office") as? String
 
         
         let imageFile = object?.objectForKey("candidate_picture") as? PFFile

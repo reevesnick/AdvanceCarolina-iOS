@@ -8,11 +8,13 @@
 
 import UIKit
 import Foundation
+import DZNEmptyDataSet
 
 
-class SampleBallotViewController: UIViewController {
+class SampleBallotViewController: UIViewController, UITableViewDelegate, DZNEmptyDataSetSource,DZNEmptyDataSetDelegate  {
     
     @IBOutlet var webView: UIWebView!
+    @IBOutlet var tableView: UITableView!
 
 
     override func viewDidLoad() {
@@ -24,9 +26,13 @@ class SampleBallotViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
 
 
-
-        // Do any additional setup after loading the view.
         
+        self.tableView.emptyDataSetSource = self;
+        self.tableView.emptyDataSetDelegate = self;
+        
+        self.tableView.tableFooterView = UIView()
+        // Do any additional setup after loading the view.
+      /*
         let localfilePath = NSBundle.mainBundle().URLForResource("5098201883794.preview-620",withExtension: "jpg");
         let myRequest = NSURLRequest(URL: localfilePath!);
         webView.loadRequest(myRequest);
@@ -41,15 +47,66 @@ class SampleBallotViewController: UIViewController {
         webView.scrollView.zoomScale = rw;
         
         
+        */
         
         
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0;
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PollCell
         
+        
+        return cell;
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - DZEmptyView
+    func titleForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "Sample Ballot coming soon."
+        let attrs = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)]
+        return NSAttributedString(string: str,attributes: attrs);
+    }
+   /*
+    func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "It might have been a connect problems from the server or the internet connection is offline. "
+        let attrs = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)]
+        return NSAttributedString(string: str,attributes: attrs);    }
+    */
+    func backgroundColorForEmptyDataSet(scrollView: UIScrollView!) -> UIColor! {
+        return UIColor.whiteColor()
+        
+    }
+    
+    
+    // MARK: - DZEmptyView Delegate
+    func emptyDataSetShouldDisplay(scrollView: UIScrollView!) -> Bool {
+        return true;
+    }
+    
+    func emptyDataSetShouldAllowTouch(scrollView: UIScrollView!) -> Bool {
+        return true;
+    }
+    
+    func emptyDataSetShouldAllowScroll(scrollView: UIScrollView!) -> Bool {
+        return true;
+    }
+    
+    func emptyDataSetDidTapView(scrollView: UIScrollView!) {
+        NSLog("");
+    }
+    
+    func emptyDataSetDidTapButton(scrollView: UIScrollView!) {
+        // NSLog("", nil)
+    }
+
     
     
 

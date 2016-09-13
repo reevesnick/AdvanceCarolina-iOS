@@ -50,7 +50,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         
         let webBroswer = KINWebBrowserViewController()
         self.navigationController?.pushViewController(webBroswer, animated: true)
-        webBroswer.loadURLString("https://www.usa.gov/register-to-vote")  // USA Voting How to Page
+        webBroswer.loadURLString("https://register.rockthevote.com/registrants/new?partner=34021&source=embed-rtv468x60v1")  // USA Voting How to Page
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
