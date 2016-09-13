@@ -63,7 +63,7 @@ class CandidateListTableViewController: PFQueryTableViewController, DZNEmptyData
             query.cachePolicy = PFCachePolicy.CacheThenNetwork
         }
         
-        query.orderByDescending("office")
+        query.orderByAscending("createdAt")
         
         return query
     }
