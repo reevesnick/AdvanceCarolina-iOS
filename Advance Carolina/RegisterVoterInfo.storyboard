@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3iN-JE-tzV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="3iN-JE-tzV">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -21,82 +22,66 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWR-a6-KTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914.13333333333333" y="-724.20000000000005"/>
+            <point key="canvasLocation" x="1071.25" y="-850.42499999999995"/>
         </scene>
         <!--RegisterView-->
         <scene sceneID="Mad-MP-eRO">
             <objects>
                 <viewController storyboardIdentifier="RegisterView" title="RegisterView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g8f-rD-8Nx" customClass="RegisterViewController" customModule="AdvanceUS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IVh-YE-Mbf"/>
-                        <viewControllerLayoutGuide type="bottom" id="eCN-9K-osz"/>
+                        <viewControllerLayoutGuide type="top" id="NuT-U3-fot"/>
+                        <viewControllerLayoutGuide type="bottom" id="xjf-Pw-jQ4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Neb-e7-CsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-Vg-dbo">
-                                <rect key="frame" x="20" y="176" width="280" height="30"/>
+                                <frame key="frameInset" minX="20" minY="176" width="284" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYP-8S-mtX">
-                                <rect key="frame" x="20" y="220" width="280" height="30"/>
+                                <frame key="frameInset" minX="20" minY="220" width="284" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSx-61-BU1">
-                                <rect key="frame" x="20" y="264" width="280" height="30"/>
+                                <frame key="frameInset" minX="20" minY="264" width="284" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="COUNTY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tek-de-joH">
-                                <rect key="frame" x="20" y="309" width="280" height="30"/>
+                                <frame key="frameInset" minX="20" minY="309" width="284" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNS-be-AQM">
-                                <rect key="frame" x="20" y="353" width="280" height="30"/>
+                                <frame key="frameInset" minX="20" minY="353" width="284" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="et7-k6-hgL">
-                                <rect key="frame" x="20" y="131" width="280" height="30"/>
+                                <frame key="frameInset" minX="20" minY="131" width="284" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Party (i.e. Democratic, Republican)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHi-bS-xMG">
-                                <rect key="frame" x="20" y="397" width="280" height="30"/>
+                                <frame key="frameInset" minX="20" minY="397" width="284" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fill out your info to help us determine the voting status" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQq-aT-3gs">
-                                <rect key="frame" x="20" y="72" width="280" height="51"/>
+                                <frame key="frameInset" minX="20" minY="72" width="284" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-Qf-ngt">
-                                <rect key="frame" x="20" y="507" width="280" height="36"/>
-                                <color key="backgroundColor" red="1" green="0.16493257680000001" blue="0.15507676649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="I Have Already Registered">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="cancelButton:" destination="g8f-rD-8Nx" eventType="touchUpInside" id="JeU-pm-OHO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsd-vy-Ffu">
-                                <rect key="frame" x="20" y="469" width="280" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <frame key="frameInset" minX="20" minY="435" width="284" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -107,42 +92,55 @@
                                     <action selector="submitData:" destination="g8f-rD-8Nx" eventType="touchUpInside" id="B9I-u8-jiR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-Qf-ngt">
+                                <frame key="frameInset" minX="20" minY="473" width="284" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.16493257680000001" blue="0.15507676649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="I Have Already Registered">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelButton:" destination="g8f-rD-8Nx" eventType="touchUpInside" id="JeU-pm-OHO"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tek-de-joH" firstAttribute="leading" secondItem="rSx-61-BU1" secondAttribute="leading" id="0Wq-O4-MVa"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="rSx-61-BU1" secondAttribute="leading" id="604-EO-jDW"/>
-                            <constraint firstItem="tek-de-joH" firstAttribute="top" secondItem="rSx-61-BU1" secondAttribute="bottom" constant="26" id="6du-Fm-9AT"/>
-                            <constraint firstItem="et7-k6-hgL" firstAttribute="top" secondItem="cQq-aT-3gs" secondAttribute="bottom" constant="8" symbolic="YES" id="ALo-O7-M7d"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="NHi-bS-xMG" secondAttribute="leading" id="BzQ-We-ioj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cQq-aT-3gs" secondAttribute="trailing" id="CGn-i2-Lbi"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="rsd-vy-Ffu" secondAttribute="leading" id="DAA-Vd-y1T"/>
-                            <constraint firstItem="rsd-vy-Ffu" firstAttribute="leading" secondItem="NHi-bS-xMG" secondAttribute="leading" id="DNK-xR-Siz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ndf-Qf-ngt" secondAttribute="trailing" id="DnB-de-uU7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tek-de-joH" secondAttribute="trailing" id="E0D-de-BXD"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ndf-Qf-ngt" secondAttribute="leading" id="E3z-29-UVy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="EnG-Vg-dbo" secondAttribute="trailing" id="ENN-Lk-aTi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rsd-vy-Ffu" secondAttribute="trailing" id="ErX-kD-VvK"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="nNS-be-AQM" secondAttribute="leading" id="Inl-bD-dtv"/>
-                            <constraint firstItem="ndf-Qf-ngt" firstAttribute="top" secondItem="IVh-YE-Mbf" secondAttribute="bottom" constant="443" id="Jsb-S5-StU"/>
-                            <constraint firstItem="EnG-Vg-dbo" firstAttribute="top" secondItem="et7-k6-hgL" secondAttribute="bottom" constant="23" id="LPE-pp-CGp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rSx-61-BU1" secondAttribute="trailing" id="Mut-yH-HhB"/>
-                            <constraint firstItem="rsd-vy-Ffu" firstAttribute="leading" secondItem="NHi-bS-xMG" secondAttribute="leading" id="NRT-QF-uhy"/>
-                            <constraint firstItem="rYP-8S-mtX" firstAttribute="top" secondItem="EnG-Vg-dbo" secondAttribute="bottom" constant="18" id="Yd4-VG-aNi"/>
-                            <constraint firstItem="NHi-bS-xMG" firstAttribute="top" secondItem="nNS-be-AQM" secondAttribute="bottom" constant="22" id="aac-Ip-WVE"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="tek-de-joH" secondAttribute="leading" id="eAl-b1-VOD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NHi-bS-xMG" secondAttribute="trailing" id="ejG-tW-31N"/>
-                            <constraint firstItem="nNS-be-AQM" firstAttribute="top" secondItem="tek-de-joH" secondAttribute="bottom" constant="30" id="f0j-Zz-831"/>
-                            <constraint firstItem="et7-k6-hgL" firstAttribute="top" secondItem="Neb-e7-CsS" secondAttribute="top" constant="147" id="fkw-Ou-ORJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="et7-k6-hgL" secondAttribute="trailing" id="hV8-wf-OaG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rYP-8S-mtX" secondAttribute="trailing" id="m3Z-1Z-wOc"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="et7-k6-hgL" secondAttribute="leading" id="mxm-GC-Mq9"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="EnG-Vg-dbo" secondAttribute="leading" id="q5e-S7-xLu"/>
-                            <constraint firstItem="rsd-vy-Ffu" firstAttribute="top" secondItem="NHi-bS-xMG" secondAttribute="bottom" constant="42" id="sUa-qk-ucN"/>
-                            <constraint firstItem="rSx-61-BU1" firstAttribute="top" secondItem="rYP-8S-mtX" secondAttribute="bottom" constant="23" id="uiX-G0-AFm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nNS-be-AQM" secondAttribute="trailing" id="uvv-jK-aKd"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="cQq-aT-3gs" secondAttribute="leading" id="ydH-Ig-BJ3"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="rYP-8S-mtX" secondAttribute="leading" id="z5q-BW-jov"/>
+                            <constraint firstItem="cQq-aT-3gs" firstAttribute="top" secondItem="NuT-U3-fot" secondAttribute="bottom" constant="8" id="0AS-CE-i56"/>
+                            <constraint firstItem="cQq-aT-3gs" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="0f2-fn-EoK"/>
+                            <constraint firstItem="EnG-Vg-dbo" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="1PM-CA-60O"/>
+                            <constraint firstItem="rSx-61-BU1" firstAttribute="top" secondItem="rYP-8S-mtX" secondAttribute="bottom" constant="14" id="3OQ-fn-GS7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ndf-Qf-ngt" secondAttribute="trailing" id="65K-uT-vQs"/>
+                            <constraint firstItem="tek-de-joH" firstAttribute="top" secondItem="rSx-61-BU1" secondAttribute="bottom" constant="15" id="Czu-mj-PyV"/>
+                            <constraint firstItem="ndf-Qf-ngt" firstAttribute="centerY" secondItem="Neb-e7-CsS" secondAttribute="centerY" id="Ey3-ML-At7"/>
+                            <constraint firstItem="rsd-vy-Ffu" firstAttribute="centerY" secondItem="Neb-e7-CsS" secondAttribute="centerY" id="HH8-9R-N2l"/>
+                            <constraint firstItem="rSx-61-BU1" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="I14-HB-EHY"/>
+                            <constraint firstItem="ndf-Qf-ngt" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="IY5-AD-aa5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NHi-bS-xMG" secondAttribute="trailing" id="MrC-8f-E4l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nNS-be-AQM" secondAttribute="trailing" id="Q6b-DS-dFH"/>
+                            <constraint firstItem="NHi-bS-xMG" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="QHv-Es-Vj9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tek-de-joH" secondAttribute="trailing" id="Qhj-Ia-fLa"/>
+                            <constraint firstItem="rYP-8S-mtX" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="Qm2-ni-eOn"/>
+                            <constraint firstItem="EnG-Vg-dbo" firstAttribute="top" secondItem="et7-k6-hgL" secondAttribute="bottom" constant="15" id="SZk-qG-VB0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rsd-vy-Ffu" secondAttribute="trailing" id="SpB-VJ-zdM"/>
+                            <constraint firstItem="nNS-be-AQM" firstAttribute="top" secondItem="tek-de-joH" secondAttribute="bottom" constant="14" id="VsV-FC-Ecm"/>
+                            <constraint firstItem="rYP-8S-mtX" firstAttribute="top" secondItem="EnG-Vg-dbo" secondAttribute="bottom" constant="14" id="Xqe-UZ-Q3U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EnG-Vg-dbo" secondAttribute="trailing" id="Y30-Yr-dTq"/>
+                            <constraint firstItem="cQq-aT-3gs" firstAttribute="centerX" secondItem="Neb-e7-CsS" secondAttribute="centerX" id="cxt-d1-cdH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rSx-61-BU1" secondAttribute="trailing" id="dJ0-fb-401"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="et7-k6-hgL" secondAttribute="trailing" id="deE-5b-ZIk"/>
+                            <constraint firstItem="NHi-bS-xMG" firstAttribute="top" secondItem="nNS-be-AQM" secondAttribute="bottom" constant="14" id="dfe-a9-znl"/>
+                            <constraint firstItem="et7-k6-hgL" firstAttribute="top" secondItem="cQq-aT-3gs" secondAttribute="bottom" constant="8" id="eni-n0-ya4"/>
+                            <constraint firstItem="tek-de-joH" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="heG-f6-f5c"/>
+                            <constraint firstItem="rsd-vy-Ffu" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="krG-Pl-McC"/>
+                            <constraint firstItem="et7-k6-hgL" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="mgh-Iv-diG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rYP-8S-mtX" secondAttribute="trailing" id="nX1-iY-QuD"/>
+                            <constraint firstItem="nNS-be-AQM" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="v1s-6p-Plt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Register to Advance Carolina" id="VXA-XN-t7r"/>
@@ -158,7 +156,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Oe-9D-5Dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352" y="-722"/>
+            <point key="canvasLocation" x="1582" y="-850"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>

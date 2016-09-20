@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bs0-I1-td0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bs0-I1-td0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Contact View Controller-->
@@ -14,44 +15,45 @@
                         <viewControllerLayoutGuide type="bottom" id="try-o9-hmz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yKx-8Y-mhF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xmy-hL-H79">
-                                <rect key="frame" x="0.0" y="235" width="600" height="224"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Advance North Carolina stands for sustainable progress. We commit to address our state’s racial, political, economic, health, environmental and educational inequities. Through consistent and strategic activity this vision is achievable with each successive election and every vote cast.
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="w8a-x8-Ive">
+                                <frame key="frameInset" minX="120" minY="40" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xmy-hL-H79">
+                                <frame key="frameInset" minX="16" minY="129" width="288" height="319"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Advance North Carolina stands for sustainable progress. We commit to address our state’s racial, political, economic, health, environmental and educational inequities. Through consistent and strategic activity this vision is achievable with each successive election and every vote cast.
 
-It is the mission of Advance Carolina to build a statewide, independent Black-Led 501(c)4 political and electoral vehicle centered in Black communities and institutions. Advance Carolina seeks to build and expand the power and political participation of Black citizens through the creation of a federated, statewide network of chapters and affiliates.</mutableString>
+It is the mission of Advance Carolina to build a statewide, independent Black-Led 501(c)4 political and electoral vehicle centered in Black communities and institutions. Advance Carolina seeks to build and expand the power and political participation of Black citizens through the creation of a federated, statewide network of chapters and affiliates.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL0-I1-Uqr">
-                                <rect key="frame" x="20" y="525" width="560" height="30"/>
                                 <state key="normal" title="Contact Us">
-                                    <color key="titleColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="sendEmailButtonTapped:" destination="bs0-I1-td0" eventType="touchUpInside" id="kjw-0u-ggr"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="w8a-x8-Ive">
-                                <rect key="frame" x="233" y="93" width="134" height="134"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Xmy-hL-H79" firstAttribute="leading" secondItem="yKx-8Y-mhF" secondAttribute="leadingMargin" constant="-20" id="Ccq-I4-QJr"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="AL0-I1-Uqr" secondAttribute="leading" id="Mp5-m4-QuG"/>
-                            <constraint firstItem="try-o9-hmz" firstAttribute="top" secondItem="AL0-I1-Uqr" secondAttribute="bottom" constant="45" id="QVL-d8-Rgw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AL0-I1-Uqr" secondAttribute="trailing" id="Uhf-6w-tlF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Xmy-hL-H79" secondAttribute="trailing" constant="-20" id="a7t-Mo-8Hm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Xmy-hL-H79" secondAttribute="leading" id="Ynh-4N-Jtw"/>
+                            <constraint firstItem="try-o9-hmz" firstAttribute="top" secondItem="AL0-I1-Uqr" secondAttribute="bottom" constant="8" id="Zni-48-YKJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xmy-hL-H79" secondAttribute="trailing" id="aTU-u9-Lcm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AL0-I1-Uqr" secondAttribute="trailing" id="dJu-hL-MpB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="AL0-I1-Uqr" secondAttribute="leading" id="udb-6l-cBB"/>
+                            <constraint firstItem="AL0-I1-Uqr" firstAttribute="top" secondItem="Xmy-hL-H79" secondAttribute="bottom" id="vHU-Yu-FDg"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8sY-gK-oGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="439"/>
+            <point key="canvasLocation" x="101.25" y="506.25"/>
         </scene>
     </scenes>
     <resources>

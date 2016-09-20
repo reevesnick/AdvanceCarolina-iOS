@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1ON-6w-ivb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="1ON-6w-ivb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Create A Schedule-->
@@ -14,20 +15,15 @@
                         <viewControllerLayoutGuide type="bottom" id="Soq-5k-pdl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gnx-Gx-eKI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="njA-MT-hiQ">
-                                <rect key="frame" x="0.0" y="176" width="320" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="480106848.587282">
-                                    <!--2016-03-19 19:00:48 +0000-->
-                                </date>
-                            </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5Y-ez-7Ab">
-                                <rect key="frame" x="20" y="400" width="280" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5Y-ez-7Ab">
+                                <frame key="frameInset" minX="20" minY="411" width="339" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Schedule Vote">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -38,17 +34,19 @@
                                     <action selector="save:" destination="whl-jS-cEU" eventType="touchUpInside" id="wpD-e5-t65"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Schedule your vote using the time of vote and select a date so, we could notify you where you should able to vote" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob4-6T-FTA">
-                                <rect key="frame" x="20" y="72" width="280" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schedule your vote using the time of vote and select a date so, we could notify you where you should able to vote" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob4-6T-FTA">
+                                <frame key="frameInset" minX="20" minY="72" width="339" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPv-iI-k1g">
-                                <rect key="frame" x="20" y="438" width="280" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.16493257678824513" blue="0.15507676654338998" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPv-iI-k1g">
+                                <frame key="frameInset" minX="20" minY="456" width="339" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.16493257678824513" blue="0.15507676654338998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Cancel Vote">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -59,24 +57,23 @@
                                     <action selector="cancel:" destination="whl-jS-cEU" eventType="touchUpInside" id="Dsj-8k-bhW"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reminder Vote Title " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dk5-kQ-o9i">
-                                <rect key="frame" x="20" y="138" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reminder Vote Title " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dk5-kQ-o9i">
+                                <frame key="frameInset" minX="20" minY="146" width="339" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="njA-MT-hiQ">
+                                <frame key="frameInset" minY="187" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="480106848.587282">
+                                    <!--2016-03-19 19:00:48 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="q5Y-ez-7Ab" secondAttribute="trailing" id="5At-vC-Ob1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="njA-MT-hiQ" secondAttribute="trailing" id="7Ry-0x-RY8"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="q5Y-ez-7Ab" secondAttribute="leading" id="9DY-GH-Vzp"/>
-                            <constraint firstItem="njA-MT-hiQ" firstAttribute="leading" secondItem="gnx-Gx-eKI" secondAttribute="leadingMargin" constant="20" id="XRK-23-V33"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LPv-iI-k1g" secondAttribute="trailing" id="cte-0m-348"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ob4-6T-FTA" secondAttribute="trailing" id="fNB-ib-mJy"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ob4-6T-FTA" secondAttribute="leading" id="gWZ-Dd-5N6"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="LPv-iI-k1g" secondAttribute="leading" id="lR2-I0-Llz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Dk5-kQ-o9i" secondAttribute="trailing" id="ptd-Jc-s8H"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Dk5-kQ-o9i" secondAttribute="leading" id="qJ6-oL-ijV"/>
+                            <constraint firstItem="njA-MT-hiQ" firstAttribute="leading" secondItem="gnx-Gx-eKI" secondAttribute="leadingMargin" id="AmL-w4-X9R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="njA-MT-hiQ" secondAttribute="trailing" id="BRL-w2-JTs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create A Schedule" id="I24-HS-co0"/>
@@ -87,14 +84,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmF-fF-djc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="169"/>
+            <point key="canvasLocation" x="-45.5" y="168.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mVC-j1-WHv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ON-6w-ivb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R5S-16-rqh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="R5S-16-rqh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -108,4 +105,9 @@
             <point key="canvasLocation" x="-478" y="169"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>

@@ -23,17 +23,27 @@ private func JSONResponseDataFormatter(data: NSData) -> NSData {
 //let PollProvider = RxMoyaProvider<PollAPI>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
 let PollProvider = RxMoyaProvider<PollAPI>()
 
+
 extension String {
     var URLEscapedString: String {
         return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
     }
+    var UTF8EncodedData: NSData {
+        return self.dataUsingEncoding(NSUTF8StringEncoding)!
+    }
 }
 
 public enum PollAPI {
-    case PollLocations(address: String)
+    case PollLocations(address: String!)
 }
 
+
+
 extension PollAPI: TargetType {
+    public var multipartBody: [MultipartFormData]? {
+        return nil
+    }
+    
     public var baseURL: NSURL {
         switch self {
         case .PollLocations(_):
