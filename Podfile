@@ -38,12 +38,14 @@ target 'Advance CarolinaUITests' do
 
 end
 
+
+
+# Keep Legacy Swift Snyntax Coding to avoid installation and pod upgrade conflicts
 post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
-      config.build_settings['MACOSX_DEPLOYMENT_TARGET'] = '10.10'
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |configuration|
+            configuration.build_settings['SWIFT_VERSION'] = "2.3"
+        end
     end
-  end
 end
 

@@ -14,18 +14,18 @@
                         <viewControllerLayoutGuide type="bottom" id="xjg-7h-A7g"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FXx-S6-0mn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M1H-IX-W2i">
-                                <frame key="frameInset" minY="64" width="375" height="546"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tKD-uB-iwn">
+                                <frame key="frameInset" maxY="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="CQf-dZ-TH0" id="8yP-Zg-2Ug"/>
-                                    <outlet property="delegate" destination="CQf-dZ-TH0" id="se2-XO-QbJ"/>
-                                    <outlet property="emptyDataSetDelegate" destination="CQf-dZ-TH0" id="Beg-bM-ilt"/>
-                                    <outlet property="emptyDataSetSource" destination="CQf-dZ-TH0" id="aXe-PP-av2"/>
+                                    <outlet property="dataSource" destination="CQf-dZ-TH0" id="8jB-29-raw"/>
+                                    <outlet property="delegate" destination="CQf-dZ-TH0" id="yu2-MM-9qH"/>
+                                    <outlet property="emptyDataSetDelegate" destination="CQf-dZ-TH0" id="eX0-IZ-nIv"/>
+                                    <outlet property="emptyDataSetSource" destination="CQf-dZ-TH0" id="dQQ-US-8T5"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -35,17 +35,17 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="M1H-IX-W2i" id="UOi-bm-rfr"/>
+                        <outlet property="tableView" destination="tKD-uB-iwn" id="E8J-oV-Eq2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M74-fW-BrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="811.5" y="367.5"/>
+            <point key="canvasLocation" x="811" y="367"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

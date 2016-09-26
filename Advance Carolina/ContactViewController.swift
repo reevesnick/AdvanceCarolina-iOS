@@ -51,7 +51,7 @@ class ContactViewController: UIViewController,MFMailComposeViewControllerDelegat
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
     
         mailComposerVC.setToRecipients(["info@advancecarolina.com"]) //Mail to
-        mailComposerVC.setSubject("Sending you an in-app e-mail...") // Subject
+        mailComposerVC.setSubject("AdvanceUS Contact") // Subject
         //mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
     
         return mailComposerVC

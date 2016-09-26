@@ -79,6 +79,8 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
             loadingBar.hide(true)
 
         }
+        self.searchBar.endEditing(true)
+
     }
     
 
@@ -97,26 +99,10 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
 
         
         pollViewModel = PollingLocationViewModel()
-        
-    /*
-        pollViewModel?.getLocations("704 E Lindsay St, Greensboro")
-            .subscribe {
-                event -> Void in
-                switch event {
-                case .Completed:
-                    print("Complete")
-                case .Error(_):
-                    print("Error")
-                case .Next(let loc):
-                    self.locations = loc
-                }
-        }.addDisposableTo(disposeBag)
-       */
-        //pollTableView.emptyDataSetDelegate = self
-        //pollTableView.emptyDataSetSource = self
-        //pollTableView.tableFooterView = UIView()
+
     }
     
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let count = locations?.count {
             return count
@@ -191,6 +177,7 @@ class PollingLocationViewController: UIViewController, UISearchBarDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+
     
     
 
