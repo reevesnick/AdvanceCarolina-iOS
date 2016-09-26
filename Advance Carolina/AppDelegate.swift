@@ -79,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         //Push Notifications - Batch
-        Batch.startWithAPIKey("DEV56F29C2F5520F6FE495D960485E"); //Developer Key
+      //  Batch.startWithAPIKey("DEV56F29C2F5520F6FE495D960485E"); //Developer Key
         Batch.startWithAPIKey("56F29C2F53E59355215F7DB2616C2A") //Live Key
         
         BatchPush.registerForRemoteNotifications()

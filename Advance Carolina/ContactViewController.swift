@@ -21,6 +21,7 @@ class ContactViewController: UIViewController,MFMailComposeViewControllerDelegat
       //  self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
 
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
+        self.title = "Contact Us";
 
 
 

@@ -11,7 +11,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3iN-JE-tzV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HaI-Hu-kwT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HaI-Hu-kwT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -33,56 +33,63 @@
                         <viewControllerLayoutGuide type="bottom" id="xjf-Pw-jQ4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Neb-e7-CsS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-Vg-dbo">
-                                <frame key="frameInset" minX="19" minY="169" width="94.68%" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-Vg-dbo">
+                                <frame key="frameInset" minX="20" minY="169" width="94.67%" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYP-8S-mtX">
-                                <frame key="frameInset" minX="19" minY="207" width="94.68%" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYP-8S-mtX">
+                                <frame key="frameInset" minX="20" minY="207" width="94.67%" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSx-61-BU1">
-                                <frame key="frameInset" minX="19" minY="248" width="94.68%" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSx-61-BU1">
+                                <frame key="frameInset" minX="20" minY="248" width="94.67%" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="COUNTY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tek-de-joH">
-                                <frame key="frameInset" minX="19" minY="286" width="94.68%" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="COUNTY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tek-de-joH">
+                                <frame key="frameInset" minX="20" minY="286" width="94.67%" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNS-be-AQM">
-                                <frame key="frameInset" minX="19" minY="322" width="94.68%" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNS-be-AQM">
+                                <frame key="frameInset" minX="20" minY="322" width="94.67%" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="et7-k6-hgL">
-                                <frame key="frameInset" minX="19" minY="131" height="30" maxX="16.5"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="et7-k6-hgL">
+                                <frame key="frameInset" minX="18.5" minY="131" height="30" maxX="21.5"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Party (i.e. Democratic, Republican)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHi-bS-xMG">
-                                <frame key="frameInset" minX="19" minY="360" width="94.68%" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Party (i.e. Democratic, Republican)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHi-bS-xMG">
+                                <frame key="frameInset" minX="20" minY="360" width="94.67%" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fill out your info to help us determine the voting status" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQq-aT-3gs">
-                                <frame key="frameInset" minX="19" minY="72" height="51" maxX="16.5"/>
+                                <frame key="frameInset" minX="18.5" minY="72" height="51" maxX="16.5"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsd-vy-Ffu">
-                                <frame key="frameInset" minX="20" minY="398" width="116" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsd-vy-Ffu">
+                                <frame key="frameInset" minX="20" minY="398" height="30" maxX="21"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -93,12 +100,12 @@
                                     <action selector="submitData:" destination="g8f-rD-8Nx" eventType="touchUpInside" id="B9I-u8-jiR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-Qf-ngt">
-                                <frame key="frameInset" minX="150" minY="398" height="30" maxX="16.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-Qf-ngt">
+                                <frame key="frameInset" minX="20" minY="436" height="30" maxX="16"/>
                                 <color key="backgroundColor" red="1" green="0.16493257680000001" blue="0.15507676649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Already Registered">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -112,15 +119,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rYP-8S-mtX" firstAttribute="top" secondItem="EnG-Vg-dbo" secondAttribute="bottom" constant="8" id="6tX-5F-XRc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ndf-Qf-ngt" secondAttribute="trailing" id="JBj-Gc-XHE"/>
-                            <constraint firstItem="tek-de-joH" firstAttribute="top" secondItem="rSx-61-BU1" secondAttribute="bottom" constant="8" id="WKj-ue-0zg"/>
-                            <constraint firstItem="rsd-vy-Ffu" firstAttribute="leading" secondItem="Neb-e7-CsS" secondAttribute="leadingMargin" constant="4" id="aVd-wc-pea"/>
-                            <constraint firstItem="ndf-Qf-ngt" firstAttribute="leading" secondItem="rsd-vy-Ffu" secondAttribute="trailing" constant="14" id="cP3-rU-HDt"/>
-                            <constraint firstItem="nNS-be-AQM" firstAttribute="top" secondItem="tek-de-joH" secondAttribute="bottom" constant="6" id="oNL-uX-fmC"/>
-                            <constraint firstItem="NHi-bS-xMG" firstAttribute="top" secondItem="nNS-be-AQM" secondAttribute="bottom" constant="8" id="ogX-r0-p0f"/>
-                            <constraint firstItem="EnG-Vg-dbo" firstAttribute="top" secondItem="et7-k6-hgL" secondAttribute="bottom" constant="8" id="sgi-yM-jAJ"/>
-                            <constraint firstItem="rSx-61-BU1" firstAttribute="top" secondItem="rYP-8S-mtX" secondAttribute="bottom" constant="11" id="vMC-zj-2s7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rsd-vy-Ffu" secondAttribute="trailing" constant="1" id="9il-9g-fxW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rsd-vy-Ffu" secondAttribute="leading" id="DHV-wA-cbD"/>
+                            <constraint firstItem="xjf-Pw-jQ4" firstAttribute="top" secondItem="ndf-Qf-ngt" secondAttribute="bottom" constant="14" id="Xew-1q-boL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ndf-Qf-ngt" secondAttribute="trailing" constant="-4" id="Yc7-Ue-mht"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ndf-Qf-ngt" secondAttribute="leading" id="cMY-Kv-0Av"/>
+                            <constraint firstItem="ndf-Qf-ngt" firstAttribute="top" secondItem="rsd-vy-Ffu" secondAttribute="bottom" constant="8" id="vl5-0J-SVT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Register to Advance Carolina" id="VXA-XN-t7r"/>
@@ -142,6 +146,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina5_5.fullscreen"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

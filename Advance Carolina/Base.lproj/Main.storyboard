@@ -33,7 +33,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eum-wc-I26" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Contact Us" id="RSW-3s-ALi"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="J3D-K9-K4R">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J3D-K9-K4R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -52,7 +52,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sqK-dG-Wb6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Ballot" id="PYu-N9-bFf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Y19-Hk-lys">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y19-Hk-lys">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -71,7 +71,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bll-bq-HKa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Candidates" id="etc-s2-VCl"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="OPj-gl-BfW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OPj-gl-BfW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -90,7 +90,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jbI-r0-0R2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="News " id="R19-UA-j0g"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tGe-wM-KYa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tGe-wM-KYa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -109,7 +109,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="15o-8b-B6V" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Poll Place" id="ST5-ip-QzR"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0Bd-Q8-Z8a">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Bd-Q8-Z8a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -160,18 +160,18 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YHQ-RB-ALV" id="pfG-DA-eRt">
-                                            <frame key="frameInset" width="320" height="67"/>
+                                            <frame key="frameInset" width="320" height="67.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ND1-kL-Waq">
-                                                    <frame key="frameInset" minX="15" minY="17" width="32" height="20"/>
+                                                    <frame key="frameInset" minX="15" minY="18" width="31.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RYo-Yx-g5R">
-                                                    <frame key="frameInset" minX="15" minY="37" width="41" height="14"/>
+                                                    <frame key="frameInset" minX="15" minY="37.5" width="40.5" height="13.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
